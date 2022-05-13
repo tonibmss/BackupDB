@@ -1,0 +1,50 @@
+
+.o_web_studio_list_view_editor.o_list_view .o_list_table.table {
+  border-collapse: separate;
+}
+
+.o_web_studio_list_view_editor.o_list_view .o_list_table.table th, .o_web_studio_list_view_editor.o_list_view .o_list_table.table td {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.o_web_studio_list_view_editor.o_list_view .o_list_table.table th.o_web_studio_hook, .o_web_studio_list_view_editor.o_list_view .o_list_table.table td.o_web_studio_hook {
+  border-left: 2px solid transparent;
+}
+
+.o_web_studio_list_view_editor.o_list_view .o_list_table.table th.o_web_studio_hovered {
+  color: black;
+  border-left: 1px dashed #00A09D;
+  border-right: 1px dashed #00A09D;
+}
+
+.o_web_studio_list_view_editor.o_list_view .o_list_table.table tr.o_data_row td.o_web_studio_hovered:not(.o_web_studio_hook) {
+  border-left: 1px dashed #00A09D;
+  border-right: 1px dashed #00A09D;
+}
+
+.o_web_studio_list_view_editor.o_list_view .o_list_table.table th.o_web_studio_clicked {
+  background-color: white;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.o_web_studio_list_view_editor.o_list_view .o_list_table.table tr.o_data_row td.o_web_studio_clicked:not(.o_web_studio_hook) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.o_web_studio_list_view_editor.o_list_view .o_list_table.table th.o_web_studio_hook > i {
+  visibility: hidden;
+  color: #00A09D;
+}
+
+.o_web_studio_list_view_editor.o_list_view .o_list_table.table .o_web_studio_hook.o_web_studio_nearest_hook {
+  cursor: pointer !important;
+  border-left: 2px solid #00A09D;
+}
+
+.o_web_studio_list_view_editor.o_list_view .o_list_table.table .o_web_studio_hook.o_web_studio_nearest_hook > i {
+  visibility: visible;
+}
+

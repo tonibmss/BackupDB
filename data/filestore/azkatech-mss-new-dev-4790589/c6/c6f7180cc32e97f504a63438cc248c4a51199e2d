@@ -1,0 +1,85 @@
+
+.o_followers {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-box-pack: end; justify-content: flex-end;
+  order: 1;
+}
+
+.o_followers.o_field_widget {
+  margin-bottom: initial;
+}
+
+.o_followers > .o_followers_title_box {
+  order: 1;
+}
+
+.o_followers .o_followers_follow_button {
+  color: #666666;
+  font-weight: bold;
+  text-align: right;
+}
+
+.o_followers .o_followers_follow_button .o_follow, .o_followers .o_followers_follow_button .o_followers_unfollow, .o_followers .o_followers_follow_button .o_followers_following {
+  display: none;
+}
+
+.o_followers .o_followers_follow_button.o_followers_following .o_followers_following {
+  display: initial;
+}
+
+.o_followers .o_followers_follow_button.o_followers_following:hover .o_followers_following {
+  display: none;
+}
+
+.o_followers .o_followers_follow_button.o_followers_following:hover .o_followers_unfollow {
+  display: initial;
+}
+
+.o_followers .o_followers_follow_button.o_followers_notfollow .o_follow {
+  display: initial;
+}
+
+.o_followers .o_followers_follow_button .fa.fa-times {
+  color: #F0AD4E;
+}
+
+.o_followers .o_followers_follow_button .fa.fa-check {
+  color: #00A04A;
+}
+
+.o_followers .o_followers_list {
+  width: 20vh;
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.o_followers .o_followers_title_box .dropdown-item.o_partner {
+  padding: 0;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  align-items: center;
+}
+
+.o_followers .o_followers_title_box .dropdown-item.o_partner .o_mail_redirect {
+  margin-right: auto;
+  color: #666666;
+}
+
+.o_followers .o_followers_title_box .dropdown-item.o_partner .o_mail_redirect img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.o_followers .o_followers_title_box .dropdown-item.o_partner .btn, .o_followers .o_followers_title_box .dropdown-item.o_partner .o_account_reports_page .oe_link_reports, .o_account_reports_page .o_followers .o_followers_title_box .dropdown-item.o_partner .oe_link_reports, .o_followers .o_followers_title_box .dropdown-item.o_partner .o_radio_hide_bullet label, .o_radio_hide_bullet .o_followers .o_followers_title_box .dropdown-item.o_partner label {
+  padding: 0 8px;
+}
+
+.o_followers .o_followers_title_box .dropdown-item.o_partner.o_inactive .o_mail_redirect {
+  color: #adb5bd;
+  font-style: italic;
+}
+
+.o_followers .o_followers_title_box .dropdown-item.o_partner.o_inactive .o_mail_redirect img {
+  opacity: 0.25;
+}
+

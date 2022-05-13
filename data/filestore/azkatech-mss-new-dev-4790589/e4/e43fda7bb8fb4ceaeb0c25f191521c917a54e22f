@@ -1,0 +1,25 @@
+
+.o_radio_hide_bullet label::before {
+  display: none;
+}
+
+.o_radio_hide_bullet .o_field_radio.o_horizontal.o_field_widget {
+  margin-bottom: 1px;
+}
+
+.o_radio_hide_bullet label::after {
+  display: none;
+}
+
+.o_account_reports_page.o_account_assets_report .o_account_reports_table .o_account_reports_header_hierarchy tr:not(:first-child) th {
+  border: none;
+}
+
+.o_account_reports_page.o_account_assets_report .o_account_reports_table .o_account_reports_header_hierarchy tr:first-child th:not(:first-child) {
+  border: 1px solid black;
+}
+
+.o_account_reports_page.o_account_assets_report .o_account_reports_table tr:not(:hover) td:nth-child(2n+6), .o_account_reports_page.o_account_assets_report .o_account_reports_table tr:not(:first-child) th:nth-child(2n+6) {
+  background-color: #F8F8F8;
+}
+

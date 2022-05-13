@@ -1,0 +1,9 @@
+
+@media (max-width: 767.98px) {
+  .o_utm_campaign_mass_mailing_substats {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between !important;
+  }
+}
+

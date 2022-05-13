@@ -1,0 +1,72 @@
+
+.o_web_client.o_in_studio .modal .modal-header, .o_web_client.o_in_studio .modal .modal-footer {
+  background-color: #fcfcfc;
+}
+
+.o_web_client.o_in_studio .modal .btn-primary {
+  background-color: #00A09D;
+}
+
+.o_web_client.o_in_studio .modal .btn-danger {
+  background-color: #e6586c;
+}
+
+.o_web_client.o_in_studio .modal .btn-secondary {
+  color: #3a3f46;
+}
+
+.o_web_client.o_in_studio .modal .o_field_many2one {
+  width: 100%;
+}
+
+.o_web_client.o_in_studio .modal .o_web_studio_edit_menu_modal > ul {
+  padding: 1em 0 0;
+}
+
+.o_web_client.o_in_studio .modal .o_web_studio_edit_menu_modal > ul > li:first-child > div .js_menu_label {
+  font-weight: bold;
+}
+
+.o_web_client.o_in_studio .modal .o_web_studio_edit_menu_modal > ul li {
+  margin-top: -1px;
+}
+
+.o_web_client.o_in_studio .modal .o_web_studio_edit_menu_modal > ul ul {
+  padding-left: 37px;
+}
+
+.o_web_client.o_in_studio .modal .o_web_studio_edit_menu_modal > ul .form-control {
+  box-shadow: none;
+}
+
+.o_web_client.o_in_studio .modal .o_web_studio_edit_menu_modal > ul .btn-primary {
+  border: 1px solid;
+  border-color: #006d6b #00A09D;
+}
+
+.o_web_client.o_in_studio .modal .o_web_studio_edit_menu_modal > ul .btn-danger {
+  border: 1px solid;
+  border-color: #df2c45 #e6586c;
+}
+
+.o_web_client.o_in_studio .modal .o_web_studio_edit_menu_icon_modal {
+  border-radius: 0 3px 3px 0;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible !important;
+  background-color: #262C34;
+}
+
+.o_web_client.o_in_studio .modal.o_web_studio_add_menu_modal {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.o_web_client.o_in_studio .modal.o_web_studio_add_menu_modal .o_field_widget {
+  width: 100%;
+}
+
+.o_web_client.o_in_studio .modal.o_web_studio_add_menu_modal .modal-dialog {
+  margin-top: 30px;
+}
+

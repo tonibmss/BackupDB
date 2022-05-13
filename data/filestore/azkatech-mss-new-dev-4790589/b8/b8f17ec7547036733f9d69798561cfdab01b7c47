@@ -1,0 +1,76 @@
+
+.o_web_studio_client_action .o_web_studio_editor_manager {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  height: 100%;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer {
+  -webkit-box-flex: 1; -webkit-flex: 1 1 auto; flex: 1 1 auto;
+  overflow: auto;
+  min-width: 0;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_web_studio_no_preview {
+  padding: 20px;
+  color: #EAEAEA;
+  font-size: x-large;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_web_studio_show_invisible {
+  opacity: 1;
+  outline: 1px solid #f2f2f2;
+  background: repeating-linear-gradient(45deg, white, white 5px, #f2f2f2 5px, #f2f2f2 10px);
+  background-attachment: fixed;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_notebook li.o_web_studio_show_invisible {
+  outline: none;
+  border: 1px solid #f2f2f2;
+  border-bottom-width: 0;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_web_studio_widget_empty {
+  background-color: #f2f2f2;
+  color: #b7b7b7;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_web_studio_list_view_editor, .o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer > div.table-responsive, .o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_kanban_view {
+  padding: 12px;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_sidebar {
+  flex: 0 0 300px;
+  overflow: auto;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_ace_view_editor {
+  -webkit-box-flex: 0; -webkit-flex: 0 0 auto; flex: 0 0 auto;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .ui-draggable-handle, .o_web_studio_client_action .o_web_studio_editor_manager .ui-draggable-handle label {
+  cursor: move;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .ui-draggable-helper {
+  background-color: white;
+  box-shadow: none;
+  border: 1px solid black;
+  z-index: 1050;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .ui-draggable-helper .o_web_studio_component_description {
+  display: none;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .ui-draggable-helper.ui-draggable-dragging {
+  transform: rotate(-5deg);
+  box-shadow: 0 5px 25px -10px black;
+  transition: transform 0.6s, box-shadow 0.3s;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .ui-draggable-helper.ui-draggable-helper-ready {
+  opacity: 1 !important;
+  line-height: 2;
+  border: 2px solid #00A09D;
+}
+

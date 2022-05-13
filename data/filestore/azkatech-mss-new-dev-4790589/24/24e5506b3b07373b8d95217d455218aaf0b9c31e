@@ -1,0 +1,5 @@
+
+.o_wprofile_slides_course_card_body {
+  cursor: pointer;
+}
+

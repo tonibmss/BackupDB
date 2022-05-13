@@ -1,0 +1,42 @@
+
+.o_web_studio_report_editor {
+  min-height: 100%;
+  position: relative;
+}
+
+.o_web_studio_report_editor .o_web_studio_report_iframe_container {
+  margin: 0 auto;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+  background: white;
+  box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+  .o_web_studio_report_editor .o_web_studio_report_iframe_container {
+    margin: 24px auto 48px;
+  }
+}
+
+.o_web_studio_report_editor .o_web_studio_report_iframe_container .o_web_studio_loader {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 128px;
+  left: auto;
+  bottom: auto;
+  right: 50%;
+  margin-right: -50px;
+}
+
+.o_web_studio_report_editor .o_web_studio_report_iframe_container .o_web_studio_loader .fa {
+  animation-duration: 1s;
+}
+
+.o_web_studio_report_editor .o_web_studio_report_iframe_container .o_web_studio_report_iframe {
+  border: none;
+  width: 100%;
+  position: relative;
+  min-height: 100px;
+  /* useful for phantomjs */
+}
+

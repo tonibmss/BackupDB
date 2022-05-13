@@ -1,0 +1,292 @@
+
+.o_barcode_client_action {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column;
+  height: 100%;
+  background-color: white;
+}
+
+.o_barcode_client_action .o_invisible {
+  visibility: hidden;
+}
+
+.o_barcode_client_action .o_strong {
+  font-weight: bold;
+}
+
+.o_barcode_client_action .o_barcode_header {
+  flex: 0 0 46px;
+}
+
+.o_barcode_client_action .o_barcode_header .nav-link {
+  cursor: pointer;
+}
+
+.o_barcode_client_action .o_barcode_header .nav-link, .o_barcode_client_action .o_barcode_header .navbar-text {
+  font-size: 16px;
+}
+
+.o_barcode_client_action .o_barcode_message {
+  min-height: 150px;
+  box-shadow: inset 0 0 20px #212529;
+}
+
+.o_barcode_client_action .o_barcode_message .o_barcode_pic, .o_barcode_client_action .o_barcode_message .o_scan_message {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  align-items: center;
+}
+
+.o_barcode_client_action .o_barcode_message .o_barcode_pic {
+  flex: 1 1 60%;
+  width: 50%;
+  max-width: 200px;
+  background: url("/stock_barcode/static/src/scss/../../img/barcode_white.png") center/contain no-repeat;
+  background-size: 100% 100%;
+}
+
+.o_barcode_client_action .o_barcode_message .o_barcode_pic.o_js_has_warning_msg {
+  background: none;
+}
+
+.o_barcode_client_action .o_barcode_message .o_barcode_pic.o_js_has_warning_msg span, .o_barcode_client_action .o_barcode_message .o_barcode_pic.o_js_has_warning_msg .o_stock_mobile_barcode {
+  display: none;
+}
+
+.o_barcode_client_action .o_barcode_message .o_barcode_pic.o_js_has_warning_msg .fa {
+  display: block;
+}
+
+.o_barcode_client_action .o_barcode_message .o_barcode_pic .fa-exclamation-triangle {
+  display: none;
+  opacity: 0.8;
+}
+
+.o_barcode_client_action .o_barcode_message .o_barcode_pic span {
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  bottom: auto;
+  right: -5px;
+  height: 5px;
+  background: rgba(255, 0, 0, 0.6);
+  box-shadow: 0 1px 10px 1px rgba(255, 0, 0, 0.8);
+}
+
+.o_barcode_client_action .o_barcode_message .o_scan_message {
+  flex: 1 0 30%;
+  max-height: 40px;
+}
+
+.o_barcode_client_action .o_barcode_lines_header {
+  border: 1px solid #ced4da;
+  border-width: 1px 0;
+  background-color: #ececec;
+  text-shadow: 0 1px 0 white;
+  color: #212529;
+}
+
+.o_barcode_client_action .o_barcode_lines_header:empty {
+  display: none;
+}
+
+.o_barcode_client_action .o_barcode_lines_header .o_barcode_location_label {
+  padding: 1px 0 0;
+  line-height: 19px;
+}
+
+.o_barcode_client_action .o_barcode_lines_header .o_barcode_summary_location_src, .o_barcode_client_action .o_barcode_lines_header .o_barcode_summary_location_dest {
+  padding: 1px 4px 0 2px;
+}
+
+.o_barcode_client_action .o_barcode_lines_header .o_barcode_summary_location_src.o_barcode_summary_location_highlight, .o_barcode_client_action .o_barcode_lines_header .o_barcode_summary_location_dest.o_barcode_summary_location_highlight {
+  background-color: white;
+}
+
+.o_barcode_client_action .o_barcode_lines_header .o_barcode_summary_location_src.o_strong, .o_barcode_client_action .o_barcode_lines_header .o_barcode_summary_location_dest.o_strong {
+  background-color: transparent;
+}
+
+.o_barcode_client_action .o_barcode_lines {
+  clear: both;
+  flex: auto;
+  overflow: auto;
+}
+
+.o_barcode_client_action .o_barcode_lines {
+  overflow-y: auto;
+  box-shadow: inset 0 -7px 4px -5px #dee2e6;
+}
+
+.o_barcode_client_action .o_barcode_lines .o_barcode_line {
+  -webkit-box-flex: 0; -webkit-flex: 0 0 auto; flex: 0 0 auto;
+  border-width: 1px 0;
+}
+
+.o_barcode_client_action .o_barcode_lines .o_barcode_line:first-child {
+  border-top: 0;
+}
+
+.o_barcode_client_action .o_barcode_lines .o_barcode_line:last-child {
+  box-shadow: 0 3px 10px #dee2e6;
+  margin-bottom: 2rem;
+}
+
+.o_barcode_client_action .o_barcode_lines .o_barcode_line .o_edit {
+  opacity: 0.5;
+}
+
+.o_barcode_client_action .o_barcode_lines .o_barcode_line .o_edit:hover, .o_barcode_client_action .o_barcode_lines .o_barcode_line .o_edit:focus, .o_barcode_client_action .o_barcode_lines .o_barcode_line .o_edit.focus {
+  opacity: 1;
+}
+
+.o_barcode_client_action .o_barcode_lines .o_barcode_line .o_barcode_scanner_qty {
+  font-size: 1em;
+  border-color: transparent;
+  margin-left: -0.4em;
+}
+
+.o_barcode_client_action .o_barcode_lines .o_barcode_line .o_barcode_scanner_qty[class*="badge-"] {
+  margin-left: 0;
+}
+
+.o_barcode_client_action .o_barcode_lines .o_barcode_line .o_barcode_scanner_qty .qty-done, .o_barcode_client_action .o_barcode_lines .o_barcode_line .o_barcode_scanner_qty .product_qty {
+  min-width: 20px;
+}
+
+.o_barcode_client_action .o_barcode_lines .o_barcode_line_details .fa:first-child {
+  opacity: 0.5;
+  margin-right: 5px;
+}
+
+.o_barcode_client_action .o_barcode_lines .o_barcode_line.o_barcode_line_package .o_barcode_line_details > * {
+  -webkit-box-flex: 1; -webkit-flex: 1 0 auto; flex: 1 0 auto;
+}
+
+.o_barcode_client_action .o_barcode_lines .o_barcode_line.o_barcode_line_package .o_barcode_line_details > .o_barcode_package_name {
+  -webkit-box-flex: 0; -webkit-flex: 0 1 auto; flex: 0 1 auto;
+  overflow: hidden;
+}
+
+.o_barcode_client_action .o_barcode_lines .o_barcode_line.o_barcode_line_package .o_barcode_line_details > .o_barcode_package_name > span {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.o_barcode_client_action .o_barcode_lines.o_js_has_highlight .o_barcode_line.o_highlight {
+  margin-bottom: 0;
+}
+
+.o_barcode_client_action .o_barcode_lines.o_js_has_highlight .o_barcode_line.o_highlight.o_highlight_red {
+  background-color: rgba(220, 105, 101, 0.25);
+  border-color: #DC6965;
+}
+
+.o_barcode_client_action .o_barcode_lines.o_js_has_highlight .o_barcode_line.o_highlight.o_highlight_green {
+  background-color: rgba(0, 160, 74, 0.25);
+  border-color: #00A04A;
+}
+
+.o_barcode_client_action .o_barcode_lines.o_js_has_highlight .o_barcode_line.o_highlight .product-label, .o_barcode_client_action .o_barcode_lines.o_js_has_highlight .o_barcode_line.o_highlight .o_barcode_scanner_qty {
+  color: #212529;
+}
+
+.o_barcode_client_action .o_barcode_lines.o_js_has_highlight .o_barcode_line.o_highlight .o_barcode_scanner_qty {
+  font-size: 1.2em;
+}
+
+.o_barcode_client_action .o_barcode_lines.o_js_has_highlight .o_barcode_line.o_highlight .qty-done, .o_barcode_client_action .o_barcode_lines.o_js_has_highlight .o_barcode_line.o_highlight .product_qty {
+  font-weight: bold;
+}
+
+.o_barcode_client_action .o_barcode_lines.o_js_has_highlight .o_barcode_line.o_highlight .qty-done.o_js_qty_animate, .o_barcode_client_action .o_barcode_lines.o_js_has_highlight .o_barcode_line.o_highlight .product_qty.o_js_qty_animate {
+  animation: o_barcode_scanner_qty_update .2s alternate;
+}
+
+.o_barcode_client_action .o_barcode_generic_view {
+  flex: 1;
+  overflow: auto;
+}
+
+.o_barcode_client_action .o_barcode_generic_view .o_view_controller, .o_barcode_client_action .o_barcode_generic_view .o_view_controller .o_form_view.o_form_nosheet {
+  height: 100%;
+  flex-grow: 1;
+  padding-top: 0;
+}
+
+.o_barcode_client_action .o_barcode_generic_view .o_form_view.o_xxs_form_view .o_td_label > .o_form_label {
+  color: #212529;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.o_barcode_client_action .o_barcode_generic_view .o_form_view.o_xxs_form_view .o_field_widget {
+  font-size: 1.2em;
+}
+
+.o_barcode_client_action .o_barcode_generic_view .o_form_view.o_xxs_form_view .o_field_widget .btn.fa, .o_barcode_client_action .o_barcode_generic_view .o_form_view.o_xxs_form_view .o_field_widget .o_account_reports_page .fa.oe_link_reports, .o_account_reports_page .o_barcode_client_action .o_barcode_generic_view .o_form_view.o_xxs_form_view .o_field_widget .fa.oe_link_reports, .o_barcode_client_action .o_barcode_generic_view .o_form_view.o_xxs_form_view .o_field_widget .o_radio_hide_bullet label.fa, .o_radio_hide_bullet .o_barcode_client_action .o_barcode_generic_view .o_form_view.o_xxs_form_view .o_field_widget label.fa {
+  font-size: 1em;
+}
+
+.o_barcode_client_action .o_barcode_generic_view .o_form_view.o_xxs_form_view .o_list_view th, .o_barcode_client_action .o_barcode_generic_view .o_form_view.o_xxs_form_view .o_list_view .o_field_widget {
+  font-size: 1.08333333rem;
+}
+
+.o_barcode_client_action .o_barcode_settings {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  flex: auto;
+}
+
+.o_barcode_client_action .o_barcode_settings > button {
+  -webkit-box-flex: 1; -webkit-flex: 1 0 auto; flex: 1 0 auto;
+  border-bottom: 1px solid #495057;
+}
+
+.o_barcode_client_action .o_barcode_settings > button:last-child {
+  border-bottom: 0;
+}
+
+.o_barcode_client_action .o_barcode_control {
+  flex: 0 0 60px;
+  margin: 0 -1px;
+  width: 100%;
+}
+
+.o_barcode_client_action .o_barcode_control > .btn, .o_barcode_client_action .o_account_reports_page .o_barcode_control > .oe_link_reports, .o_account_reports_page .o_barcode_client_action .o_barcode_control > .oe_link_reports, .o_barcode_client_action .o_radio_hide_bullet .o_barcode_control > label, .o_radio_hide_bullet .o_barcode_client_action .o_barcode_control > label {
+  flex: 1;
+  width: 50%;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+}
+
+.o_barcode_client_action .o_barcode_control > .btn.btn-secondary, .o_barcode_client_action .o_account_reports_page .o_barcode_control > .btn-secondary.oe_link_reports, .o_account_reports_page .o_barcode_client_action .o_barcode_control > .btn-secondary.oe_link_reports, .o_barcode_client_action .o_account_reports_page .o_radio_hide_bullet .o_barcode_control > label.oe_link_reports, .o_account_reports_page .o_radio_hide_bullet .o_barcode_client_action .o_barcode_control > label.oe_link_reports, .o_barcode_client_action .o_radio_hide_bullet .o_account_reports_page .o_barcode_control > label.oe_link_reports, .o_radio_hide_bullet .o_account_reports_page .o_barcode_client_action .o_barcode_control > label.oe_link_reports, .o_barcode_client_action .o_radio_hide_bullet .o_barcode_control > label, .o_radio_hide_bullet .o_barcode_client_action .o_barcode_control > label {
+  color: #343a40;
+  border-color: #ced4da;
+}
+
+.o_barcode_client_action .o_barcode_control > .btn.btn-primary, .o_barcode_client_action .o_account_reports_page .o_barcode_control > .btn-primary.oe_link_reports, .o_account_reports_page .o_barcode_client_action .o_barcode_control > .btn-primary.oe_link_reports, .o_barcode_client_action .o_radio_hide_bullet .o_barcode_control > label.btn-primary, .o_radio_hide_bullet .o_barcode_client_action .o_barcode_control > label.btn-primary {
+  border-color: #00A09D;
+}
+
+.o_barcode_client_action .o_barcode_control > .btn.btn-success, .o_barcode_client_action .o_account_reports_page .o_barcode_control > .btn-success.oe_link_reports, .o_account_reports_page .o_barcode_client_action .o_barcode_control > .btn-success.oe_link_reports, .o_barcode_client_action .o_radio_hide_bullet .o_barcode_control > label.btn-success, .o_radio_hide_bullet .o_barcode_client_action .o_barcode_control > label.btn-success {
+  border-color: #00A04A;
+}
+
+.o_barcode_client_action .o_barcode_control > .btn[disabled], .o_barcode_client_action .o_account_reports_page .o_barcode_control > .oe_link_reports[disabled], .o_account_reports_page .o_barcode_client_action .o_barcode_control > .oe_link_reports[disabled], .o_barcode_client_action .o_radio_hide_bullet .o_barcode_control > label[disabled], .o_radio_hide_bullet .o_barcode_client_action .o_barcode_control > label[disabled] {
+  opacity: 0.65;
+  background-color: #e9ecef;
+  color: #6c757d;
+}
+
+.o_barcode_client_action .o_barcode_control > .btn + .btn, .o_barcode_client_action .o_account_reports_page .o_barcode_control > .oe_link_reports + .btn, .o_account_reports_page .o_barcode_client_action .o_barcode_control > .oe_link_reports + .btn, .o_barcode_client_action .o_radio_hide_bullet .o_barcode_control > label + .btn, .o_radio_hide_bullet .o_barcode_client_action .o_barcode_control > label + .btn, .o_barcode_client_action .o_account_reports_page .o_barcode_control > .btn + .oe_link_reports, .o_account_reports_page .o_barcode_client_action .o_barcode_control > .btn + .oe_link_reports, .o_barcode_client_action .o_account_reports_page .o_barcode_control > .oe_link_reports + .oe_link_reports, .o_account_reports_page .o_barcode_client_action .o_barcode_control > .oe_link_reports + .oe_link_reports, .o_barcode_client_action .o_radio_hide_bullet .o_account_reports_page .o_barcode_control > label + .oe_link_reports, .o_account_reports_page .o_barcode_client_action .o_radio_hide_bullet .o_barcode_control > label + .oe_link_reports, .o_radio_hide_bullet .o_barcode_client_action .o_account_reports_page .o_barcode_control > label + .oe_link_reports, .o_account_reports_page .o_radio_hide_bullet .o_barcode_client_action .o_barcode_control > label + .oe_link_reports, .o_barcode_client_action .o_radio_hide_bullet .o_barcode_control > .btn + label, .o_radio_hide_bullet .o_barcode_client_action .o_barcode_control > .btn + label, .o_barcode_client_action .o_account_reports_page .o_radio_hide_bullet .o_barcode_control > .oe_link_reports + label, .o_radio_hide_bullet .o_barcode_client_action .o_account_reports_page .o_barcode_control > .oe_link_reports + label, .o_account_reports_page .o_barcode_client_action .o_radio_hide_bullet .o_barcode_control > .oe_link_reports + label, .o_radio_hide_bullet .o_account_reports_page .o_barcode_client_action .o_barcode_control > .oe_link_reports + label, .o_barcode_client_action .o_radio_hide_bullet .o_barcode_control > label + label, .o_radio_hide_bullet .o_barcode_client_action .o_barcode_control > label + label {
+  border-left-width: 1px;
+}
+
+.o_barcode_client_action .o_barcode_control .fa-angle-left, .o_barcode_client_action .o_barcode_control .fa-angle-right {
+  font-size: 1.5em;
+}
+
+.o_barcode_client_action .o_barcode_control:first-of-type {
+  box-shadow: 0 -3px 10px #dee2e6;
+}
+

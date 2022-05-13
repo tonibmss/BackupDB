@@ -1,0 +1,27 @@
+
+@media (max-width: 767.98px) {
+  .o_chatter .o_chatter_topbar {
+    flex-wrap: wrap-reverse;
+  }
+  .o_chatter .o_chatter_topbar > .o_topbar_right_area {
+    flex-basis: 100%;
+  }
+  .o_chatter .o_chatter_topbar > .o_topbar_right_area {
+    justify-content: space-between;
+    margin-left: initial;
+    border-bottom: 1px solid #dee2e6;
+  }
+  .o_chatter .o_chatter_topbar > .o_topbar_right_area .o_followers {
+    order: initial;
+  }
+  .o_chatter .o_chatter_topbar > .o_topbar_right_area .o_chatter_button_attachment {
+    margin-left: auto;
+  }
+  .o_chatter.o_chatter_composer_active .o_chatter_topbar .btn.o_active, .o_chatter.o_chatter_composer_active .o_chatter_topbar .o_account_reports_page .o_active.oe_link_reports, .o_account_reports_page .o_chatter.o_chatter_composer_active .o_chatter_topbar .o_active.oe_link_reports, .o_chatter.o_chatter_composer_active .o_chatter_topbar .o_radio_hide_bullet label.o_active, .o_radio_hide_bullet .o_chatter.o_chatter_composer_active .o_chatter_topbar label.o_active {
+    border-top: 0;
+  }
+  .show.o_mail_systray_dropdown {
+    z-index: 1080;
+  }
+}
+

@@ -1,0 +1,17 @@
+
+.o_notification_manager {
+  position: absolute;
+  top: 2.625rem;
+  left: auto;
+  bottom: auto;
+  right: 0;
+  position: fixed;
+  z-index: 1055;
+  width: 300px;
+  max-width: 100%;
+}
+
+.o_notification_manager .o_notification {
+  width: 100%;
+}
+

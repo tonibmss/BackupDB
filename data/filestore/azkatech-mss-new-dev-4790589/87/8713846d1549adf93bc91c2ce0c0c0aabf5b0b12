@@ -1,0 +1,22 @@
+
+@media (max-width: 767.98px) {
+  img, .media_iframe_video, span.fa, i.fa {
+    transform: none !important;
+  }
+}
+
+.o_wysiwyg_loader {
+  pointer-events: none;
+  min-height: 100px;
+  color: transparent;
+}
+
+.o_wysiwyg_loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: auto;
+  right: auto;
+  transform: translate(-50%, -50%);
+}
+

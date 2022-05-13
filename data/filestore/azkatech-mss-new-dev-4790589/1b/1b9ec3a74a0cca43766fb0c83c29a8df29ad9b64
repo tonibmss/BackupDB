@@ -1,0 +1,42 @@
+
+.o_kanban_view.o_kanban_dashboard.o_project_kanban .o_project_kanban_boxes {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-flow: row wrap; flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.o_kanban_view.o_kanban_dashboard.o_project_kanban .o_project_kanban_boxes .o_project_kanban_box {
+  position: relative;
+  text-align: center;
+  padding: 0 0 0 0;
+  margin: 0 5px;
+}
+
+.o_kanban_view.o_kanban_dashboard.o_project_kanban .o_project_kanban_boxes .o_project_kanban_box .o_value {
+  font-weight: 800;
+}
+
+.o_kanban_view.o_kanban_dashboard.o_project_kanban .o_project_kanban_boxes .o_project_kanban_box > div {
+  font-weight: 500;
+}
+
+.o_kanban_view.o_kanban_dashboard.o_project_kanban .o_project_kanban_boxes .o_project_kanban_box > div button.o_needaction {
+  font-size: small;
+  font-weight: 400;
+  margin-left: 4px;
+  opacity: 0.5;
+}
+
+.o_kanban_view.o_kanban_dashboard.o_project_kanban .o_project_kanban_boxes .o_project_kanban_box > div button.o_needaction:hover, .o_kanban_view.o_kanban_dashboard.o_project_kanban .o_project_kanban_boxes .o_project_kanban_box > div button.o_needaction:focus, .o_kanban_view.o_kanban_dashboard.o_project_kanban .o_project_kanban_boxes .o_project_kanban_box > div button.o_needaction.focus {
+  opacity: 1;
+}
+
+.o_kanban_view.o_kanban_dashboard.o_project_kanban .o_project_kanban_boxes .o_project_kanban_box > div button.o_needaction:before {
+  content: "/ ";
+}
+
+.o_kanban_view.o_kanban_dashboard.o_project_kanban .o_project_kanban_boxes .o_project_kanban_box > div button.o_needaction:after {
+  content: "\f086";
+  font: normal normal normal 14px/1 FontAwesome;
+}
+

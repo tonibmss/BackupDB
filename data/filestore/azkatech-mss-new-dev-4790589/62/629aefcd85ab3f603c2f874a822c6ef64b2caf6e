@@ -1,0 +1,86 @@
+
+@media (min-width: 1534px) {
+  .modal .o_attachment_preview {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1534px) {
+  .o_attachment_preview {
+    display: block;
+    -webkit-box-flex: 1; -webkit-flex: 1 0 auto; flex: 1 0 auto;
+    overflow: hidden;
+    width: 530px;
+    border-left: 1px solid #ced4da;
+    left: auto !important;
+  }
+  .o_attachment_preview > .o_attachment_preview_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .o_attachment_preview > .o_attachment_preview_container .arrow {
+    width: 5%;
+    position: absolute;
+    top: 50%;
+    left: auto;
+    bottom: auto;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(248, 249, 250, 0.7);
+    transition: width 0.3s;
+    padding-top: 30px;
+    height: 75px;
+  }
+  .o_attachment_preview > .o_attachment_preview_container .arrow:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+  .o_attachment_preview > .o_attachment_preview_container .arrow.disabled {
+    color: #6c757d;
+    background: none;
+  }
+  .o_attachment_preview > .o_attachment_preview_container .arrow:hover {
+    width: 7%;
+  }
+  .o_attachment_preview > .o_attachment_preview_container .arrow.o_move_previous {
+    left: 2px;
+    right: 0px;
+  }
+  .o_attachment_preview > .o_attachment_preview_container > iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .o_attachment_preview > .o_attachment_preview_container > .o_attachment_preview_img {
+    position: absolute;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .o_attachment_preview > .o_attachment_preview_container > .o_attachment_preview_img > img {
+    margin: auto;
+    box-shadow: 0px 0px 5px rgba(41, 41, 41, 0.43);
+  }
+  .o_attachment_preview .ui-resizable-w {
+    cursor: ew-resize;
+    width: 10px;
+  }
+  .o_attachment_preview.ui-resizable-resizing:before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  .o_form_view > .o_form_sheet_bg > .oe_chatter {
+    padding: 8px 16px;
+    border-top: 1px solid #ced4da;
+  }
+}
+
+@media (max-width: 1533.98px) {
+  .o_attachment_preview {
+    display: none;
+  }
+}
+

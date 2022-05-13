@@ -1,0 +1,30 @@
+
+.o_snackbar {
+  display: -webkit-inline-box; display: -webkit-inline-flex; display: inline-flex;
+  position: fixed;
+  z-index: 9999;
+  left: 15px;
+  right: 15px;
+  bottom: 20px;
+  height: 50px;
+  background: black;
+  color: white;
+  border-radius: 2px;
+}
+
+.o_snackbar .o_snackbar_message {
+  flex-grow: 1;
+  padding: 16px;
+  font-weight: bold;
+}
+
+.o_snackbar .o_snackbar_button {
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0 16px;
+  color: #00A09D;
+  background: black;
+  font-weight: bold;
+}
+

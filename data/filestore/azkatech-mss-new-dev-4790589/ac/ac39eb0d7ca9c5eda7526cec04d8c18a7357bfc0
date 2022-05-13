@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//PYVOBJECT//NONSGML Version 1//EN
+BEGIN:VEVENT
+UID:20220127T085817Z - 26500@eupp24
+DTSTART:20220325T073000Z
+DTEND:20220325T080000Z
+ATTENDEE:MAILTO:rawan.n@medsurgsolutions.com
+ATTENDEE:MAILTO:jad.r@medsurgsolutions.com
+CREATED:20220127T085817Z
+DESCRIPTION:Housing allowance for Rabih\, total of SAR 40\,000 divided into
+  two payments. one in April and second one in October. Total due April is 
+ SAR 20\,000
+DTSTAMP:20220127T085817Z
+SUMMARY:Housing Allowance for Rabih Chehwan (1st payment)
+END:VEVENT
+END:VCALENDAR

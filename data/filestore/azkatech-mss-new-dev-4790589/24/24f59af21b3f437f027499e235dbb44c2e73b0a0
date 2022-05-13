@@ -1,0 +1,53 @@
+
+.workorder_picture, .quality_picture {
+  margin: 5px 0;
+}
+
+.workorder_picture .o_field_image, .quality_picture .o_field_image {
+  float: left;
+  position: relative;
+  margin-bottom: 16px !important;
+}
+
+.workorder_picture .o_field_image img, .quality_picture .o_field_image img {
+  height: 70px;
+}
+
+.workorder_picture .o_field_image .o_form_image_controls, .quality_picture .o_field_image .o_form_image_controls {
+  height: 100%;
+  background-color: transparent;
+  cursor: zoom-in;
+}
+
+.workorder_picture .o_field_image .o_form_image_controls .o_clear_file_button, .quality_picture .o_field_image .o_form_image_controls .o_clear_file_button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #00A09D;
+  cursor: pointer;
+  padding: 4px 8px;
+  margin: 0;
+  color: white;
+}
+
+.workorder_picture .o_field_image .o_form_image_controls .o_form_binary_progress, .quality_picture .o_field_image .o_form_image_controls .o_form_binary_progress {
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.workorder_picture .o_field_image .o_hidden_input_file, .quality_picture .o_field_image .o_hidden_input_file {
+  display: none;
+}
+
+.workorder_picture #picture_button, .quality_picture #picture_button {
+  margin-top: 0;
+  position: absolute;
+  top: 33%;
+  left: 106%;
+  bottom: auto;
+  right: auto;
+}
+

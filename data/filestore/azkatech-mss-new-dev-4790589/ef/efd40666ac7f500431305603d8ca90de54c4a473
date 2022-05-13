@@ -1,0 +1,97 @@
+
+.o_clean_footer, .o_clean_header, .o_report_layout_clean {
+  color: #000;
+}
+
+.o_clean_header img {
+  max-height: 90px;
+  max-width: 300px;
+}
+
+.o_clean_footer {
+  margin: 0 3px;
+  margin-top: 200px;
+  border-top: 3px solid black;
+}
+
+.o_clean_footer h4 {
+  color: black;
+  font-weight: bolder;
+}
+
+.o_clean_footer .pagenumber {
+  border: 3px solid black;
+  background-color: black;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.o_report_layout_clean {
+  /*Total table*/
+  /* compat 12.0 */
+  /* row col rule compat 12.0 */
+}
+
+.o_report_layout_clean h1, .o_report_layout_clean h2, .o_report_layout_clean h3 {
+  color: black;
+  font-weight: bolder;
+}
+
+.o_report_layout_clean strong {
+  color: black;
+}
+
+.o_report_layout_clean table.o_main_table {
+  margin-bottom: 0;
+}
+
+.o_report_layout_clean table thead {
+  color: black;
+}
+
+.o_report_layout_clean table thead tr th {
+  border-top: 3px solid black !important;
+  text-transform: uppercase;
+}
+
+.o_report_layout_clean table thead tr th:first-child {
+  width: 48%;
+}
+
+.o_report_layout_clean table tbody {
+  color: #000;
+}
+
+.o_report_layout_clean table tbody tr:first-child td {
+  border-top: none;
+}
+
+.o_report_layout_clean table tbody tr:last-child td {
+  border-bottom: 3px solid black;
+}
+
+.o_report_layout_clean table tbody tr td {
+  padding: 15px 5px;
+}
+
+.o_report_layout_clean #total strong {
+  color: black;
+}
+
+.o_report_layout_clean .row:not(#total) > div:has(table) {
+  top: -16px;
+}
+
+.o_report_layout_clean .row > div > table tr:first-child td, .o_report_layout_clean .row > div > table tr.o_subtotal,
+.o_report_layout_clean div#total table tr:first-child td,
+.o_report_layout_clean div#total table tr.o_subtotal {
+  border-top: none !important;
+}
+
+.o_report_layout_clean .row > div > table tr:last-child td, .o_report_layout_clean .row > div > table tr.o_total,
+.o_report_layout_clean div#total table tr:last-child td,
+.o_report_layout_clean div#total table tr.o_total {
+  border-top: 1px solid #e9ecef !important;
+}
+

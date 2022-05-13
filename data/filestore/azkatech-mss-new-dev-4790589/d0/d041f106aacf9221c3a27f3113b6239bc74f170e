@@ -1,0 +1,16 @@
+
+.o_web_client.o_touch_device .ui-autocomplete .ui-menu-item > a, .ui-autocomplete .o_web_client.o_touch_device .ui-menu-item > a, .o_web_client.o_touch_device .show .dropdown-menu .dropdown-item, .show .dropdown-menu .o_web_client.o_touch_device .dropdown-item, .o_web_client.o_touch_device .show .dropdown-menu .dropdown-header, .show .dropdown-menu .o_web_client.o_touch_device .dropdown-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.o_web_client.o_touch_device .btn, .o_web_client.o_touch_device .o_account_reports_page .oe_link_reports, .o_account_reports_page .o_web_client.o_touch_device .oe_link_reports, .o_web_client.o_touch_device .o_radio_hide_bullet label, .o_radio_hide_bullet .o_web_client.o_touch_device label, .o_web_client.o_touch_device .btn .btn-sm, .o_web_client.o_touch_device .o_account_reports_page .oe_link_reports .btn-sm, .o_account_reports_page .o_web_client.o_touch_device .oe_link_reports .btn-sm, .o_web_client.o_touch_device .o_radio_hide_bullet label .btn-sm, .o_radio_hide_bullet .o_web_client.o_touch_device label .btn-sm, .o_web_client.o_touch_device .btn .btn-group-sm > .btn, .o_web_client.o_touch_device .o_account_reports_page .oe_link_reports .btn-group-sm > .btn, .o_account_reports_page .o_web_client.o_touch_device .oe_link_reports .btn-group-sm > .btn, .o_web_client.o_touch_device .o_radio_hide_bullet label .btn-group-sm > .btn, .o_radio_hide_bullet .o_web_client.o_touch_device label .btn-group-sm > .btn, .o_web_client.o_touch_device .btn .o_radio_hide_bullet .btn-group-sm > label, .o_radio_hide_bullet .o_web_client.o_touch_device .btn .btn-group-sm > label, .o_web_client.o_touch_device .o_account_reports_page .oe_link_reports .o_radio_hide_bullet .btn-group-sm > label, .o_radio_hide_bullet .o_web_client.o_touch_device .o_account_reports_page .oe_link_reports .btn-group-sm > label, .o_account_reports_page .o_web_client.o_touch_device .oe_link_reports .o_radio_hide_bullet .btn-group-sm > label, .o_radio_hide_bullet .o_account_reports_page .o_web_client.o_touch_device .oe_link_reports .btn-group-sm > label, .o_web_client.o_touch_device .o_radio_hide_bullet label .btn-group-sm > label, .o_radio_hide_bullet .o_web_client.o_touch_device label .btn-group-sm > label, .o_web_client.o_touch_device .btn .o_account_reports_page .oe_link_reports, .o_account_reports_page .o_web_client.o_touch_device .btn .oe_link_reports, .o_web_client.o_touch_device .o_account_reports_page .oe_link_reports .oe_link_reports, .o_account_reports_page .o_web_client.o_touch_device .oe_link_reports .oe_link_reports, .o_web_client.o_touch_device .o_radio_hide_bullet label .o_account_reports_page .oe_link_reports, .o_account_reports_page .o_web_client.o_touch_device .o_radio_hide_bullet label .oe_link_reports, .o_radio_hide_bullet .o_web_client.o_touch_device label .o_account_reports_page .oe_link_reports, .o_account_reports_page .o_radio_hide_bullet .o_web_client.o_touch_device label .oe_link_reports {
+  font-size: 1.08333333rem;
+  padding: 7px 14px;
+}
+
+.o_web_client.o_touch_device .btn.fa, .o_web_client.o_touch_device .o_account_reports_page .fa.oe_link_reports, .o_account_reports_page .o_web_client.o_touch_device .fa.oe_link_reports, .o_web_client.o_touch_device .o_radio_hide_bullet label.fa, .o_radio_hide_bullet .o_web_client.o_touch_device label.fa {
+  font-size: 1.3em;
+  padding: 2px 10px;
+}
+

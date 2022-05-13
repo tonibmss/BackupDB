@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//PYVOBJECT//NONSGML Version 1//EN
+BEGIN:VEVENT
+UID:20220127T085650Z - 77594@eupp24
+DTSTART:20220624T063000Z
+DTEND:20220624T070000Z
+ATTENDEE:MAILTO:rawan.n@medsurgsolutions.com
+ATTENDEE:MAILTO:jad.r@medsurgsolutions.com
+CREATED:20220127T085650Z
+DESCRIPTION:Housing allowance for Nazih Mahmoud\, second payment and transf
+ er directly to the real state office. Total amount 65\,000 SAR divided int
+ o two payment. one paid in January 2022.  
+DTSTAMP:20220127T085650Z
+SUMMARY:Housing Allowance Nazih ( 2nd payment)
+END:VEVENT
+END:VCALENDAR

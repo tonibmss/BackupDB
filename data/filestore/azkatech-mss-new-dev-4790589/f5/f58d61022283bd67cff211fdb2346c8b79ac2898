@@ -1,0 +1,7 @@
+
+@media (max-width: 767.98px) {
+  .o_form_view.o_sale_order .oe_title {
+    display: none;
+  }
+}
+

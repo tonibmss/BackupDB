@@ -1,0 +1,90 @@
+
+.o_stock_barcode_main_menu_container {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-flow: column nowrap; flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .o_stock_barcode_main_menu_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: auto;
+    min-height: 0;
+    -webkit-box-pack: start; justify-content: flex-start;
+  }
+}
+
+.o_stock_barcode_main_menu {
+  text-align: center;
+  background-color: #fff;
+  padding: 24px 16px;
+  font-size: 1.2em;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.o_stock_barcode_main_menu .o_stock_barcode_menu {
+  line-height: 1.9;
+}
+
+.o_stock_barcode_main_menu .message_demo_barcodes {
+  font-size: 0.9em;
+}
+
+.o_stock_barcode_main_menu > ul {
+  display: inline-block;
+}
+
+.o_stock_barcode_main_menu .o_stock_barcode_container span.o_stock_barcode_laser {
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  bottom: auto;
+  right: -15px;
+  height: 5px;
+  background: rgba(255, 0, 0, 0.6);
+  box-shadow: 0 1px 10px 1px rgba(255, 0, 0, 0.8);
+  animation: o_barcode_scanner_intro 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.4s;
+}
+
+.o_stock_barcode_main_menu .o_stock_barcode_container img {
+  width: 200px;
+}
+
+@media (min-width: 768px) {
+  .o_stock_barcode_main_menu {
+    -webkit-box-flex: 0; -webkit-flex: 0 0 auto; flex: 0 0 auto;
+    width: 550px;
+    border-radius: 4px;
+    margin-top: -24px;
+  }
+  .o_stock_barcode_main_menu .o_stock_barcode_menu {
+    line-height: 2.6;
+  }
+  .o_stock_barcode_main_menu .button_inventory, .o_stock_barcode_main_menu .button_operations {
+    font-size: 1.25rem;
+  }
+}
+
+@keyframes o_barcode_scanner_intro {
+  25% {
+    top: 75%;
+  }
+  50% {
+    top: 0;
+  }
+  75% {
+    top: 100%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+

@@ -1,0 +1,9 @@
+
+.o_report_stock_quantity .o_grid_total {
+  display: none;
+}
+
+.o_report_stock_quantity tfoot {
+  display: none;
+}
+

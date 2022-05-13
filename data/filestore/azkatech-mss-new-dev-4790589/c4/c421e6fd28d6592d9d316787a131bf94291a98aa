@@ -1,0 +1,13 @@
+
+.o_invoice_extract_button {
+  color: #6c757d;
+}
+
+.o_invoice_extract_button:hover, .o_invoice_extract_button.active {
+  color: #00A09D;
+}
+
+.o_invoice_extract_button.active {
+  font-weight: bold;
+}
+

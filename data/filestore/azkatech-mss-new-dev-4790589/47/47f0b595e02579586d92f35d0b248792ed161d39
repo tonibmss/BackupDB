@@ -1,0 +1,60 @@
+
+@media (max-width: 767.98px) {
+  .o_form_view .o_form_sheet {
+    padding: 16px;
+  }
+  .o_form_view .o_form_sheet_bg > .o_form_sheet {
+    border-left: 0;
+    border-right: 0;
+  }
+  .o_form_view .o_form_label:not(.o_invisible_modifier) {
+    padding-bottom: 4px;
+  }
+  .o_form_view .o_group {
+    margin-top: 0;
+  }
+  .o_form_view .o_group .o_inner_group {
+    margin-bottom: 0 !important;
+  }
+  .o_form_view .o_group .o_inner_group div[name="carrier_selection"] > div:not(.alert) {
+    display: -webkit-inline-box; display: -webkit-inline-flex; display: inline-flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
+  .o_form_view .o_group .o_inner_group div[name="carrier_selection"] > div:not(.alert):first-child {
+    width: 100%;
+  }
+  .o_form_view .o_group .o_inner_group div[name="carrier_selection"] > div:not(.alert):first-child .o_field_widget {
+    width: 100% !important;
+  }
+  .o_form_view .o_group .o_inner_group div[name="carrier_selection"] > div:not(.alert):first-child .text-success {
+    margin: 2px 10px;
+  }
+  .o_form_view .o_notebook > .tab-content > .tab-pane.active .oe_subtotal_footer {
+    width: 100% !important;
+  }
+  .o_form_view .o_notebook > .tab-content > .tab-pane.active .oe_subtotal_footer tr > td {
+    width: 35% !important;
+  }
+  .o_form_view .o_notebook > .tab-content > .tab-pane.active .oe_subtotal_footer tr > td:first-child {
+    width: 65% !important;
+  }
+  .o_form_view .btn-add-record {
+    margin-left: 0 !important;
+    margin-bottom: 10px !important;
+  }
+  .o_form_view button.btn.o_external_button.fa, .o_form_view .o_account_reports_page button.o_external_button.fa.oe_link_reports, .o_account_reports_page .o_form_view button.o_external_button.fa.oe_link_reports {
+    padding-right: 0 !important;
+  }
+  .o_form_view .oe_inline.o_field_widget.o_field_many2one, .o_form_view .o_field_widget.o_field_many2one.oe_left, .o_form_view .o_field_widget.o_field_many2one.oe_right, .o_form_view .o_field_widget.o_field_many2one.o_group.o_inner_group.oe_subtotal_footer {
+    width: 100% !important;
+  }
+  .ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content {
+    width: 100% !important;
+    height: 80%;
+    max-height: fit-content;
+    left: 0 !important;
+    overflow-y: auto;
+  }
+}
+

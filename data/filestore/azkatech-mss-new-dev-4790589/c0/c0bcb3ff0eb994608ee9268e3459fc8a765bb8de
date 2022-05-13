@@ -1,0 +1,130 @@
+
+.o_report_stock_rule .o_report_stock_rule_rule {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-flow: row nowrap; flex-flow: row nowrap;
+}
+
+.o_report_stock_rule .o_report_stock_rule_legend {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-flow: row wrap; flex-flow: row wrap;
+  max-width: 1000px;
+}
+
+.o_report_stock_rule .o_report_stock_rule_legend_line {
+  -webkit-box-flex: 0; -webkit-flex: 0 1 auto; flex: 0 1 auto;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-flow: row nowrap; flex-flow: row nowrap;
+  width: 29%;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  min-width: 200px;
+}
+
+.o_report_stock_rule .o_report_stock_rule_legend_line > .o_report_stock_rule_legend_label {
+  -webkit-box-flex: 1; -webkit-flex: 1 1 auto; flex: 1 1 auto;
+  width: 30%;
+  min-width: 100px;
+}
+
+.o_report_stock_rule .o_report_stock_rule_legend_line > .o_report_stock_rule_legend_symbol {
+  -webkit-box-flex: 1; -webkit-flex: 1 1 auto; flex: 1 1 auto;
+  width: 70%;
+}
+
+.o_report_stock_rule .o_report_stock_rule_putaway > p {
+  text-align: center;
+  color: black;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.o_report_stock_rule .o_report_stock_rule_line {
+  -webkit-box-flex: 1; -webkit-flex: 1 1 auto; flex: 1 1 auto;
+  height: 20px;
+}
+
+.o_report_stock_rule .o_report_stock_rule_line > line {
+  stroke: black;
+  stroke-width: 1;
+}
+
+.o_report_stock_rule .o_report_stock_rule_arrow {
+  -webkit-box-flex: 0; -webkit-flex: 0 0 auto; flex: 0 0 auto;
+  height: 20px;
+  width: 20px;
+}
+
+.o_report_stock_rule .o_report_stock_rule_arrow > svg > line {
+  stroke: black;
+  stroke-width: 1;
+}
+
+.o_report_stock_rule .o_report_stock_rule_arrow > svg > polygon {
+  fill: black;
+  fill-opacity: 0.5;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.o_report_stock_rule .o_report_stock_rule_vertical_bar {
+  -webkit-box-flex: 0; -webkit-flex: 0 0 auto; flex: 0 0 auto;
+  height: 20px;
+  width: 2px;
+}
+
+.o_report_stock_rule .o_report_stock_rule_vertical_bar > svg > line {
+  stroke: black;
+  stroke-width: 2;
+}
+
+.o_report_stock_rule .o_report_stock_rule_rule_name {
+  text-align: center;
+}
+
+.o_report_stock_rule .o_report_stock_rule_symbol_cell {
+  border: none !important;
+}
+
+.o_report_stock_rule .o_report_stock_rule_symbol_cell > div {
+  max-width: 200px;
+  height: 20px;
+}
+
+.o_report_stock_rule .o_report_stock_rule_rule_main {
+  height: 100%;
+  padding-top: 2px;
+}
+
+.o_report_stock_rule .o_report_stock_rule_location_header {
+  text-align: center;
+}
+
+.o_report_stock_rule .o_report_stock_rule_location_header > a {
+  display: block;
+}
+
+.o_report_stock_rule .o_report_stock_rule_location_header > a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #efefef;
+}
+
+.o_report_stock_rule .o_report_stock_rule_location_header > a > div {
+  color: black;
+}
+
+.o_report_stock_rule .o_report_stock_rule_rule_cell {
+  padding: 0 !important;
+}
+
+.o_report_stock_rule .o_report_stock_rule_rule_cell > a {
+  display: block;
+}
+
+.o_report_stock_rule .o_report_stock_rule_rule_cell > a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #efefef;
+}
+

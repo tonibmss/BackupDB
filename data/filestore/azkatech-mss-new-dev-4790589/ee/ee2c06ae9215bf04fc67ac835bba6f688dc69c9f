@@ -1,0 +1,138 @@
+
+.o_kanban_view.o_kanban_dashboard.o_helpdesk_kanban .o_kanban_group {
+  width: 452px;
+}
+
+.o_kanban_view.o_kanban_dashboard.o_helpdesk_kanban .o_kanban_record {
+  width: 420px;
+  min-height: 250px;
+}
+
+.o_helpdesk_dashboard {
+  border-bottom: 1px solid #CED4DA;
+  background-color: white;
+}
+
+.o_helpdesk_dashboard .o_welcome_message {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  justify-content: center;
+}
+
+.o_helpdesk_dashboard .o_welcome_message .o_welcome_image {
+  padding: 20px;
+}
+
+.o_helpdesk_dashboard .o_welcome_message .o_welcome_content > a {
+  color: white;
+  display: inline-block;
+}
+
+.o_helpdesk_dashboard .o_dashboard_action {
+  cursor: pointer;
+}
+
+.o_helpdesk_dashboard > .o_demo {
+  opacity: 0.07;
+}
+
+.o_helpdesk_dashboard > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (min-width: 768px) {
+  .o_helpdesk_dashboard > div {
+    width: 50%;
+  }
+}
+
+.o_helpdesk_dashboard > div > table {
+  margin-bottom: 0;
+  table-layout: fixed;
+  border-spacing: 10px 0px;
+  border-collapse: separate;
+}
+
+.o_helpdesk_dashboard > div > table > tbody > tr > td {
+  vertical-align: middle;
+  text-align: center;
+  border-top: 1px solid white;
+  width: 25%;
+  height: 33px;
+}
+
+.o_helpdesk_dashboard > div > table > tbody > tr > td span {
+  display: inline;
+}
+
+.o_helpdesk_dashboard > div > table > tbody > tr > td a:hover {
+  text-decoration: none;
+}
+
+.o_helpdesk_dashboard > div > table > tbody > tr > td.o_main {
+  background-color: #00A09D;
+}
+
+.o_helpdesk_dashboard > div > table > tbody > tr > td.o_main:hover {
+  background-color: #006d6b;
+}
+
+.o_helpdesk_dashboard > div > table > tbody > tr > td.o_main a {
+  color: white;
+}
+
+.o_helpdesk_dashboard > div > table > tbody > tr > td.o_warning {
+  background-color: orange;
+}
+
+.o_helpdesk_dashboard > div > table > tbody > tr > td.o_warning:hover {
+  background-color: #cc8400;
+}
+
+.o_helpdesk_dashboard > div > table > tbody > tr > td.o_warning a {
+  color: white;
+}
+
+.o_helpdesk_dashboard > div > table > tbody > tr > td.o_secondary {
+  background-color: #f8f9fa;
+}
+
+.o_helpdesk_dashboard > div > table > tbody > tr > td.o_secondary:hover {
+  background-color: #dae0e5;
+}
+
+.o_helpdesk_dashboard > div > table > tbody > tr > td.o_secondary a {
+  color: black;
+}
+
+.o_helpdesk_dashboard > div > table > tbody > tr > td.o_highlight, .o_helpdesk_dashboard > div > table > tbody > tr > td .o_highlight {
+  font-size: 20px;
+}
+
+.o_helpdesk_dashboard > div > table > tbody > tr > td.o_text {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .o_kanban_view.o_kanban_dashboard.o_helpdesk_kanban {
+    padding-top: 160px;
+  }
+  .o_helpdesk_dashboard {
+    position: fixed;
+    border: 8px solid #f9f9f9;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .o_kanban_view.o_kanban_dashboard.o_helpdesk_kanban {
+    padding-top: 200px;
+  }
+}
+

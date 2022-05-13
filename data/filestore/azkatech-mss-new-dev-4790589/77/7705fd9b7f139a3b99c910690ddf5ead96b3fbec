@@ -1,0 +1,25 @@
+
+.o_wss_certification_icon {
+  width: 1.4em;
+  height: auto;
+}
+
+#wrap.o_wss_certification_channel .o_wslides_course_header {
+  background-image: linear-gradient(120deg, #5B7687, #485761);
+}
+
+@media (min-width: 768px) {
+  #wrap.o_wss_certification_channel .o_wslides_course_pict {
+    border-color: #485761;
+  }
+}
+
+@media (min-width: 768px) {
+  #wrap.o_wss_certification_channel .o_wslides_nav_tabs .nav-link, #wrap.o_wss_certification_channel .o_wslides_nav_tabs .nav-link:hover {
+    border-color: #5B7687;
+  }
+  #wrap.o_wss_certification_channel .o_wslides_nav_tabs .nav-link.active {
+    border-color: #f8f9fa;
+  }
+}
+

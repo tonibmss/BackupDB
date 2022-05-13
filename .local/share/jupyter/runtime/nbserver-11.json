@@ -1,0 +1,11 @@
+{
+  "base_url": "/odoo-sh/editor/",
+  "hostname": "0.0.0.0",
+  "notebook_dir": "/home/odoo",
+  "password": true,
+  "pid": 11,
+  "port": 8888,
+  "secure": false,
+  "token": "",
+  "url": "http://0.0.0.0:8888/odoo-sh/editor/"
+}

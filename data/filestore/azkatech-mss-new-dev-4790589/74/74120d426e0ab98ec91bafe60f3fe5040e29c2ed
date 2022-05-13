@@ -1,0 +1,28 @@
+
+.o_newsletter_modal .modal-header {
+  padding: 0;
+  border: none;
+}
+
+.o_newsletter_modal .modal-title {
+  display: none;
+}
+
+.o_newsletter_modal .close {
+  position: absolute;
+  top: 0;
+  left: auto;
+  bottom: auto;
+  right: 0;
+  font-size: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  margin: -0.75rem -0.75rem 0 0;
+  opacity: 1;
+  background-color: #FFFFFF;
+  z-index: 1;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+

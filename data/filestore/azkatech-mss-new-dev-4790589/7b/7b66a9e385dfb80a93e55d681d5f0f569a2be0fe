@@ -1,0 +1,191 @@
+
+.o_dashboard_subview_buttons .dropdown-menu {
+  overflow-y: auto;
+  max-height: calc(100vh - 46px - 100px);
+}
+
+.o_dashboard_view {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-flow: row wrap; flex-flow: row wrap;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  padding: 24px 0;
+  background-color: white;
+}
+
+.o_dashboard_view > .o_group .o_graph_renderer > .o_graph_canvas_container > label, .o_dashboard_view .o_subview .o_graph_renderer > .o_graph_canvas_container > label, .o_dashboard_view .o_group .o_aggregate > label, .o_dashboard_view .o_group .o_formula > label, .o_dashboard_view > .o_group > .o_group.o_group_col_2.o_has_widget .o_graph_renderer label {
+  color: #212529;
+  margin-bottom: 0;
+}
+
+.o_dashboard_view > .o_group, .o_dashboard_view .o_subview {
+  flex: 1 1 100%;
+  max-width: 100%;
+  margin: 0 16px 2rem;
+}
+
+.o_dashboard_view > .o_group .o_graph_renderer, .o_dashboard_view .o_subview .o_graph_renderer {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+}
+
+.o_dashboard_view > .o_group .o_graph_renderer > .o_graph_canvas_container, .o_dashboard_view .o_subview .o_graph_renderer > .o_graph_canvas_container {
+  -webkit-box-flex: 1; -webkit-flex: 1 1 auto; flex: 1 1 auto;
+  height: 250px;
+}
+
+.o_dashboard_view > .o_group .o_graph_renderer > .o_graph_canvas_container > label, .o_dashboard_view .o_subview .o_graph_renderer > .o_graph_canvas_container > label {
+  position: absolute;
+}
+
+.o_dashboard_view .o_group > .o_aggregate_col, .o_dashboard_view .o_group .o_formula {
+  display: inline-block;
+  width: 200px;
+  margin-bottom: 1.5rem;
+}
+
+.o_dashboard_view .o_group .o_group.o_group_col_12 {
+  width: 100%;
+}
+
+.o_dashboard_view .o_group .o_aggregate, .o_dashboard_view .o_group .o_formula {
+  padding: 0 24px 0 8px;
+  border-left: 2px solid #dee2e6;
+}
+
+.o_dashboard_view .o_group .o_aggregate > label:empty, .o_dashboard_view .o_group .o_formula > label:empty {
+  display: none;
+}
+
+.o_dashboard_view .o_group .o_aggregate > label:empty + .o_value, .o_dashboard_view .o_group .o_formula > label:empty + .o_value {
+  font-size: 2.5em;
+}
+
+.o_dashboard_view .o_group .o_aggregate .o_value, .o_dashboard_view .o_group .o_formula .o_value {
+  font-size: 1.6em;
+}
+
+.o_dashboard_view .o_group .o_aggregate .o_comparison, .o_dashboard_view .o_group .o_formula .o_comparison {
+  font-size: 1em;
+}
+
+.o_dashboard_view .o_group .o_aggregate .o_variation, .o_dashboard_view .o_group .o_formula .o_variation {
+  margin-top: 0.25rem;
+  font-size: 1.6em;
+  line-height: 1;
+}
+
+.o_dashboard_view .o_group .o_aggregate .o_variation + .o_comparison, .o_dashboard_view .o_group .o_formula .o_variation + .o_comparison {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.o_dashboard_view .o_group .o_aggregate .o_variation + .o_comparison > span, .o_dashboard_view .o_group .o_formula .o_variation + .o_comparison > span {
+  font-weight: normal;
+}
+
+.o_dashboard_view .o_group .o_aggregate.border-danger, .o_dashboard_view .o_group .o_aggregate.border-success, .o_dashboard_view .o_group .o_formula.border-danger, .o_dashboard_view .o_group .o_formula.border-success {
+  border-left-width: 2px;
+}
+
+.o_dashboard_view .o_group .o_aggregate .o_variation.o_positive, .o_dashboard_view .o_group .o_formula .o_variation.o_positive {
+  color: #00A04A !important;
+}
+
+.o_dashboard_view .o_group .o_aggregate a.o_variation.o_positive:hover, .o_dashboard_view .o_group .o_aggregate a.o_variation.o_positive:focus, .o_dashboard_view .o_group .o_formula a.o_variation.o_positive:hover, .o_dashboard_view .o_group .o_formula a.o_variation.o_positive:focus {
+  color: #005427 !important;
+}
+
+.o_dashboard_view .o_group .o_aggregate .o_variation.o_negative, .o_dashboard_view .o_group .o_formula .o_variation.o_negative {
+  color: #DC6965 !important;
+}
+
+.o_dashboard_view .o_group .o_aggregate a.o_variation.o_negative:hover, .o_dashboard_view .o_group .o_aggregate a.o_variation.o_negative:focus, .o_dashboard_view .o_group .o_formula a.o_variation.o_negative:hover, .o_dashboard_view .o_group .o_formula a.o_variation.o_negative:focus {
+  color: #c7322d !important;
+}
+
+.o_dashboard_view .o_group .o_horizontal_separator {
+  width: 100%;
+  padding-bottom: 0.5rem;
+  font-size: 1.3em;
+  color: #212529;
+}
+
+.o_dashboard_view .o_group .o_aggregate.o_clickable .o_value, .o_dashboard_view .o_group .o_aggregate.o_clickable .o_variation {
+  cursor: pointer;
+}
+
+.o_dashboard_view .o_group .o_aggregate.o_clickable .o_value:after, .o_dashboard_view .o_group .o_aggregate.o_clickable .o_variation:after {
+  font: 1.08333333rem "FontAwesome";
+  content: '\f002';
+  vertical-align: middle;
+  margin-left: 8px;
+  opacity: 0;
+}
+
+.o_dashboard_view .o_group .o_aggregate.o_clickable .o_value:hover:after, .o_dashboard_view .o_group .o_aggregate.o_clickable .o_variation:hover:after {
+  opacity: 1;
+}
+
+.o_dashboard_view > .o_group {
+  justify-content: stretch;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-flow: row wrap; flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+.o_dashboard_view > .o_group > .o_group.o_group_col_2 {
+  width: auto;
+  flex: 1 1 50%;
+}
+
+.o_dashboard_view > .o_group > .o_group.o_group_col_2.o_has_widget {
+  flex: 1;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+}
+
+.o_dashboard_view > .o_group > .o_group.o_group_col_2.o_has_widget .o_graph_renderer {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  justify-content: space-between;
+  -webkit-flex-flow: column wrap; flex-flow: column wrap;
+}
+
+.o_dashboard_view > .o_group > .o_group.o_group_col_2.o_has_widget .o_graph_renderer .o_graph_canvas_container {
+  min-width: 200px;
+}
+
+@media (min-width: 576px) {
+  .o_dashboard_view > .o_group > .o_group.o_group_col_2.o_has_widget .o_graph_renderer .o_graph_canvas_container {
+    min-width: 300px;
+    max-width: 400px;
+  }
+}
+
+.o_dashboard_view .o_pivot > table {
+  width: 100%;
+}
+
+.o_dashboard_view .o_dashboard_subview_buttons > .btn-group[role=toolbar] {
+  margin-left: 8px;
+}
+
+.o_dashboard_view .o_dashboard_subview_buttons .o_dropdown {
+  margin-left: 8px;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  align-items: center;
+}
+
+.o_dashboard_view .o_subview .o_view_nocontent {
+  position: relative;
+  -webkit-box-flex: 1; -webkit-flex: 1 1 auto; flex: 1 1 auto;
+  top: inherit;
+}
+
+.o_dashboard_view .o_subview .o_view_controller {
+  padding-top: 8px;
+}
+
+.o_dashboard_view .o_subview[type=graph] .o_view_controller {
+  width: 100%;
+}
+

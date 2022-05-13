@@ -1,0 +1,162 @@
+
+.o_sign_pdf_iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  flex: 0 1 100%;
+  border: none;
+  display: block;
+}
+
+.o_sign_request_reference_title {
+  text-align: left;
+}
+
+.o_sign_signer_status.clearfix {
+  text-align: right;
+}
+
+.o_sign_request_from {
+  text-align: left;
+}
+
+.o_sign_request_follower_name:before {
+  content: ', ';
+}
+
+.o_sign_request_follower_name:first-child:before {
+  content: none;
+}
+
+/* Document view */
+.o_sign_document {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-flow: column nowrap; flex-flow: column nowrap;
+  background-color: white;
+}
+
+.o_sign_document > .container-fluid {
+  -webkit-box-flex: 0; -webkit-flex: 0 0 auto; flex: 0 0 auto;
+  margin: 0;
+  padding: 0 16px 10px;
+}
+
+.o_sign_document > .container {
+  -webkit-box-flex: 0; -webkit-flex: 0 0 auto; flex: 0 0 auto;
+}
+
+.o_sign_document .row.o_sign_page_info {
+  max-height: 33vh;
+  overflow-y: auto;
+}
+
+.o_sign_document .row > div > .o_page_header, .o_sign_document .row > div > .alert {
+  margin: 10px 0;
+}
+
+.o_sign_document .row > .o_sign_sign_document_button {
+  margin: 0 16px;
+}
+
+.o_sign_document .o_sign_signer_status > img {
+  height: 32px;
+}
+
+.o_sign_image_document {
+  display: inline-block;
+  max-width: 100%;
+  margin-top: 16px;
+}
+
+.o_sign_image_document > img {
+  min-width: 100px;
+}
+
+.o_sign_validate_banner {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: auto;
+  left: 0;
+  bottom: 0;
+  right: auto;
+  width: 100%;
+  padding: 10px;
+  background-color: #875A7B;
+  color: white;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.modal.o_sign_thank_you_dialog {
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.modal.o_sign_thank_you_dialog .btn {
+  border-radius: 0;
+  border: none;
+}
+
+.modal.o_sign_thank_you_dialog .modal-header {
+  border-top-left-radius: 0.0rem;
+  border-top-right-radius: 0.0rem;
+  background-color: #875A7B;
+  color: #fff;
+}
+
+.modal.o_sign_thank_you_dialog .modal-header .modal-title {
+  line-height: 1;
+  color: #fff;
+}
+
+.modal.o_sign_thank_you_dialog .modal-header .text-muted {
+  color: #fff !important;
+}
+
+.modal.o_sign_thank_you_dialog .modal-header .close {
+  color: #fff;
+  opacity: 1;
+  text-shadow: none;
+}
+
+.modal.o_sign_thank_you_dialog .modal-body {
+  color: #666666;
+}
+
+.modal.o_sign_thank_you_dialog .modal-body .o_thankyou_message {
+  margin-top: 14px;
+}
+
+.modal.o_sign_thank_you_dialog .modal-body .o_thankyou_link {
+  margin-top: 25px;
+}
+
+.modal.o_sign_thank_you_dialog .modal-body .o_thankyou_link > img {
+  width: 30px;
+}
+
+.modal.o_sign_thank_you_dialog .modal-body .o_thankyou_link a {
+  color: #666666;
+}
+
+.modal.o_sign_thank_you_dialog .modal-body .o_thankyou_link a:hover {
+  text-decoration: none;
+  color: #00A09D;
+}
+
+.modal.o_sign_thank_you_dialog .modal-footer {
+  border-top: none;
+  text-align: left;
+  display: block;
+}
+
+.modal.o_sign_thank_you_dialog .modal-footer:empty {
+  padding: 0px;
+}
+
+.modal.o_sign_signature_dialog .modal-footer {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-box-pack: start; justify-content: flex-start;
+}

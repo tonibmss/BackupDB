@@ -1,0 +1,108 @@
+
+@media (max-width: 767.98px) {
+  .o_documents_kanban details.o_documents_mobile_inspector > summary {
+    list-style-type: none;
+    position: fixed;
+    right: 0;
+    top: initial;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .o_documents_kanban details.o_documents_mobile_inspector > summary::-webkit-details-marker {
+    display: none;
+  }
+  .o_documents_kanban details.o_documents_mobile_inspector .o_documents_inspector,
+  .o_documents_kanban details.o_documents_mobile_inspector .o_documents_close_inspector {
+    display: none;
+  }
+  @keyframes o_documents_sweepup {
+    0% {
+      opacity: 0;
+      top: 25%;
+    }
+    100% {
+      opacity: 1;
+      top: 0;
+    }
+  }
+  .o_documents_kanban details.o_documents_mobile_inspector[open] {
+    position: fixed;
+    z-index: 1050;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 46px !important;
+    overflow: auto;
+    background-color: #3F3F3F;
+    animation: o_documents_sweepup 0.3s ease-in-out;
+  }
+  .o_documents_kanban details.o_documents_mobile_inspector[open] > summary {
+    position: fixed;
+    z-index: 1050;
+    right: 0;
+    top: 0;
+    bottom: initial;
+    left: 0;
+    padding: 0.7rem 1.4rem;
+    height: 46px;
+    pointer-events: none;
+  }
+  .o_documents_kanban details.o_documents_mobile_inspector[open] > summary.btn-primary, .o_documents_kanban details.o_documents_mobile_inspector[open] > summary.btn-primary:hover, .o_documents_kanban details.o_documents_mobile_inspector[open] > summary.btn-primary:active, .o_documents_kanban details.o_documents_mobile_inspector[open] > summary.btn-primary:focus, .o_documents_kanban details.o_documents_mobile_inspector[open] > summary.btn-primary:active:focus {
+    box-shadow: none;
+    background-color: #1A1A1A;
+    border-color: #1A1A1A;
+  }
+  .o_documents_kanban details.o_documents_mobile_inspector[open] > summary .o_documents_close_inspector {
+    display: initial;
+    pointer-events: initial;
+  }
+  .o_documents_kanban details.o_documents_mobile_inspector[open] .o_documents_inspector {
+    display: block;
+  }
+  @keyframes o_documents_sweepright {
+    0% {
+      opacity: 0;
+      left: 25%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  .o_documents_kanban.o_chatter_open .o_document_chatter {
+    position: fixed;
+    z-index: 1050;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: none;
+    animation: o_documents_sweepright 0.3s ease-in-out;
+  }
+  .o_documents_kanban.o_chatter_open .o_document_chatter .o_document_close_chatter {
+    position: fixed;
+    z-index: 1050;
+    right: 0;
+    top: 0;
+    bottom: initial;
+    left: 0;
+    padding: 0.7rem 1.4rem;
+    height: 46px;
+    width: auto;
+    padding: 1rem 1.4rem;
+    border-radius: 0;
+    font-size: 2.6rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    text-align: right !important;
+  }
+  .o_documents_kanban.o_chatter_open .o_document_chatter .o_chatter_topbar .o_topbar_right_area {
+    margin-right: initial;
+  }
+  .o_documents_kanban.o_chatter_open .o_document_chatter .o_chatter {
+    padding-top: 46px !important;
+  }
+}
+

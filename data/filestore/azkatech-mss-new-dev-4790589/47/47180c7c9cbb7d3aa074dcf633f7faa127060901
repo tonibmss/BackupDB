@@ -1,0 +1,25 @@
+
+.o_standard_footer {
+  margin-top: 200px;
+}
+
+.o_standard_footer .list-inline-item {
+  white-space: nowrap;
+}
+
+.o_report_layout_standard h2 {
+  color: black;
+}
+
+.o_report_layout_standard #informations strong {
+  color: black;
+}
+
+.o_report_layout_standard #total strong {
+  color: black;
+}
+
+.o_report_layout_standard table thead {
+  color: black;
+}
+

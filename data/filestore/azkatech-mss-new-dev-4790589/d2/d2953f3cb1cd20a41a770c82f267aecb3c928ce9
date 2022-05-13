@@ -1,0 +1,361 @@
+
+.o_company_2_layout {
+  font-family: 'Lato';
+}
+
+.o_company_2_layout .o_background_header h3 {
+  color: #000000;
+}
+
+.o_company_2_layout.o_background_footer ul li {
+  color: #000000;
+}
+
+.o_company_2_layout.o_report_layout_background strong {
+  color: #000000;
+}
+
+.o_company_2_layout.o_report_layout_background h2 {
+  color: #000000;
+}
+
+.o_company_2_layout.o_report_layout_background thead tr th {
+  color: #000000;
+}
+
+.o_company_2_layout .row > div > table:first-child strong, .o_company_2_layout .row > div > table:last-child strong, .o_company_2_layout .row > div > table.o_subtotal strong, .o_company_2_layout .row > div > table.o_total strong,
+.o_company_2_layout div#total table:first-child strong,
+.o_company_2_layout div#total table:last-child strong,
+.o_company_2_layout div#total table.o_subtotal strong,
+.o_company_2_layout div#total table.o_total strong {
+  color: #000000;
+}
+
+.o_company_8_layout {
+  font-family: 'Lato';
+}
+
+.o_company_8_layout.o_report_layout_standard h2 {
+  color: black;
+}
+
+.o_company_8_layout.o_report_layout_standard #informations strong {
+  color: black;
+}
+
+.o_company_8_layout.o_report_layout_standard #total strong {
+  color: black;
+}
+
+.o_company_8_layout.o_report_layout_standard table thead {
+  color: black;
+}
+
+.o_company_3_layout {
+  font-family: 'Lato';
+}
+
+.o_company_3_layout.o_report_layout_standard h2 {
+  color: black;
+}
+
+.o_company_3_layout.o_report_layout_standard #informations strong {
+  color: black;
+}
+
+.o_company_3_layout.o_report_layout_standard #total strong {
+  color: black;
+}
+
+.o_company_3_layout.o_report_layout_standard table thead {
+  color: black;
+}
+
+.o_company_6_layout {
+  font-family: 'Lato';
+}
+
+.o_company_6_layout.o_report_layout_standard h2 {
+  color: black;
+}
+
+.o_company_6_layout.o_report_layout_standard #informations strong {
+  color: black;
+}
+
+.o_company_6_layout.o_report_layout_standard #total strong {
+  color: black;
+}
+
+.o_company_6_layout.o_report_layout_standard table thead {
+  color: black;
+}
+
+.o_company_9_layout {
+  font-family: 'Lato';
+}
+
+.o_company_9_layout.o_report_layout_standard h2 {
+  color: black;
+}
+
+.o_company_9_layout.o_report_layout_standard #informations strong {
+  color: black;
+}
+
+.o_company_9_layout.o_report_layout_standard #total strong {
+  color: black;
+}
+
+.o_company_9_layout.o_report_layout_standard table thead {
+  color: black;
+}
+
+.o_company_10_layout {
+  font-family: 'Lato';
+}
+
+.o_company_10_layout .o_background_header h3 {
+  color: #757da2;
+}
+
+.o_company_10_layout.o_background_footer ul li {
+  color: #757da2;
+}
+
+.o_company_10_layout.o_report_layout_background strong {
+  color: #757da2;
+}
+
+.o_company_10_layout.o_report_layout_background h2 {
+  color: #757da2;
+}
+
+.o_company_10_layout.o_report_layout_background thead tr th {
+  color: #757da2;
+}
+
+.o_company_10_layout .row > div > table:first-child strong, .o_company_10_layout .row > div > table:last-child strong, .o_company_10_layout .row > div > table.o_subtotal strong, .o_company_10_layout .row > div > table.o_total strong,
+.o_company_10_layout div#total table:first-child strong,
+.o_company_10_layout div#total table:last-child strong,
+.o_company_10_layout div#total table.o_subtotal strong,
+.o_company_10_layout div#total table.o_total strong {
+  color: #757da2;
+}
+
+.o_company_7_layout {
+  font-family: 'Lato';
+}
+
+.o_company_7_layout .o_background_header h3 {
+  color: #258daf;
+}
+
+.o_company_7_layout.o_background_footer ul li {
+  color: #91a7af;
+}
+
+.o_company_7_layout.o_report_layout_background strong {
+  color: #91a7af;
+}
+
+.o_company_7_layout.o_report_layout_background h2 {
+  color: #258daf;
+}
+
+.o_company_7_layout.o_report_layout_background thead tr th {
+  color: #91a7af;
+}
+
+.o_company_7_layout .row > div > table:first-child strong, .o_company_7_layout .row > div > table:last-child strong, .o_company_7_layout .row > div > table.o_subtotal strong, .o_company_7_layout .row > div > table.o_total strong,
+.o_company_7_layout div#total table:first-child strong,
+.o_company_7_layout div#total table:last-child strong,
+.o_company_7_layout div#total table.o_subtotal strong,
+.o_company_7_layout div#total table.o_total strong {
+  color: #258daf;
+}
+
+.o_company_11_layout {
+  font-family: 'Lato';
+}
+
+.o_company_11_layout.o_report_layout_standard h2 {
+  color: black;
+}
+
+.o_company_11_layout.o_report_layout_standard #informations strong {
+  color: black;
+}
+
+.o_company_11_layout.o_report_layout_standard #total strong {
+  color: black;
+}
+
+.o_company_11_layout.o_report_layout_standard table thead {
+  color: black;
+}
+
+.o_company_12_layout {
+  font-family: 'Lato';
+}
+
+.o_company_12_layout.o_report_layout_standard h2 {
+  color: black;
+}
+
+.o_company_12_layout.o_report_layout_standard #informations strong {
+  color: black;
+}
+
+.o_company_12_layout.o_report_layout_standard #total strong {
+  color: black;
+}
+
+.o_company_12_layout.o_report_layout_standard table thead {
+  color: black;
+}
+
+.o_company_14_layout {
+  font-family: 'Lato';
+}
+
+.o_company_14_layout.o_report_layout_standard h2 {
+  color: black;
+}
+
+.o_company_14_layout.o_report_layout_standard #informations strong {
+  color: black;
+}
+
+.o_company_14_layout.o_report_layout_standard #total strong {
+  color: black;
+}
+
+.o_company_14_layout.o_report_layout_standard table thead {
+  color: black;
+}
+
+.o_company_5_layout {
+  font-family: 'Lato';
+}
+
+.o_company_5_layout.o_report_layout_standard h2 {
+  color: black;
+}
+
+.o_company_5_layout.o_report_layout_standard #informations strong {
+  color: black;
+}
+
+.o_company_5_layout.o_report_layout_standard #total strong {
+  color: black;
+}
+
+.o_company_5_layout.o_report_layout_standard table thead {
+  color: black;
+}
+
+.o_company_4_layout {
+  font-family: 'Lato';
+}
+
+.o_company_4_layout .o_background_header h3 {
+  color: black;
+}
+
+.o_company_4_layout.o_background_footer ul li {
+  color: black;
+}
+
+.o_company_4_layout.o_report_layout_background strong {
+  color: black;
+}
+
+.o_company_4_layout.o_report_layout_background h2 {
+  color: black;
+}
+
+.o_company_4_layout.o_report_layout_background thead tr th {
+  color: black;
+}
+
+.o_company_4_layout .row > div > table:first-child strong, .o_company_4_layout .row > div > table:last-child strong, .o_company_4_layout .row > div > table.o_subtotal strong, .o_company_4_layout .row > div > table.o_total strong,
+.o_company_4_layout div#total table:first-child strong,
+.o_company_4_layout div#total table:last-child strong,
+.o_company_4_layout div#total table.o_subtotal strong,
+.o_company_4_layout div#total table.o_total strong {
+  color: black;
+}
+
+.o_company_13_layout {
+  font-family: 'Lato';
+}
+
+.o_company_13_layout.o_report_layout_standard h2 {
+  color: black;
+}
+
+.o_company_13_layout.o_report_layout_standard #informations strong {
+  color: black;
+}
+
+.o_company_13_layout.o_report_layout_standard #total strong {
+  color: black;
+}
+
+.o_company_13_layout.o_report_layout_standard table thead {
+  color: black;
+}
+
+.o_company_15_layout {
+  font-family: 'Lato';
+}
+
+.o_company_15_layout.o_report_layout_standard h2 {
+  color: black;
+}
+
+.o_company_15_layout.o_report_layout_standard #informations strong {
+  color: black;
+}
+
+.o_company_15_layout.o_report_layout_standard #total strong {
+  color: black;
+}
+
+.o_company_15_layout.o_report_layout_standard table thead {
+  color: black;
+}
+
+.o_company_1_layout {
+  font-family: 'Lato';
+}
+
+.o_company_1_layout .o_background_header h3 {
+  color: #384da1;
+}
+
+.o_company_1_layout.o_background_footer ul li {
+  color: #878eaf;
+}
+
+.o_company_1_layout.o_report_layout_background strong {
+  color: #878eaf;
+}
+
+.o_company_1_layout.o_report_layout_background h2 {
+  color: #384da1;
+}
+
+.o_company_1_layout.o_report_layout_background thead tr th {
+  color: #878eaf;
+}
+
+.o_company_1_layout .row > div > table:first-child strong, .o_company_1_layout .row > div > table:last-child strong, .o_company_1_layout .row > div > table.o_subtotal strong, .o_company_1_layout .row > div > table.o_total strong,
+.o_company_1_layout div#total table:first-child strong,
+.o_company_1_layout div#total table:last-child strong,
+.o_company_1_layout div#total table.o_subtotal strong,
+.o_company_1_layout div#total table.o_total strong {
+  color: #384da1;
+}
+

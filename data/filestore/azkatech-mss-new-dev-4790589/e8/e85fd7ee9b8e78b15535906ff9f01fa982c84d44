@@ -1,0 +1,18 @@
+
+.o_kanban_view.o_web_studio_report_kanban .o_kanban_record .o_kanban_image {
+  width: 40px;
+}
+
+.o_kanban_view.o_web_studio_report_kanban .o_kanban_record .oe_kanban_details {
+  padding-left: 48px;
+}
+
+.o_kanban_view.o_web_studio_report_kanban .o_kanban_record .oe_kanban_details > small {
+  display: block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+

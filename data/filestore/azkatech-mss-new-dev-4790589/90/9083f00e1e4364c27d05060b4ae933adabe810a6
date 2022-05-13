@@ -1,0 +1,19 @@
+
+.o_web_studio_report_layout_dialog {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  justify-content: center;
+}
+
+.o_web_studio_report_layout_dialog .o_web_studio_report_layout_item {
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.o_web_studio_report_layout_dialog .o_web_studio_report_layout_item:hover {
+  background-color: #EAEAEA;
+}
+

@@ -1,0 +1,131 @@
+
+.o_form_sheet .o_hr_skills_group .o_list_view .o_list_table {
+  cursor: auto;
+}
+
+.o_form_sheet .o_hr_skills_group .o_list_view tbody:first-of-type > .o_resume_group_header:first-child {
+  box-shadow: none;
+}
+
+.o_form_sheet .o_hr_skills_group .o_data_row {
+  cursor: pointer;
+}
+
+.o_form_sheet .o_hr_skills_group .o_group_header, .o_form_sheet .o_hr_skills_group .o_group_header:hover, .o_form_sheet .o_hr_skills_group .o_resume_group_header, .o_form_sheet .o_hr_skills_group .o_resume_group_header:hover {
+  background: none !important;
+  cursor: initial;
+  pointer-events: none;
+}
+
+.o_form_sheet .o_hr_skills_group .o_group_header .o_field_x2many_list_row_add, .o_form_sheet .o_hr_skills_group .o_group_header .o_field_x2many_list_row_add:hover, .o_form_sheet .o_hr_skills_group .o_resume_group_header .o_field_x2many_list_row_add, .o_form_sheet .o_hr_skills_group .o_resume_group_header .o_field_x2many_list_row_add:hover {
+  cursor: pointer;
+  pointer-events: initial;
+}
+
+.o_form_sheet .o_group_resume .o_data_row td {
+  padding: 0.5rem;
+}
+
+.o_form_sheet .o_group_resume .o_data_row td.o_resume_timeline_cell div {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+
+.o_form_sheet .o_group_resume .o_data_row td.o_resume_timeline_cell:before {
+  position: absolute;
+  top: 0;
+  left: 0.8rem;
+  bottom: auto;
+  right: auto;
+  width: 1px;
+  height: 100%;
+  margin-left: -.01rem;
+  background-color: #dee2e6;
+  content: "";
+}
+
+.o_form_sheet .o_group_resume .o_resume_line_desc {
+  white-space: normal;
+}
+
+.o_form_sheet .o_group_resume .o_resume_line_title, .o_form_sheet .o_group_resume .o_resume_line_dates {
+  line-height: 1;
+}
+
+.o_form_sheet .o_group_resume .o_resume_group_header + .o_data_row .o_resume_timeline_cell:before {
+  top: 0.5rem;
+}
+
+.o_form_sheet .o_group_resume .o_data_row.o_data_row_last .o_resume_line_desc {
+  margin-bottom: 0.5rem;
+}
+
+.o_form_sheet .o_group_resume .o_data_row.o_data_row_last .o_resume_timeline_cell:before {
+  height: 0.5rem;
+}
+
+.o_form_sheet .o_group_skills .o_resume_empty_helper {
+  display: none;
+}
+
+.o_form_sheet .o_group_skills .o_group_header > .o_group_name {
+  padding: .8rem .5rem 0 0;
+}
+
+.o_form_sheet .o_group_skills .o_group_header:first-child > .o_group_name {
+  padding-top: 0;
+}
+
+.o_form_sheet .o_group_skills .o_skill_cell {
+  padding-left: 0;
+  white-space: normal !important;
+}
+
+.o_form_sheet .o_group_skills .o_skill_cell .o_progressbar {
+  display: -webkit-inline-box; display: -webkit-inline-flex; display: inline-flex;
+  align-items: center;
+}
+
+.o_form_sheet .o_group_skills .o_skill_cell .o_progress {
+  border: 0;
+  background: #dee2e6;
+  height: 5px;
+}
+
+.o_form_sheet .o_group_skills .o_skill_cell .o_progressbar_value {
+  width: auto;
+  font-size: 0.94791667rem;
+  font-weight: bold;
+}
+
+.o_form_view.o_form_editable .o_form_sheet .o_group_name {
+  background-color: #e9ecef;
+}
+
+.o_form_view.o_form_editable .o_form_sheet .o_resume_group_header .btn, .o_form_view.o_form_editable .o_form_sheet .o_resume_group_header .o_account_reports_page .oe_link_reports, .o_account_reports_page .o_form_view.o_form_editable .o_form_sheet .o_resume_group_header .oe_link_reports, .o_form_view.o_form_editable .o_form_sheet .o_resume_group_header .o_radio_hide_bullet label, .o_radio_hide_bullet .o_form_view.o_form_editable .o_form_sheet .o_resume_group_header label {
+  margin-top: .25rem;
+  margin-right: .4rem;
+}
+
+.o_form_view.o_form_editable .o_form_sheet .o_group_skills .o_group_name {
+  padding-top: .4em;
+  padding-bottom: .4rem;
+}
+
+.o_form_view.o_form_editable .o_form_sheet .o_group_name, .o_form_view.o_form_editable .o_form_sheet .o_skill_cell {
+  padding-left: .5rem;
+}
+
+.o_form_view.o_form_editable .o_form_sheet .o_group_skills .o_group_name > b, .o_form_view.o_form_editable .o_form_sheet .o_hr_skills_group .o_horizontal_separator {
+  color: #212529;
+  font-style: italic;
+}
+
+.o_form_view.o_form_editable .o_form_sheet .o_list_record_remove > button {
+  color: #adb5bd;
+}
+
+.o_form_view.o_form_editable .o_form_sheet .o_list_record_remove > button:hover, .o_form_view.o_form_editable .o_form_sheet .o_list_record_remove > button:focus, .o_form_view.o_form_editable .o_form_sheet .o_list_record_remove > button.focus {
+  color: #DC6965;
+}
+

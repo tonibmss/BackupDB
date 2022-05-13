@@ -1,0 +1,21 @@
+
+.o_web_studio_field_modal .modal-header, .o_web_studio_field_modal .modal-footer {
+  background-color: #f8f9fa;
+}
+
+.o_web_studio_field_modal .o_web_studio_field_dialog_form {
+  padding: 35px 18px 25px 16px;
+}
+
+.o_web_studio_field_modal .o_web_studio_field_dialog_form > label {
+  padding-right: 15px;
+}
+
+.o_web_studio_field_modal .o_web_studio_field_dialog_form .o_web_studio_selection_editor .ui-sortable-handle {
+  cursor: move;
+}
+
+.o_web_studio_field_modal .o_web_studio_field_dialog_form .o_field_widget {
+  width: 100%;
+}
+

@@ -1,0 +1,120 @@
+
+.o_background_footer, .o_background_header, .o_report_layout_background {
+  color: #495057;
+}
+
+.o_background_header {
+  min-width: 900px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.o_background_header img {
+  max-height: 96px;
+  max-width: 200px;
+  margin-right: 16px;
+}
+
+.o_background_header h3 {
+  color: black;
+  font-weight: 700;
+  font-size: 1.25rem;
+  max-width: 300px;
+}
+
+.o_background_footer .list-inline-item {
+  white-space: nowrap;
+}
+
+.o_background_footer ul {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 4px 0;
+  margin: 0 0 4px 0;
+}
+
+.o_background_footer ul li {
+  color: black;
+}
+
+.o_report_layout_background {
+  background-image: url(/base/static/img/bg_background_template.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-height: 620px;
+  /*Total table*/
+  /* row div rule compat 12.0 */
+}
+
+.o_report_layout_background strong {
+  color: black;
+}
+
+.o_report_layout_background .table {
+  border-top: 1px solid #dee2e6;
+}
+
+.o_report_layout_background .table td, .o_report_layout_background .table th {
+  border-top: none;
+}
+
+.o_report_layout_background h2 {
+  color: black;
+}
+
+.o_report_layout_background thead tr th {
+  color: black;
+}
+
+.o_report_layout_background tbody {
+  color: #495057;
+}
+
+.o_report_layout_background tbody tr:nth-child(odd) {
+  background-color: rgba(220, 205, 216, 0.2);
+}
+
+.o_report_layout_background tbody tr.o_line_section {
+  color: #875A7B;
+  background-color: rgba(73, 80, 87, 0.2) !important;
+}
+
+.o_report_layout_background .row > div > table tr,
+.o_report_layout_background div#total table tr {
+  /* first-child & last-child rule compat 12.0 */
+}
+
+.o_report_layout_background .row > div > table tr:nth-child(odd),
+.o_report_layout_background div#total table tr:nth-child(odd) {
+  background-color: transparent !important;
+}
+
+.o_report_layout_background .row > div > table tr:first-child, .o_report_layout_background .row > div > table tr:last-child, .o_report_layout_background .row > div > table tr.o_subtotal, .o_report_layout_background .row > div > table tr.o_total,
+.o_report_layout_background div#total table tr:first-child,
+.o_report_layout_background div#total table tr:last-child,
+.o_report_layout_background div#total table tr.o_subtotal,
+.o_report_layout_background div#total table tr.o_total {
+  border-top: none !important;
+}
+
+.o_report_layout_background .row > div > table tr:first-child td, .o_report_layout_background .row > div > table tr:last-child td, .o_report_layout_background .row > div > table tr.o_subtotal td, .o_report_layout_background .row > div > table tr.o_total td,
+.o_report_layout_background div#total table tr:first-child td,
+.o_report_layout_background div#total table tr:last-child td,
+.o_report_layout_background div#total table tr.o_subtotal td,
+.o_report_layout_background div#total table tr.o_total td {
+  border-top: 1px solid #ced4da !important;
+}
+
+.o_report_layout_background .row > div > table tr:first-child strong, .o_report_layout_background .row > div > table tr:last-child strong, .o_report_layout_background .row > div > table tr.o_subtotal strong, .o_report_layout_background .row > div > table tr.o_total strong,
+.o_report_layout_background div#total table tr:first-child strong,
+.o_report_layout_background div#total table tr:last-child strong,
+.o_report_layout_background div#total table tr.o_subtotal strong,
+.o_report_layout_background div#total table tr.o_total strong {
+  color: black;
+}
+
+/* special case for displaying report in iframe */
+.o_in_iframe .o_background_header {
+  min-width: 0;
+}
+

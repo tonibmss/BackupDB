@@ -1,0 +1,33 @@
+
+.oe_chatter .o_mail_chatter_attachments {
+  min-height: 50px;
+}
+
+.oe_chatter .o_mail_chatter_attachments .o_chatter_attachment {
+  padding: 5px;
+}
+
+.oe_chatter .o_mail_chatter_attachments .o_chatter_attachment input.o_input_file {
+  position: absolute;
+  top: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.oe_chatter .o_mail_chatter_attachments .o_chatter_attachment .o_border_dashed {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px dashed #dee2e6;
+  text-align: center;
+}
+
+.oe_chatter .o_mail_chatter_attachments .o_chatter_attachment .o_border_dashed .o_attach_title {
+  position: relative;
+  top: 10px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-weight: bold;
+  background: white;
+}
+

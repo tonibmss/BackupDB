@@ -1,0 +1,197 @@
+
+[type="text"], [type="password"], [type="number"], textarea, select {
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+.o_input {
+  border: 1px solid #ccc;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+}
+
+.o_input .o_input {
+  border: none !important;
+  padding: 0;
+}
+
+select {
+  cursor: pointer;
+  background-color: transparent;
+  min-width: 50px;
+  -webkit-appearance: none; -moz-appearance: none; appearance: none;
+  background-image: url("/web_enterprise/static/src/img/down-arrow.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  border-radius: 0;
+  color: #666666;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #666666;
+}
+
+select:-moz-focusring > option {
+  color: #666666;
+}
+
+::-webkit-input-placeholder {
+  color: #8f8f8f;
+  opacity: 0.5;
+}
+
+::-moz-placeholder {
+  color: #8f8f8f;
+  opacity: 0.5;
+}
+
+:-ms-input-placeholder {
+  color: #8f8f8f;
+  opacity: 0.5;
+}
+
+.btn-secondary, .o_radio_hide_bullet label {
+  color: #212529;
+  background-color: white;
+  border-color: white;
+  color: #00A09D;
+}
+
+.btn-secondary:hover, .o_radio_hide_bullet label:hover {
+  color: #212529;
+  background-color: #e6e5e5;
+  border-color: #e6e5e5;
+}
+
+.btn-secondary:focus, .o_radio_hide_bullet label:focus, .btn-secondary.focus, .o_radio_hide_bullet label.focus {
+  box-shadow: 0 0 0 0.2rem rgba(222, 222, 223, 0.5);
+}
+
+.btn-secondary.disabled, .o_radio_hide_bullet label.disabled, .btn-secondary:disabled, .o_radio_hide_bullet label:disabled {
+  color: #212529;
+  background-color: white;
+  border-color: white;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .o_radio_hide_bullet label:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .o_radio_hide_bullet label:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle,
+.o_radio_hide_bullet .show > label.dropdown-toggle {
+  color: #212529;
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .o_radio_hide_bullet label:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .o_radio_hide_bullet label:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus,
+.o_radio_hide_bullet .show > label.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(222, 222, 223, 0.5);
+}
+
+.btn-secondary.fa:not(.fa-search), .o_radio_hide_bullet label.fa:not(.fa-search) {
+  color: #6c757d;
+}
+
+.btn-outline-secondary, .o_account_reports_page .oe_link_reports {
+  color: #212529;
+  background-color: white;
+  border-color: #d8dbdd;
+  color: #6c757d;
+}
+
+.btn-outline-secondary:hover, .o_account_reports_page .oe_link_reports:hover {
+  color: #212529;
+  background-color: #e6e5e5;
+  border-color: #e6e5e5;
+}
+
+.btn-outline-secondary:focus, .o_account_reports_page .oe_link_reports:focus, .btn-outline-secondary.focus, .o_account_reports_page .focus.oe_link_reports {
+  box-shadow: 0 0 0 0.2rem rgba(188, 191, 194, 0.5);
+}
+
+.btn-outline-secondary.disabled, .o_account_reports_page .disabled.oe_link_reports, .btn-outline-secondary:disabled, .o_account_reports_page .oe_link_reports:disabled {
+  color: #212529;
+  background-color: white;
+  border-color: #d8dbdd;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .o_account_reports_page .oe_link_reports:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .o_account_reports_page .oe_link_reports:not(:disabled):not(.disabled).active,
+.show > .btn-outline-secondary.dropdown-toggle,
+.o_account_reports_page .show > .dropdown-toggle.oe_link_reports {
+  color: #212529;
+  background-color: #ebebeb;
+  border-color: #d8dbdd;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .o_account_reports_page .oe_link_reports:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .o_account_reports_page .oe_link_reports:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-secondary.dropdown-toggle:focus,
+.o_account_reports_page .show > .dropdown-toggle.oe_link_reports:focus {
+  box-shadow: 0 0 0 0.2rem rgba(188, 191, 194, 0.5);
+}
+
+.o_loading {
+  background-color: #875A7B;
+  color: white;
+  padding: 4px;
+}
+
+.oe_clear {
+  clear: both;
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 1.95rem;
+  }
+  h2, h3, h4, h5, h6 {
+    font-size: 15px;
+  }
+}
+
+.alert.alert-info, .alert.alert-success, .alert.alert-warning, .alert.alert-danger, .oe_import .alert.alert-error {
+  border-width: 0 0 0 3px;
+}
+
+.alert a {
+  font-weight: 700;
+}
+
+.card {
+  box-shadow: none;
+}
+
+.badge {
+  border: 1px solid #00A09D;
+}
+
+.btn, .o_account_reports_page .oe_link_reports, .o_radio_hide_bullet label, .btn-group > .btn, .o_account_reports_page .btn-group > .oe_link_reports, .o_radio_hide_bullet .btn-group > label {
+  border-radius: 0px;
+}
+
+.btn:hover, .o_account_reports_page .oe_link_reports:hover, .o_radio_hide_bullet label:hover, .btn:active, .o_account_reports_page .oe_link_reports:active, .o_radio_hide_bullet label:active, .btn:focus, .o_account_reports_page .oe_link_reports:focus, .o_radio_hide_bullet label:focus, .btn:active:focus, .o_account_reports_page .oe_link_reports:active:focus, .o_radio_hide_bullet label:active:focus, .btn-group > .btn:hover, .o_account_reports_page .btn-group > .oe_link_reports:hover, .o_radio_hide_bullet .btn-group > label:hover, .btn-group > .btn:active, .o_account_reports_page .btn-group > .oe_link_reports:active, .o_radio_hide_bullet .btn-group > label:active, .btn-group > .btn:focus, .o_account_reports_page .btn-group > .oe_link_reports:focus, .o_radio_hide_bullet .btn-group > label:focus, .btn-group > .btn:active:focus, .o_account_reports_page .btn-group > .oe_link_reports:active:focus, .o_radio_hide_bullet .btn-group > label:active:focus {
+  outline: none;
+}
+
+.btn-primary.active, .btn-secondary.active, .o_radio_hide_bullet label.active {
+  box-shadow: none;
+}
+
+.btn-primary, .btn-secondary, .o_radio_hide_bullet label {
+  text-transform: uppercase;
+}
+
+.navbar .navbar-toggle {
+  border-color: transparent;
+}
+
+.label {
+  border-radius: 0;
+  font-size: 1em;
+}
+
+.popover {
+  border-radius: 0;
+}
+

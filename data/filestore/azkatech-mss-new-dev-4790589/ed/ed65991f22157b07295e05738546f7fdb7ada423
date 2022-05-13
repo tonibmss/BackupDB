@@ -1,0 +1,253 @@
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view:not(.o_form_nosheet) {
+  padding: 0;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_form_sheet_bg {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-flow: column nowrap; flex-flow: column nowrap;
+  padding: 16px;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_form_sheet, .o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .oe_chatter {
+  max-width: 100%;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_form_sheet > .o_group {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .oe_chatter {
+  position: relative;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .oe_chatter .o_web_studio_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: all 0.2s ease 0s;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .oe_chatter .o_web_studio_overlay:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_web_studio_statusbar_hook {
+  text-align: center;
+  color: #00A09D;
+  background-color: lightgray;
+  font-weight: bold;
+  cursor: pointer;
+  height: 42px;
+  line-height: 42px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease 0s;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_web_studio_statusbar_hook:hover {
+  opacity: 1;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_statusbar_status > .o_arrow_button:hover, .o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_statusbar_status > .o_arrow_button:active, .o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_statusbar_status > .o_arrow_button:focus {
+  color: #495057;
+  background-color: white;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view.o_web_studio_form_view_editor .o_web_studio_hook :first-child {
+  line-height: 0px;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view.o_web_studio_form_view_editor .o_web_studio_hook td, .o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view.o_web_studio_form_view_editor .o_web_studio_hook th {
+  padding: 0;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view.o_web_studio_form_view_editor .o_web_studio_hook > td {
+  padding: 0;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view.o_web_studio_form_view_editor .o_web_studio_hook span.o_web_studio_hook_separator {
+  display: block;
+  position: relative;
+  border: 0px dashed transparent;
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view.o_web_studio_form_view_editor .o_web_studio_hook.o_web_studio_nearest_hook {
+  cursor: pointer !important;
+  outline: none;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view.o_web_studio_form_view_editor .o_web_studio_hook.o_web_studio_nearest_hook span.o_web_studio_hook_separator {
+  background-color: rgba(0, 160, 157, 0.02);
+  border: 1px dashed rgba(0, 160, 157, 0.5);
+  padding: 20px;
+  margin: 4px 0;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view.o_web_studio_form_view_editor .o_inner_group {
+  transition: border-color 0.5s;
+  padding: 5px;
+  border-collapse: separate;
+  border: 5px solid rgba(0, 160, 157, 0.1);
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view.o_web_studio_form_view_editor .o_inner_group tr:not(.o_web_studio_hovered) td > *:not(.o_horizontal_separator) {
+  opacity: 0.5;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view.o_web_studio_form_view_editor .o_inner_group tr:not(.o_web_studio_new_line) td {
+  border: 5px solid transparent;
+  border-bottom-width: 1px;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view.o_web_studio_form_view_editor .o_inner_group tr:not(.o_web_studio_new_line) td.o_td_label {
+  min-width: 140px;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view.o_web_studio_form_view_editor td.ui-draggable-helper-ready {
+  outline: 2px solid #00A09D;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_field_image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_field_image img[src="/web/static/src/img/placeholder.png"] {
+  padding: 3% 6%;
+  background: #f2f2f2;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_web_studio_hovered {
+  cursor: pointer;
+  outline: 1px dashed #00A09D;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_web_studio_hovered:not(.o_statusbar_status) {
+  outline-offset: -1px;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_web_studio_clicked {
+  outline: 2px solid #00A09D;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_web_studio_clicked.btn {
+  outline: 2px solid #008784;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_web_studio_clicked:not(.o_statusbar_status) {
+  outline-offset: -2px;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_web_studio_button_hook {
+  width: 48px;
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  border-left: none;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .oe_button_box:hover .o_web_studio_button_hook:before {
+  content: "\f0fe";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #00A09D;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_notebook li {
+  margin-right: 3px;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_web_studio_add_chatter {
+  position: relative;
+  margin: 16px -16px;
+  cursor: pointer;
+  color: #00A09D;
+  background-color: lightgray;
+  opacity: 0.5;
+  font-weight: bold;
+  transition: all 0.2s ease 0s;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_web_studio_add_chatter > .o_chatter_topbar {
+  padding: 16px;
+  max-width: 90%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease 0s;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_web_studio_add_chatter > span {
+  position: relative;
+  max-width: 100%;
+  display: block;
+  transition: width 0.2s ease .1s;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_web_studio_add_chatter > span > span {
+  position: absolute;
+  top: auto;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  width: 100%;
+  height: 52px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_web_studio_add_chatter:hover {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: transparent;
+  opacity: 1;
+  transition: all .2s ease .2s;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_web_studio_add_chatter:hover > span {
+  width: 100%;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager .o_web_studio_view_renderer .o_form_view .o_web_studio_add_chatter:hover > .o_chatter_topbar {
+  transition: all .8s ease .1s;
+  max-width: 100%;
+  opacity: 1;
+}
+
+table.o_web_studio_new_elements {
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+table.o_web_studio_new_elements td.o_web_studio_new_element {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table.o_web_studio_new_elements td.o_web_studio_new_element[disabled] {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+table.o_web_studio_new_elements td.o_web_studio_new_element > i {
+  font-size: 35px;
+}
+
+.o_web_studio_new_button_dialog > div {
+  margin-top: 16px;
+}
+
+.o_web_studio_new_button_dialog .o_web_studio_icon_selector {
+  display: inline-block;
+  padding: 3px;
+  font-size: medium;
+}
+
+.o_web_studio_new_button_dialog .o_web_studio_icon_selector.o_selected {
+  outline: 1px solid #00A09D;
+}
+

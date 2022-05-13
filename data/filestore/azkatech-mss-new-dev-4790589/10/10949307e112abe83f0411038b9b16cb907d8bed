@@ -1,0 +1,49 @@
+
+.o_web_client.o_in_studio .o_main_navbar {
+  background-color: #262C34;
+  border-color: #262C34;
+}
+
+.o_web_client.o_in_studio .o_main_navbar > ul > li > a {
+  color: lightgrey;
+  height: 45px;
+}
+
+.o_web_client.o_in_studio .o_main_navbar .o_web_studio_navbar_item {
+  background-color: #3a3f46;
+}
+
+.o_web_client.o_in_studio .o_main_navbar .o_web_edit_menu {
+  color: #b7b7b7;
+  display: inline;
+  margin-left: 15px;
+  padding: 2px 10px 2px 10px;
+  font-size: 10px;
+}
+
+.o_web_client.o_in_studio .o_main_navbar .o_web_edit_menu:hover {
+  background-color: inherit;
+  color: white;
+}
+
+.o_web_client.o_in_studio .o_main_navbar .o_web_studio_notes, .o_web_client.o_in_studio .o_main_navbar .o_web_studio_leave {
+  height: 100%;
+  display: table;
+  float: right;
+  margin: 0 20px;
+}
+
+.o_web_client.o_in_studio .o_main_navbar .o_web_studio_notes > a, .o_web_client.o_in_studio .o_main_navbar .o_web_studio_leave > a {
+  color: #EAEAEA;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.o_web_client.o_in_studio .o_main_navbar .o_web_studio_leave {
+  margin: 0;
+}
+
+.o_web_client.o_in_studio .o_main_navbar .o_web_studio_leave > a {
+  font-weight: bold;
+}
+

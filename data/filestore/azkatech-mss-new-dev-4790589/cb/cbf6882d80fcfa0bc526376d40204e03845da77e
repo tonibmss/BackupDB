@@ -1,0 +1,13 @@
+
+.o_menu_toggle {
+  float: left;
+  padding: 4px 0 0 16px;
+  font-size: 1.3em;
+  color: white;
+}
+
+.o_menu_toggle:hover, .o_menu_toggle:focus, .o_menu_toggle:active {
+  color: white;
+  outline: none;
+}
+

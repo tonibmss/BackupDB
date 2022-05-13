@@ -1,0 +1,741 @@
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content.o_web_studio_sidebar_content_properties {
+  padding-top: 0px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  margin-top: -15px;
+  -webkit-box-flex: 1; -webkit-flex: 1 0 auto; flex: 1 0 auto;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_component {
+  max-width: 160px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion {
+  position: relative;
+  margin: 0 -5px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion:before {
+  content: "";
+  background-color: rgba(234, 234, 234, 0.5);
+  width: 1px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  bottom: 0;
+  right: auto;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .o_web_studio_subsection_title {
+  color: white;
+  font-size: 13px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion a {
+  color: #00bab6;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion a:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion a:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion a.focus {
+  color: #00A09D;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card {
+  position: relative;
+  border: none;
+  margin-top: 0;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:hover .card-header, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card.o_web_studio_active .card-header {
+  background: #22272e;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:hover .card-header button[data-toggle="collapse"], .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card.o_web_studio_active .card-header button[data-toggle="collapse"] {
+  color: white;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card.o_web_studio_active .card-header i.fa-angle-left {
+  transform: rotate(-90deg);
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card.o_web_studio_active:last-child .card-header:before {
+  bottom: 0;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .collapsing {
+  transition: none;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-header {
+  background: #262C34;
+  padding: 0;
+  border: none;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-header:before, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-header:after {
+  background-color: #6b6a6a;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5px;
+  bottom: 0;
+  right: auto;
+  width: 1px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-header:after {
+  width: auto;
+  height: 1px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-header > h5 {
+  margin-bottom: 0px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-header button[data-toggle="collapse"] {
+  display: block;
+  padding: 3px 8px 6px 10px;
+  color: #b7b7b7;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-header button[data-toggle="collapse"] > small {
+  font-size: 90%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-header button[data-toggle="collapse"] > small.fa {
+  font-size: 70%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-header button[data-toggle="collapse"] .o_text {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  width: 92%;
+  vertical-align: middle;
+  font: 400 11px Monaco, Menlo, "Ubuntu Mono", Consolas, source-code-pro, monospace;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-header button[data-toggle="collapse"] i.fa-angle-left {
+  transition: transform .3s;
+  position: absolute;
+  right: 1.5rem;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body {
+  border: none;
+  border-top: 1px solid #262C34;
+  padding-top: 8px;
+  background-color: #3a3f46 !important;
+  color: #fff;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .text-muted {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .row {
+  margin-bottom: 8px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body input, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body select, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body textarea, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body div.input-group-addon {
+  padding: 2px 5px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body textarea {
+  resize: vertical;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_sidebar_text > label {
+  display: block;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_width > input {
+  width: 76%;
+  display: inline-block;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_margin > input {
+  display: inline-block;
+  width: 21%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle {
+  border: 1px solid;
+  font-size: 0.8em;
+  padding: 7px 15px;
+  color: #EAEAEA;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  font-size: 13px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-secondary, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-secondary, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-secondary, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-secondary, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-secondary, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-secondary {
+  border-color: #262C34;
+  background-color: #262C34;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-secondary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-secondary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-secondary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-secondary.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-secondary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-secondary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-secondary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-secondary.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-secondary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-secondary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-secondary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-secondary.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-secondary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-secondary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-secondary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-secondary.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-secondary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-secondary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-secondary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-secondary.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-secondary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-secondary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-secondary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-secondary.active {
+  background-color: #22272e;
+  border-color: #22272e;
+  color: white;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-primary, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-primary, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-primary, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-primary, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-primary, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-primary {
+  border-color: #00A09D;
+  background-color: #00A09D;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-primary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-primary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-primary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-primary.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-primary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-primary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-primary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-primary.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-primary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-primary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-primary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-primary.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-primary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-primary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-primary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-primary.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-primary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-primary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-primary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-primary.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-primary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-primary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-primary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-primary.active {
+  background-color: #008784;
+  border-color: #008784;
+  color: white;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-danger, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-danger, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-danger, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-danger, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-danger, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-danger {
+  border-color: #e6586c;
+  background-color: #e6586c;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-danger:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-danger:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-danger:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-danger.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-danger:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-danger:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-danger:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-danger.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-danger:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-danger:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-danger:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-danger.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-danger:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-danger:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-danger:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-danger.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-danger:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-danger:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-danger:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-danger.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-danger:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-danger:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-danger:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-danger.active {
+  background-color: #e34258;
+  border-color: #e34258;
+  color: white;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-warning, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-warning, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-warning, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-warning, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-warning, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-warning {
+  border-color: #f0ad4e;
+  background-color: #f0ad4e;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-warning:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-warning:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-warning:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.btn-warning.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-warning:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-warning:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-warning:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.btn-warning.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-warning:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-warning:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-warning:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.btn-warning.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-warning:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-warning:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-warning:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.btn-warning.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-warning:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-warning:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-warning:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.btn-warning.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-warning:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-warning:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-warning:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.btn-warning.active {
+  background-color: #eea236;
+  border-color: #eea236;
+  color: white;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration > button.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_decoration button.dropdown-toggle.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment > button.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text_alignment button.dropdown-toggle.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size > button.active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size button.dropdown-toggle.active {
+  border-color: #00bab6 !important;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size .dropdown-item-text {
+  cursor: pointer;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_font_size .dropdown-item-text.active {
+  background-color: #00A09D;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_size > input,
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_offset > input {
+  width: 40%;
+  margin-right: 5px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_classes > input {
+  width: 98%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_tif_ifexpression {
+  position: relative;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_tif_ifexpression .fa {
+  position: absolute;
+  top: 1px;
+  left: auto;
+  bottom: auto;
+  right: 1px;
+  background-color: #22272e;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_table_style > select {
+  margin-left: 3px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_groups .o_field_many2manytags {
+  width: 100%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors {
+  position: relative;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown {
+  display: inline-block;
+  position: initial;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button {
+  border: 1px solid;
+  font-size: 0.8em;
+  padding: 7px 15px;
+  color: #EAEAEA;
+  text-transform: uppercase;
+  border-color: #262C34;
+  background-color: #262C34;
+  color: #EAEAEA;
+  padding: 2px 7px;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-secondary {
+  border-color: #262C34;
+  background-color: #262C34;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-secondary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-secondary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-secondary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-secondary.active {
+  background-color: #22272e;
+  border-color: #22272e;
+  color: white;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-primary {
+  border-color: #00A09D;
+  background-color: #00A09D;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-primary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-primary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-primary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-primary.active {
+  background-color: #008784;
+  border-color: #008784;
+  color: white;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-danger {
+  border-color: #e6586c;
+  background-color: #e6586c;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-danger:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-danger:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-danger:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-danger.active {
+  background-color: #e34258;
+  border-color: #e34258;
+  color: white;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-warning {
+  border-color: #f0ad4e;
+  background-color: #f0ad4e;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-warning:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-warning:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-warning:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.btn-warning.active {
+  background-color: #eea236;
+  border-color: #eea236;
+  color: white;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown > button.active {
+  background-color: #22272e;
+  border-color: #22272e;
+  color: white;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-menu {
+  padding: 0;
+  border-color: #22272e;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item:focus {
+  background-color: #22272e;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button {
+  border: 1px solid;
+  font-size: 0.8em;
+  padding: 7px 15px;
+  color: #EAEAEA;
+  text-transform: uppercase;
+  border-color: #3a3f46;
+  background-color: #3a3f46;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-secondary {
+  border-color: #262C34;
+  background-color: #262C34;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-secondary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-secondary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-secondary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-secondary.active {
+  background-color: #22272e;
+  border-color: #22272e;
+  color: white;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-primary {
+  border-color: #00A09D;
+  background-color: #00A09D;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-primary:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-primary:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-primary:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-primary.active {
+  background-color: #008784;
+  border-color: #008784;
+  color: white;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-danger {
+  border-color: #e6586c;
+  background-color: #e6586c;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-danger:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-danger:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-danger:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-danger.active {
+  background-color: #e34258;
+  border-color: #e34258;
+  color: white;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-warning {
+  border-color: #f0ad4e;
+  background-color: #f0ad4e;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-warning:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-warning:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-warning:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.btn-warning.active {
+  background-color: #eea236;
+  border-color: #eea236;
+  color: white;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button:hover, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button:active, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button:focus, .o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .dropdown-item > button.active {
+  background-color: #262C34;
+  border-color: #262C34;
+  color: white;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .o_web_studio_color_palette .o_web_studio_color_row {
+  height: 20px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .o_web_studio_color_palette button {
+  width: 20px;
+  height: 18px;
+  border: 0px solid black;
+  margin: 0 1px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .o_web_studio_color_palette button:hover {
+  box-shadow: inset 0 0 0 2px white;
+  border-width: 1px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_colors > .dropdown .o_web_studio_color_palette h6 {
+  color: gray;
+  font-size: 15px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_toption_options:first-child {
+  margin-top: 12px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_web_studio_text .btn-sm {
+  padding: 3px 8px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_field_selector_value {
+  background-color: #262C34;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card .card-body .o_input {
+  border-bottom: none;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(1) .card-header {
+  padding-left: 3px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(1) .card-header:after {
+  width: 3px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(2) .card-header {
+  padding-left: 6px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(2) .card-header:after {
+  width: 6px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(3) .card-header {
+  padding-left: 9px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(3) .card-header:after {
+  width: 9px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(4) .card-header {
+  padding-left: 12px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(4) .card-header:after {
+  width: 12px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(5) .card-header {
+  padding-left: 15px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(5) .card-header:after {
+  width: 15px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(6) .card-header {
+  padding-left: 18px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(6) .card-header:after {
+  width: 18px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(7) .card-header {
+  padding-left: 21px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(7) .card-header:after {
+  width: 21px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(8) .card-header {
+  padding-left: 24px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(8) .card-header:after {
+  width: 24px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(9) .card-header {
+  padding-left: 27px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(9) .card-header:after {
+  width: 27px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(10) .card-header {
+  padding-left: 30px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(10) .card-header:after {
+  width: 30px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(11) .card-header {
+  padding-left: 33px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(11) .card-header:after {
+  width: 33px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(12) .card-header {
+  padding-left: 36px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(12) .card-header:after {
+  width: 36px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(13) .card-header {
+  padding-left: 39px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(13) .card-header:after {
+  width: 39px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(14) .card-header {
+  padding-left: 42px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(14) .card-header:after {
+  width: 42px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(15) .card-header {
+  padding-left: 45px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(15) .card-header:after {
+  width: 45px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(16) .card-header {
+  padding-left: 48px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(16) .card-header:after {
+  width: 48px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(17) .card-header {
+  padding-left: 51px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(17) .card-header:after {
+  width: 51px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(18) .card-header {
+  padding-left: 54px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(18) .card-header:after {
+  width: 54px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(19) .card-header {
+  padding-left: 57px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(19) .card-header:after {
+  width: 57px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(20) .card-header {
+  padding-left: 60px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(20) .card-header:after {
+  width: 60px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(21) .card-header {
+  padding-left: 63px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(21) .card-header:after {
+  width: 63px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(22) .card-header {
+  padding-left: 66px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(22) .card-header:after {
+  width: 66px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(23) .card-header {
+  padding-left: 69px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(23) .card-header:after {
+  width: 69px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(24) .card-header {
+  padding-left: 72px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(24) .card-header:after {
+  width: 72px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(25) .card-header {
+  padding-left: 75px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(25) .card-header:after {
+  width: 75px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(26) .card-header {
+  padding-left: 78px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(26) .card-header:after {
+  width: 78px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(27) .card-header {
+  padding-left: 81px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(27) .card-header:after {
+  width: 81px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(28) .card-header {
+  padding-left: 84px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(28) .card-header:after {
+  width: 84px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(29) .card-header {
+  padding-left: 87px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(29) .card-header:after {
+  width: 87px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(30) .card-header {
+  padding-left: 90px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:nth-child(30) .card-header:after {
+  width: 90px;
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card.o_web_studio_active .card-header:after {
+  top: 15px;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:first-child .card-header:before {
+  top: 50%;
+}
+
+.o_web_studio_sidebar.o_web_studio_report_sidebar .o_web_studio_sidebar_content .o_web_studio_accordion .card:last-child .card-header:before {
+  bottom: 50%;
+}
+

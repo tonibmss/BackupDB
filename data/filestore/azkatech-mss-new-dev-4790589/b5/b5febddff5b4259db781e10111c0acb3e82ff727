@@ -1,0 +1,54 @@
+
+.o_web_studio_client_action .o_web_studio_editor_manager.o_web_studio_report_editor_manager .o_web_studio_sidebar {
+  flex: 0 0 350px;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager.o_web_studio_report_editor_manager .o_web_studio_report_actions {
+  position: absolute;
+  top: 8px;
+  left: auto;
+  bottom: auto;
+  right: 24px;
+  z-index: 1;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager.o_web_studio_report_editor_manager .o_web_studio_report_actions .o_web_studio_report_print {
+  margin-right: 8px;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager.o_web_studio_report_editor_manager .o_web_studio_report_actions .o_web_studio_report_pager {
+  display: inline-block;
+  background-color: #3a3f46;
+  border-radius: 5px;
+  color: #b7b7b7;
+  padding: 3px 3px 3px 8px;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager.o_web_studio_report_editor_manager .o_web_studio_report_actions .o_web_studio_report_pager .o_pager_value {
+  color: white;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager.o_web_studio_report_editor_manager .o_web_studio_report_actions .o_web_studio_report_pager .o_pager_counter {
+  margin-right: 8px;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager.o_web_studio_report_editor_manager .o_web_studio_report_actions .o_web_studio_report_pager .btn-group > button {
+  padding: 0 5px;
+  border-color: #3a3f46;
+  background-color: #3a3f46;
+  color: #EAEAEA;
+  opacity: 0.5;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager.o_web_studio_report_editor_manager .o_web_studio_report_actions .o_web_studio_report_pager .btn-group > button:hover, .o_web_studio_client_action .o_web_studio_editor_manager.o_web_studio_report_editor_manager .o_web_studio_report_actions .o_web_studio_report_pager .btn-group > button:active, .o_web_studio_client_action .o_web_studio_editor_manager.o_web_studio_report_editor_manager .o_web_studio_report_actions .o_web_studio_report_pager .btn-group > button:focus, .o_web_studio_client_action .o_web_studio_editor_manager.o_web_studio_report_editor_manager .o_web_studio_report_actions .o_web_studio_report_pager .btn-group > button.active {
+  background-color: #3a3f46;
+  border-color: #3a3f46;
+  color: white;
+}
+
+.o_web_studio_client_action .o_web_studio_editor_manager.o_web_studio_report_editor_manager .o_web_studio_report_actions .o_web_studio_report_pager .btn-group > button:hover, .o_web_studio_client_action .o_web_studio_editor_manager.o_web_studio_report_editor_manager .o_web_studio_report_actions .o_web_studio_report_pager .btn-group > button:focus, .o_web_studio_client_action .o_web_studio_editor_manager.o_web_studio_report_editor_manager .o_web_studio_report_actions .o_web_studio_report_pager .btn-group > button.focus {
+  opacity: 1;
+}
+

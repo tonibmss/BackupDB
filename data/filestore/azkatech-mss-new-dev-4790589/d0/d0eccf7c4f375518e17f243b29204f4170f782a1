@@ -1,0 +1,1491 @@
+
+.o_gantt_view {
+  box-shadow: 0 5px 20px -15px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  -webkit-print-color-adjust: exact;
+  /* Chrome, Safari */
+  color-adjust: exact;
+  /*Firefox*/
+}
+
+.o_gantt_view #o_gantt_containment {
+  position: absolute;
+  top: 0;
+  left: 16.66666667%;
+  bottom: 1px;
+  right: 0;
+}
+
+.o_gantt_view.o_grabbing, .o_gantt_view.o_grabbing .o_gantt_pill {
+  cursor: grab !important;
+}
+
+.o_gantt_view.o_copying, .o_gantt_view.o_copying .o_gantt_pill {
+  cursor: copy !important;
+}
+
+.o_gantt_view.o_no_dragging .o_gantt_cell_buttons, .o_gantt_view.o_no_dragging .ui-resizable-handle {
+  visibility: hidden;
+}
+
+.o_gantt_view.o_no_dragging, .o_gantt_view.o_no_dragging .o_gantt_pill {
+  cursor: not-allowed !important;
+}
+
+.o_gantt_view.o_grabbing .o_gantt_cell_buttons,
+.o_gantt_view.o_grabbing .ui-draggable-dragging:before,
+.o_gantt_view.o_grabbing .ui-draggable-dragging .ui-resizable-handle, .o_gantt_view.o_copying .o_gantt_cell_buttons,
+.o_gantt_view.o_copying .ui-draggable-dragging:before,
+.o_gantt_view.o_copying .ui-draggable-dragging .ui-resizable-handle {
+  visibility: hidden;
+}
+
+.o_gantt_view .o_dragged_pill {
+  outline: 1px solid #00A09D;
+}
+
+.o_gantt_view .ui-draggable-dragging {
+  opacity: .8;
+}
+
+.o_gantt_view .o_gantt_header_container {
+  top: 0;
+  z-index: 10;
+}
+
+.o_gantt_view .o_gantt_header_container .o_gantt_row_sidebar {
+  box-shadow: inset 0 -1px 0 #ced4da;
+  line-height: 4.8rem;
+}
+
+.o_gantt_view .o_gantt_header_container .o_gantt_header_slots {
+  box-shadow: inset 1px 0 0 #ced4da;
+}
+
+.o_gantt_view .o_gantt_header_container .o_gantt_header_scale {
+  border-top: 1px solid #ced4da;
+  border-bottom: 1px solid #ced4da;
+}
+
+.o_gantt_view .o_gantt_header_container .o_gantt_header_cell {
+  border-left: 1px solid transparent;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_header_container .o_gantt_header_cell.o_gantt_today {
+  border-color: #d2c9bd;
+  border-left-color: #dca665;
+  background-color: #fffaeb;
+}
+
+.o_gantt_view .o_gantt_header_container .o_gantt_header_cell.o_gantt_today + .o_gantt_header_cell, .o_gantt_view .o_gantt_header_container .o_gantt_header_cell.o_gantt_today + .o_gantt_cell {
+  border-left-color: #dca665;
+}
+
+.o_gantt_view .o_gantt_header_container .o_gantt_header_cell.o_gantt_today.o_gantt_unavailability {
+  background: #f4f3ed;
+}
+
+.o_gantt_view .o_gantt_row_sidebar {
+  color: #212529;
+  font-weight: bold;
+}
+
+.o_gantt_view .o_gantt_row_sidebar .o_gantt_row_title {
+  line-height: 31px;
+}
+
+.o_gantt_view .o_gantt_row .o_gantt_pill, .o_gantt_view .o_gantt_total_row_container .o_gantt_pill {
+  z-index: 1;
+  height: 31px;
+}
+
+.o_gantt_view .o_gantt_row_container .o_gantt_row {
+  border-bottom: 1px solid #ced4da;
+  background: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_container .o_gantt_row:first-child > .o_gantt_slots_container, .o_gantt_view .o_gantt_row_container .o_gantt_row:first-child > .o_gantt_row_sidebar {
+  box-shadow: inset 0 4px 5px -3px rgba(0, 0, 0, 0.1);
+}
+
+.o_gantt_view .o_gantt_row_container .o_gantt_row_thumbnail_wrapper .o_gantt_row_thumbnail {
+  width: auto;
+  max-height: 21px;
+}
+
+.o_gantt_view .o_gantt_row_container .o_gantt_cell {
+  border-left: 1px solid #ced4da;
+}
+
+.o_gantt_view .o_gantt_row_container .o_gantt_cell.o_gantt_today {
+  border-color: #d2c9bd;
+  border-left-color: #dca665;
+  background-color: #fffaeb;
+}
+
+.o_gantt_view .o_gantt_row_container .o_gantt_cell.o_gantt_today + .o_gantt_header_cell, .o_gantt_view .o_gantt_row_container .o_gantt_cell.o_gantt_today + .o_gantt_cell {
+  border-left-color: #dca665;
+}
+
+.o_gantt_view .o_gantt_row_container .o_gantt_cell.o_gantt_today.o_gantt_unavailability {
+  background: #f4f3ed;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell {
+  min-height: 31px;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill {
+  color: #FFFFFF;
+  background-color: #71959e;
+  cursor: pointer;
+  overflow: hidden;
+  user-select: none;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.ui-resizable-resize {
+  background-color: #134E5E;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.ui-resizable-resizing, .o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.ui-draggable-dragging {
+  z-index: 2;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_progress {
+  color: #FFFFFF;
+  background-color: #71959e;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_progress.ui-resizable-resize {
+  background-color: #134E5E;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_progress.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #71959e 0 10px, #83a3aa 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_progress.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_progress.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_progress.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_progress.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #134E5E 0 10px, #186377 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill:hover .ui-resizable-e, .o_gantt_view .o_gantt_row_nogroup .o_gantt_pill:hover .ui-resizable-w {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill:hover .ui-resizable-e:hover, .o_gantt_view .o_gantt_row_nogroup .o_gantt_pill:hover .ui-resizable-w:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.ui-resizable-resizing .ui-resizable-e, .o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.ui-resizable-resizing .ui-resizable-w {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_1 {
+  color: #212529;
+  background-color: #f6a096;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_1:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_1:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_1.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_1.ui-resizable-resize {
+  background-color: #F06050;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_1.o_gantt_progress {
+  color: #212529;
+  background-color: #f6a096;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_1.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_1.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_1.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_1.o_gantt_progress.ui-resizable-resize {
+  background-color: #F06050;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_1.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #f6a096 0 10px, #f8bab2 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_1.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_1.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_1.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_1.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #F06050 0 10px, #f27a6c 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_2 {
+  color: #212529;
+  background-color: #f8c8a0;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_2:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_2:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_2.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_2.ui-resizable-resize {
+  background-color: #F4A460;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_2.o_gantt_progress {
+  color: #212529;
+  background-color: #f8c8a0;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_2.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_2.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_2.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_2.o_gantt_progress.ui-resizable-resize {
+  background-color: #F4A460;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_2.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #f8c8a0 0 10px, #fad9bd 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_2.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_2.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_2.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_2.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #F4A460 0 10px, #f6b47d 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_3 {
+  color: #212529;
+  background-color: #fae179;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_3:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_3:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_3.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_3.ui-resizable-resize {
+  background-color: #F7CD1F;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_3.o_gantt_progress {
+  color: #212529;
+  background-color: #fae179;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_3.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_3.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_3.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_3.o_gantt_progress.ui-resizable-resize {
+  background-color: #F7CD1F;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_3.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #fae179 0 10px, #fbe896 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_3.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_3.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_3.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_3.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #F7CD1F 0 10px, #f8d43d 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_4 {
+  color: #212529;
+  background-color: #a7daf4;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_4:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_4:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_4.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_4.ui-resizable-resize {
+  background-color: #6CC1ED;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_4.o_gantt_progress {
+  color: #212529;
+  background-color: #a7daf4;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_4.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_4.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_4.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_4.o_gantt_progress.ui-resizable-resize {
+  background-color: #6CC1ED;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_4.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #a7daf4 0 10px, #c2e5f7 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_4.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_4.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_4.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_4.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #6CC1ED 0 10px, #87ccf0 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_5 {
+  color: #212529;
+  background-color: #b392a4;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_5:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_5:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_5.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_5.ui-resizable-resize {
+  background-color: #814968;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_5.o_gantt_progress {
+  color: #212529;
+  background-color: #b392a4;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_5.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_5.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_5.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_5.o_gantt_progress.ui-resizable-resize {
+  background-color: #814968;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_5.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #b392a4 0 10px, #c0a4b3 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_5.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_5.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_5.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_5.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #814968 0 10px, #955478 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_6 {
+  color: #212529;
+  background-color: #f3b2b2;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_6:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_6:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_6.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_6.ui-resizable-resize {
+  background-color: #EB7E7F;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_6.o_gantt_progress {
+  color: #212529;
+  background-color: #f3b2b2;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_6.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_6.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_6.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_6.o_gantt_progress.ui-resizable-resize {
+  background-color: #EB7E7F;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_6.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #f3b2b2 0 10px, #f7cccc 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_6.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_6.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_6.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_6.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #EB7E7F 0 10px, #ef9899 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_7 {
+  color: #212529;
+  background-color: #80b5c1;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_7:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_7:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_7.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_7.ui-resizable-resize {
+  background-color: #2C8397;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_7.o_gantt_progress {
+  color: #212529;
+  background-color: #80b5c1;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_7.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_7.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_7.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_7.o_gantt_progress.ui-resizable-resize {
+  background-color: #2C8397;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_7.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #80b5c1 0 10px, #95c1cb 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_7.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_7.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_7.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_7.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #2C8397 0 10px, #3398af 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_8 {
+  color: #212529;
+  background-color: #9199ad;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_8:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_8:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_8.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_8.ui-resizable-resize {
+  background-color: #475577;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_8.o_gantt_progress {
+  color: #212529;
+  background-color: #9199ad;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_8.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_8.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_8.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_8.o_gantt_progress.ui-resizable-resize {
+  background-color: #475577;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_8.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #9199ad 0 10px, #a3a9ba 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_8.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_8.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_8.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_8.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #475577 0 10px, #52638a 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_9 {
+  color: #212529;
+  background-color: #e6729f;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_9:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_9:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_9.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_9.ui-resizable-resize {
+  background-color: #D6145F;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_9.o_gantt_progress {
+  color: #212529;
+  background-color: #e6729f;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_9.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_9.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_9.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_9.o_gantt_progress.ui-resizable-resize {
+  background-color: #D6145F;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_9.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #e6729f 0 10px, #eb8cb1 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_9.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_9.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_9.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_9.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #D6145F 0 10px, #ea1f6d 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_10 {
+  color: #212529;
+  background-color: #83dbb3;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_10:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_10:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_10.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_10.ui-resizable-resize {
+  background-color: #30C381;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_10.o_gantt_progress {
+  color: #212529;
+  background-color: #83dbb3;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_10.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_10.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_10.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_10.o_gantt_progress.ui-resizable-resize {
+  background-color: #30C381;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_10.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #83dbb3 0 10px, #9be2c2 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_10.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_10.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_10.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_10.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #30C381 0 10px, #41d090 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_11 {
+  color: #212529;
+  background-color: #bea3d4;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_11:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_11:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_11.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_11.ui-resizable-resize {
+  background-color: #9365B8;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_11.o_gantt_progress {
+  color: #212529;
+  background-color: #bea3d4;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_11.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_11.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_11.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_11.o_gantt_progress.ui-resizable-resize {
+  background-color: #9365B8;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_11.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #bea3d4 0 10px, #cdb8de 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_11.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_11.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_11.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_11.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #9365B8 0 10px, #a27ac2 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_12 {
+  color: #212529;
+  background-color: #cc93a6;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_12:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_12:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_12.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_12.ui-resizable-resize {
+  background-color: #aa4b6b;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_12.o_gantt_progress {
+  color: #212529;
+  background-color: #cc93a6;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_12.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_12.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_12.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_12.o_gantt_progress.ui-resizable-resize {
+  background-color: #aa4b6b;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_12.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #cc93a6 0 10px, #d6a8b7 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_12.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_12.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_12.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_12.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #aa4b6b 0 10px, #b75c7b 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_13 {
+  color: #212529;
+  background-color: #83dbb3;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_13:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_13:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_13.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_13.ui-resizable-resize {
+  background-color: #30C381;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_13.o_gantt_progress {
+  color: #212529;
+  background-color: #83dbb3;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_13.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_13.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_13.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_13.o_gantt_progress.ui-resizable-resize {
+  background-color: #30C381;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_13.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #83dbb3 0 10px, #9be2c2 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_13.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_13.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_13.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_13.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #30C381 0 10px, #41d090 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_14 {
+  color: #212529;
+  background-color: #c1ac89;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_14:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_14:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_14.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_14.ui-resizable-resize {
+  background-color: #97743a;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_14.o_gantt_progress {
+  color: #212529;
+  background-color: #c1ac89;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_14.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_14.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_14.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_14.o_gantt_progress.ui-resizable-resize {
+  background-color: #97743a;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_14.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #c1ac89 0 10px, #ccba9d 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_14.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_14.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_14.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_14.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #97743a 0 10px, #ad8542 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_15 {
+  color: #212529;
+  background-color: #fae179;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_15:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_15:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_15.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_15.ui-resizable-resize {
+  background-color: #F7CD1F;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_15.o_gantt_progress {
+  color: #212529;
+  background-color: #fae179;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_15.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_15.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_15.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_15.o_gantt_progress.ui-resizable-resize {
+  background-color: #F7CD1F;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_15.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #fae179 0 10px, #fbe896 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_15.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_15.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_15.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_15.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #F7CD1F 0 10px, #f8d43d 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_16 {
+  color: #212529;
+  background-color: #8eb6f8;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_16:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_16:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_16.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_16.ui-resizable-resize {
+  background-color: #4285F4;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_16.o_gantt_progress {
+  color: #212529;
+  background-color: #8eb6f8;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_16.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_16.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_16.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_16.o_gantt_progress.ui-resizable-resize {
+  background-color: #4285F4;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_16.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #8eb6f8 0 10px, #abc9fa 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_16.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_16.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_16.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_16.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #4285F4 0 10px, #5f98f6 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_17 {
+  color: #212529;
+  background-color: #bb7ccc;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_17:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_17:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_17.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_17.ui-resizable-resize {
+  background-color: #8E24AA;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_17.o_gantt_progress {
+  color: #212529;
+  background-color: #bb7ccc;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_17.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_17.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_17.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_17.o_gantt_progress.ui-resizable-resize {
+  background-color: #8E24AA;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_17.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #bb7ccc 0 10px, #c692d5 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_17.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_17.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_17.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_17.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #8E24AA 0 10px, #a329c3 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_18 {
+  color: #212529;
+  background-color: #e6729f;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_18:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_18:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_18.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_18.ui-resizable-resize {
+  background-color: #D6145F;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_18.o_gantt_progress {
+  color: #212529;
+  background-color: #e6729f;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_18.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_18.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_18.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_18.o_gantt_progress.ui-resizable-resize {
+  background-color: #D6145F;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_18.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #e6729f 0 10px, #eb8cb1 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_18.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_18.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_18.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_18.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #D6145F 0 10px, #ea1f6d 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_19 {
+  color: #FFFFFF;
+  background-color: #748b8e;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_19:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_19:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_19.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_19.ui-resizable-resize {
+  background-color: #173e43;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_19.o_gantt_progress {
+  color: #FFFFFF;
+  background-color: #748b8e;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_19.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_19.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_19.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_19.o_gantt_progress.ui-resizable-resize {
+  background-color: #173e43;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_19.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #748b8e 0 10px, #85999c 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_19.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_19.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_19.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_19.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #173e43 0 10px, #1f535a 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_20 {
+  color: #212529;
+  background-color: #85bc96;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_20:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_20:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_20.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_20.ui-resizable-resize {
+  background-color: #348F50;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_20.o_gantt_progress {
+  color: #212529;
+  background-color: #85bc96;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_20.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_20.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_20.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_20.o_gantt_progress.ui-resizable-resize {
+  background-color: #348F50;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_20.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #85bc96 0 10px, #99c7a7 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_20.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_20.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_20.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_20.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #348F50 0 10px, #3ca55d 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_21 {
+  color: #212529;
+  background-color: #cc8988;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_21:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_21:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_21.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_21.ui-resizable-resize {
+  background-color: #AA3A38;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_21.o_gantt_progress {
+  color: #212529;
+  background-color: #cc8988;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_21.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_21.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_21.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_21.o_gantt_progress.ui-resizable-resize {
+  background-color: #AA3A38;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_21.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #cc8988 0 10px, #d59e9d 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_21.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_21.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_21.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_21.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #AA3A38 0 10px, #c04340 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_22 {
+  color: #212529;
+  background-color: #af9991;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_22:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_22:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_22.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_22.ui-resizable-resize {
+  background-color: #795548;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_22.o_gantt_progress {
+  color: #212529;
+  background-color: #af9991;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_22.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_22.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_22.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_22.o_gantt_progress.ui-resizable-resize {
+  background-color: #795548;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_22.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #af9991 0 10px, #bca9a3 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_22.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_22.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_22.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_22.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #795548 0 10px, #8c6253 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_23 {
+  color: #FFFFFF;
+  background-color: #9e6783;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_23:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_23:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_23.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_23.ui-resizable-resize {
+  background-color: #5e0231;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_23.o_gantt_progress {
+  color: #FFFFFF;
+  background-color: #9e6783;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_23.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_23.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_23.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_23.o_gantt_progress.ui-resizable-resize {
+  background-color: #5e0231;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_23.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #9e6783 0 10px, #aa7a92 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_23.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_23.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_23.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_23.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #5e0231 0 10px, #7c0341 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_24 {
+  color: #212529;
+  background-color: #a6efb6;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_24:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_24:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_24.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_24.ui-resizable-resize {
+  background-color: #6be585;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_24.o_gantt_progress {
+  color: #212529;
+  background-color: #a6efb6;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_24.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_24.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_24.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_24.o_gantt_progress.ui-resizable-resize {
+  background-color: #6be585;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_24.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #a6efb6 0 10px, #c0f4cb 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_24.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_24.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_24.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_24.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #6be585 0 10px, #85ea9a 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_25 {
+  color: #212529;
+  background-color: #c2c2a3;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_25:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_25:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_25.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_25.ui-resizable-resize {
+  background-color: #999966;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_25.o_gantt_progress {
+  color: #212529;
+  background-color: #c2c2a3;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_25.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_25.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_25.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_25.o_gantt_progress.ui-resizable-resize {
+  background-color: #999966;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_25.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #c2c2a3 0 10px, #ceceb5 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_25.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_25.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_25.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_25.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #999966 0 10px, #a5a578 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_26 {
+  color: #212529;
+  background-color: #f2e5a1;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_26:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_26:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_26.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_26.ui-resizable-resize {
+  background-color: #e9d362;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_26.o_gantt_progress {
+  color: #212529;
+  background-color: #f2e5a1;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_26.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_26.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_26.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_26.o_gantt_progress.ui-resizable-resize {
+  background-color: #e9d362;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_26.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #f2e5a1 0 10px, #f6ecbc 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_26.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_26.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_26.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_26.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #e9d362 0 10px, #eddb7d 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_27 {
+  color: #212529;
+  background-color: #d3a5a5;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_27:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_27:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_27.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_27.ui-resizable-resize {
+  background-color: #b56969;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_27.o_gantt_progress {
+  color: #212529;
+  background-color: #d3a5a5;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_27.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_27.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_27.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_27.o_gantt_progress.ui-resizable-resize {
+  background-color: #b56969;
+  color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_27.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #d3a5a5 0 10px, #ddbaba 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_27.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_27.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_27.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_27.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #b56969 0 10px, #bf7d7d 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_28 {
+  color: #212529;
+  background-color: #d7dbdd;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_28:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_28:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_28.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_28.ui-resizable-resize {
+  background-color: #bdc3c7;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_28.o_gantt_progress {
+  color: #212529;
+  background-color: #d7dbdd;
+  cursor: pointer;
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_28.o_gantt_progress:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_28.o_gantt_progress:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_28.o_gantt_progress.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_28.o_gantt_progress.ui-resizable-resize {
+  background-color: #bdc3c7;
+  color: #212529;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_28.decoration-info {
+  background-image: repeating-linear-gradient(-45deg, #d7dbdd 0 10px, #e8eaeb 10px 20px);
+}
+
+.o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_28.decoration-info:hover, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_28.decoration-info:focus, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_28.decoration-info.ui-draggable-dragging, .o_gantt_view:not(.o_grabbing):not(.o_copying):not(.o_no_dragging) .o_gantt_row_nogroup .o_gantt_pill.o_gantt_color_28.decoration-info.ui-resizable-resize {
+  background-image: repeating-linear-gradient(-45deg, #bdc3c7 0 10px, #ced2d5 10px 20px);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.decoration-primary:before {
+  content: '';
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: -11px;
+  left: -13px;
+  bottom: auto;
+  right: auto;
+  box-shadow: 1px 1px 0 white;
+  background: #00A09D;
+  transform: rotate(45deg);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.decoration-secondary:before {
+  content: '';
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: -11px;
+  left: -13px;
+  bottom: auto;
+  right: auto;
+  box-shadow: 1px 1px 0 white;
+  background: #6c757d;
+  transform: rotate(45deg);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.decoration-success:before {
+  content: '';
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: -11px;
+  left: -13px;
+  bottom: auto;
+  right: auto;
+  box-shadow: 1px 1px 0 white;
+  background: #00A04A;
+  transform: rotate(45deg);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.decoration-info:before {
+  content: '';
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: -11px;
+  left: -13px;
+  bottom: auto;
+  right: auto;
+  box-shadow: 1px 1px 0 white;
+  background: #87C0D1;
+  transform: rotate(45deg);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.decoration-warning:before {
+  content: '';
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: -11px;
+  left: -13px;
+  bottom: auto;
+  right: auto;
+  box-shadow: 1px 1px 0 white;
+  background: #F0AD4E;
+  transform: rotate(45deg);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.decoration-danger:before {
+  content: '';
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: -11px;
+  left: -13px;
+  bottom: auto;
+  right: auto;
+  box-shadow: 1px 1px 0 white;
+  background: #DC6965;
+  transform: rotate(45deg);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.decoration-light:before {
+  content: '';
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: -11px;
+  left: -13px;
+  bottom: auto;
+  right: auto;
+  box-shadow: 1px 1px 0 white;
+  background: #f8f9fa;
+  transform: rotate(45deg);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.decoration-dark:before {
+  content: '';
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: -11px;
+  left: -13px;
+  bottom: auto;
+  right: auto;
+  box-shadow: 1px 1px 0 white;
+  background: #343a40;
+  transform: rotate(45deg);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.decoration-alpha:before {
+  content: '';
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: -11px;
+  left: -13px;
+  bottom: auto;
+  right: auto;
+  box-shadow: 1px 1px 0 white;
+  background: #00A09D;
+  transform: rotate(45deg);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.decoration-beta:before {
+  content: '';
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: -11px;
+  left: -13px;
+  bottom: auto;
+  right: auto;
+  box-shadow: 1px 1px 0 white;
+  background: #875A7B;
+  transform: rotate(45deg);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.decoration-gamma:before {
+  content: '';
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: -11px;
+  left: -13px;
+  bottom: auto;
+  right: auto;
+  box-shadow: 1px 1px 0 white;
+  background: #5C5B80;
+  transform: rotate(45deg);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.decoration-delta:before {
+  content: '';
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: -11px;
+  left: -13px;
+  bottom: auto;
+  right: auto;
+  box-shadow: 1px 1px 0 white;
+  background: #5B899E;
+  transform: rotate(45deg);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill.decoration-epsilon:before {
+  content: '';
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: -11px;
+  left: -13px;
+  bottom: auto;
+  right: auto;
+  box-shadow: 1px 1px 0 white;
+  background: #E46F78;
+  transform: rotate(45deg);
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell.o_gantt_unavailability {
+  background: linear-gradient(#e9ecef, #e9ecef) no-repeat;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell.o_gantt_unavailability.o_gantt_unavailable_first_half {
+  background-size: 50%;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell.o_gantt_unavailability.o_gantt_unavailable_second_half {
+  background-position: right;
+  background-size: 50%;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell.o_gantt_unavailable_second_half.o_gantt_today {
+  background: linear-gradient(to right, #fffaeb 50%, #e9ecef 50%);
+  background-size: 100%;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell_buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: 0;
+  display: none;
+  z-index: 4;
+  color: #666666;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell_buttons .o_gantt_cell_add {
+  cursor: cell;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell_buttons .o_gantt_cell_plan {
+  cursor: zoom-in;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell_buttons .o_gantt_cell_add, .o_gantt_view .o_gantt_row_nogroup .o_gantt_cell_buttons .o_gantt_cell_plan {
+  background: #f8f9fa;
+  width: 30px;
+  line-height: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell_buttons .o_gantt_cell_add:first-child, .o_gantt_view .o_gantt_row_nogroup .o_gantt_cell_buttons .o_gantt_cell_plan:first-child {
+  border-bottom-left-radius: 4px;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell_buttons .o_gantt_cell_add:last-child, .o_gantt_view .o_gantt_row_nogroup .o_gantt_cell_buttons .o_gantt_cell_plan:last-child {
+  border-bottom-right-radius: 4px;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill_wrapper {
+  line-height: 31px;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill_wrapper.o_gantt_pill_wrapper_continuous_left {
+  padding-left: 0;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill_wrapper.o_gantt_pill_wrapper_continuous_right {
+  padding-right: 0;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill_wrapper .o_gantt_pill_resize_badge {
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: -18px;
+  right: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.28);
+  background-color: #FFFFFF;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill_wrapper.o_gantt_consolidated_wrapper .o_gantt_consolidated_pill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_pill_wrapper.o_gantt_consolidated_wrapper .o_gantt_consolidated_pill_title {
+  z-index: 2;
+  color: white;
+}
+
+.o_gantt_view .o_gantt_row_nogroup.open .o_gantt_row_sidebar {
+  font-weight: normal;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell.o_gantt_hoverable.o_hovered .o_gantt_cell_buttons {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell.o_gantt_hoverable.o_hovered.o_gantt_unavailability.o_gantt_unavailable_first_half {
+  background: linear-gradient(to right, rgba(233, 236, 239, 0.7) 50%, rgba(0, 160, 157, 0.1) 50%);
+  background-size: 100%;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell.o_gantt_hoverable.o_hovered.o_gantt_unavailability.o_gantt_unavailable_second_half {
+  background: linear-gradient(to right, rgba(0, 160, 157, 0.1) 50%, rgba(233, 236, 239, 0.7) 50%);
+  background-size: 100%;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell.o_gantt_hoverable.o_hovered.o_gantt_unavailability.o_gantt_unavailable_full {
+  background: linear-gradient(to right, rgba(233, 236, 239, 0.7) 50%, rgba(233, 236, 239, 0.7) 50%);
+  background-size: 100%;
+}
+
+.o_gantt_view .o_gantt_row_group {
+  cursor: pointer;
+}
+
+.o_gantt_view .o_gantt_row_group .o_gantt_row_sidebar, .o_gantt_view .o_gantt_row_group .o_gantt_slots_container, .o_gantt_view .o_gantt_row_group.open:hover .o_gantt_row_sidebar, .o_gantt_view .o_gantt_row_group.open:hover .o_gantt_slots_container {
+  background-image: linear-gradient(#e9ecef, #f8f9fa);
+}
+
+.o_gantt_view .o_gantt_row_group:hover .o_gantt_row_sidebar, .o_gantt_view .o_gantt_row_group:hover .o_gantt_slots_container, .o_gantt_view .o_gantt_row_group.open .o_gantt_row_sidebar, .o_gantt_view .o_gantt_row_group.open .o_gantt_slots_container {
+  background-image: linear-gradient(#f8f9fa, #e9ecef);
+}
+
+.o_gantt_view .o_gantt_row_group .o_gantt_row_sidebar, .o_gantt_view .o_gantt_row_group .o_gantt_row_title, .o_gantt_view .o_gantt_row_group .o_gantt_cell {
+  min-height: 24px;
+  line-height: 24px;
+}
+
+.o_gantt_view .o_gantt_row_group .o_gantt_row_thumbnail_wrapper .o_gantt_row_thumbnail {
+  max-width: 17px;
+}
+
+.o_gantt_view .o_gantt_row_group .o_gantt_cell {
+  border-color: #dbdfe4;
+}
+
+.o_gantt_view .o_gantt_row_group .o_gantt_cell.o_gantt_today {
+  background-color: #fcfaf3;
+}
+
+.o_gantt_view .o_gantt_row_group .o_gantt_pill {
+  border-color: #00A09D;
+}
+
+.o_gantt_view .o_gantt_row_group .o_gantt_pill_wrapper.o_gantt_consolidated_wrapper {
+  margin-top: 0;
+  line-height: 24px;
+}
+
+.o_gantt_view .o_gantt_row_group .o_gantt_pill_wrapper.o_gantt_consolidated_wrapper .o_gantt_consolidated_pill {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  bottom: auto;
+  right: 0;
+  background-color: #00A09D;
+  height: 2px;
+}
+
+.o_gantt_view .o_gantt_row_group .o_gantt_pill_wrapper.o_gantt_consolidated_wrapper .o_gantt_consolidated_pill:before, .o_gantt_view .o_gantt_row_group .o_gantt_pill_wrapper.o_gantt_consolidated_wrapper .o_gantt_consolidated_pill:after {
+  border-top: 4px solid transparent;
+  border-bottom: 5px solid transparent;
+  content: '';
+}
+
+.o_gantt_view .o_gantt_row_group .o_gantt_pill_wrapper.o_gantt_consolidated_wrapper .o_gantt_consolidated_pill:before {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  border-left: 5px solid;
+  border-left-color: inherit;
+}
+
+.o_gantt_view .o_gantt_row_group .o_gantt_pill_wrapper.o_gantt_consolidated_wrapper .o_gantt_consolidated_pill:after {
+  position: absolute;
+  top: -3px;
+  left: auto;
+  bottom: auto;
+  right: 0;
+  border-right: 5px solid;
+  border-right-color: inherit;
+}
+
+.o_gantt_view .o_gantt_row_group.open .o_gantt_cell, .o_gantt_view .o_gantt_row_group.open .o_gantt_cell.o_gantt_today, .o_gantt_view .o_gantt_row_group.open .o_gantt_cell.o_gantt_today + .o_gantt_cell {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.o_gantt_view .o_gantt_row_group.open .o_gantt_cell .o_gantt_pill_wrapper.o_gantt_consolidated_wrapper .o_gantt_consolidated_pill:before, .o_gantt_view .o_gantt_row_group.open .o_gantt_cell .o_gantt_pill_wrapper.o_gantt_consolidated_wrapper .o_gantt_consolidated_pill:after {
+  top: 2px;
+  border: 2px solid transparent;
+  border-top-color: inherit;
+}
+
+.o_gantt_view .o_gantt_row_group.open .o_gantt_cell .o_gantt_pill_wrapper.o_gantt_consolidated_wrapper .o_gantt_consolidated_pill:before {
+  border-left-color: inherit;
+}
+
+.o_gantt_view .o_gantt_row_group.open .o_gantt_cell .o_gantt_pill_wrapper.o_gantt_consolidated_wrapper .o_gantt_consolidated_pill:after {
+  border-right-color: inherit;
+}
+
+.o_gantt_view .o_gantt_row_group .o_gantt_consolidated_pill_title, .o_gantt_view .o_gantt_total .o_gantt_consolidated_pill_title {
+  z-index: 2;
+  background-color: white;
+  color: #666666;
+}
+
+.o_gantt_view .o_gantt_total {
+  z-index: 2;
+}
+
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row {
+  border-bottom: 1px solid #ced4da;
+}
+
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_cell {
+  border-left: 1px solid rgba(206, 212, 218, 0.25);
+}
+
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_cell.o_gantt_today {
+  border-color: #d2c9bd;
+  border-left-color: #dca665;
+  background-color: #fffaeb;
+}
+
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_cell.o_gantt_today + .o_gantt_header_cell, .o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_cell.o_gantt_today + .o_gantt_cell {
+  border-left-color: #dca665;
+}
+
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_cell.o_gantt_today.o_gantt_unavailability {
+  background: #f4f3ed;
+}
+
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_cell:first-child {
+  border-left: 1px solid #ced4da;
+}
+
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_cell, .o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_row_title, .o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_pill_wrapper {
+  min-height: 49.6px;
+  line-height: 49.6px;
+}
+
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_consolidated_pill_title {
+  bottom: 2px;
+  line-height: 1.5;
+}
+
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_pill {
+  position: absolute;
+  top: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(135, 90, 123, 0.5);
+}
+
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_pill_wrapper:hover {
+  overflow: visible;
+}
+
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_pill_wrapper:hover .o_gantt_pill {
+  background-color: rgba(135, 90, 123, 0.8);
+}
+
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_pill_wrapper:hover:before {
+  position: absolute;
+  top: auto;
+  left: -1px;
+  bottom: 0;
+  right: -1px;
+  border: 1px solid #875A7B;
+  border-width: 0 1px;
+  background: rgba(135, 90, 123, 0.1);
+  height: 100vh;
+  content: '';
+  pointer-events: none;
+}
+

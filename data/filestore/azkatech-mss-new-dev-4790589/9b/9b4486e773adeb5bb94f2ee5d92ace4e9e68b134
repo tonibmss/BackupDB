@@ -1,0 +1,604 @@
+
+.o_web_studio_sidebar {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-flow: column nowrap; flex-flow: column nowrap;
+  color: white;
+  background-color: #3a3f46;
+  border-right: 3px solid #262C34;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_header {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-box-flex: 0; -webkit-flex: 0 0 auto; flex: 0 0 auto;
+  margin-bottom: 15px;
+  background-color: #262C34;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_header > div {
+  -webkit-box-flex: 1; -webkit-flex: 1 0 auto; flex: 1 0 auto;
+  text-align: center;
+  padding: 14px 0;
+  color: #EAEAEA;
+  background-color: #262C34;
+  box-shadow: inset 1px 0 0 #3a3f46;
+  cursor: pointer;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_header > div.inactive {
+  color: grey;
+  cursor: not-allowed;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_header > div.active, .o_web_studio_sidebar .o_web_studio_sidebar_header > div:first-child:last-child {
+  cursor: default;
+  background-color: #3a3f46;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_header > div:not(.inactive):not(.active):hover {
+  color: white;
+  background-color: rgba(58, 63, 70, 0.5);
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_header > div > i {
+  margin-right: 4px;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content {
+  padding: 0 15px 15px;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > :first-child {
+  margin-top: 0;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > h3 {
+  color: white;
+  margin: 10px 0 15px 0;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > hr {
+  border-color: #262C34;
+  border-width: 1px;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div {
+  margin-top: 12px;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div label,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div label {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 4px 0 3px 2px;
+  color: #b7b7b7;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div .o_web_studio_toption_option.o_web_studio_required_option > label,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div .o_web_studio_toption_option.o_web_studio_required_option > label {
+  color: #dc3545;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div input, .o_web_studio_sidebar .o_web_studio_sidebar_content > div select, .o_web_studio_sidebar .o_web_studio_sidebar_content > div textarea, .o_web_studio_sidebar .o_web_studio_sidebar_content > div div.input-group-addon,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div input,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div select,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div textarea,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div div.input-group-addon {
+  color: #b7b7b7;
+  border: 1px solid transparent;
+  background-color: #262C34;
+  padding: 4px 9px;
+  transition: all 0.3s ease 0s;
+  transition-property: background, border;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div input:focus, .o_web_studio_sidebar .o_web_studio_sidebar_content > div select:focus, .o_web_studio_sidebar .o_web_studio_sidebar_content > div textarea:focus, .o_web_studio_sidebar .o_web_studio_sidebar_content > div div.input-group-addon:focus,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div input:focus,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div select:focus,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div textarea:focus,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div div.input-group-addon:focus {
+  border-color: #6999a8;
+  box-shadow: 0 0 1px 0 #6999a8;
+  color: white;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div input > option, .o_web_studio_sidebar .o_web_studio_sidebar_content > div select > option, .o_web_studio_sidebar .o_web_studio_sidebar_content > div textarea > option, .o_web_studio_sidebar .o_web_studio_sidebar_content > div div.input-group-addon > option,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div input > option,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div select > option,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div textarea > option,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div div.input-group-addon > option {
+  background-color: white;
+  color: #15161A;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div .input-group > input,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div .input-group > input {
+  min-width: 75px;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div .o_web_studio_attrs,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div .o_web_studio_attrs {
+  font-size: 11px;
+  float: right;
+  color: #00A09D;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div .o_web_studio_attrs:hover,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div .o_web_studio_attrs:hover {
+  color: #008784;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > button,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button {
+  border: 1px solid;
+  font-size: 0.8em;
+  padding: 7px 15px;
+  color: #EAEAEA;
+  text-transform: uppercase;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-secondary,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-secondary {
+  border-color: #262C34;
+  background-color: #262C34;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-secondary:hover, .o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-secondary:active, .o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-secondary:focus, .o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-secondary.active,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-secondary:hover,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-secondary:active,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-secondary:focus,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-secondary.active {
+  background-color: #22272e;
+  border-color: #22272e;
+  color: white;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-primary,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-primary {
+  border-color: #00A09D;
+  background-color: #00A09D;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-primary:hover, .o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-primary:active, .o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-primary:focus, .o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-primary.active,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-primary:hover,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-primary:active,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-primary:focus,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-primary.active {
+  background-color: #008784;
+  border-color: #008784;
+  color: white;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-danger,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-danger {
+  border-color: #e6586c;
+  background-color: #e6586c;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-danger:hover, .o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-danger:active, .o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-danger:focus, .o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-danger.active,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-danger:hover,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-danger:active,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-danger:focus,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-danger.active {
+  background-color: #e34258;
+  border-color: #e34258;
+  color: white;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-warning,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-warning {
+  border-color: #f0ad4e;
+  background-color: #f0ad4e;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-warning:hover, .o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-warning:active, .o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-warning:focus, .o_web_studio_sidebar .o_web_studio_sidebar_content > div > button.btn-warning.active,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-warning:hover,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-warning:active,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-warning:focus,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div > button.btn-warning.active {
+  background-color: #eea236;
+  border-color: #eea236;
+  color: white;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_iscode input, .o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_iscode textarea,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_iscode input,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_iscode textarea {
+  font-family: Monaco, Menlo, "Ubuntu Mono", Consolas, source-code-pro, monospace;
+  font-size: 11px;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_iscode textarea,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_iscode textarea {
+  white-space: nowrap;
+  overflow-x: scroll;
+  resize: vertical;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_checkbox label,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_checkbox label {
+  cursor: pointer;
+  font-size: 12px;
+  color: #b7b7b7;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_checkbox label:active,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_checkbox label:active {
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_checkbox label:hover,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_checkbox label:hover {
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_checkbox .custom-checkbox > input:not(:checked) + label:before,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_checkbox .custom-checkbox > input:not(:checked) + label:before {
+  border: 1px solid #262C34;
+  background-color: #262C34;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_checkbox .custom-checkbox > input:checked + label:after,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_checkbox .custom-checkbox > input:checked + label:after {
+  background-image: url("/web_studio/static/src/img/ui/checkbox_active.svg");
+  background-size: cover;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_checkbox .custom-checkbox.o_web_studio_checkbox_inactive > input + label:after,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_checkbox .custom-checkbox.o_web_studio_checkbox_inactive > input + label:after {
+  background-image: url("/web_studio/static/src/img/ui/checkbox_indeterminate.svg");
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_checkbox + .o_web_studio_sidebar_checkbox,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_checkbox + .o_web_studio_sidebar_checkbox {
+  margin-top: 2px;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_select,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_select {
+  position: relative;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_select select, .o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_select select:active, .o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_select select:focus,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_select select,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_select select:active,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_select select:focus {
+  color: #b7b7b7;
+  background-image: none;
+  box-shadow: none;
+  border-color: #262C34;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_select:after, .o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_select:before,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_select:after,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_select:before {
+  color: #b7b7b7;
+  font-family: 'FontAwesome';
+  font-size: 8px;
+  content: "\f077";
+  position: absolute;
+  top: 29px;
+  left: auto;
+  bottom: auto;
+  right: 8px;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_select:after,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_select:after {
+  content: "\f078";
+  position: absolute;
+  top: 37px;
+  left: auto;
+  bottom: auto;
+  right: 8px;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_select:hover:after, .o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_select:hover:before,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_select:hover:after,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_select:hover:before {
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_optional_select,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_optional_select {
+  position: relative;
+  margin-top: 0px;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_optional_select select, .o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_optional_select select:active, .o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_optional_select select:focus,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_optional_select select,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_optional_select select:active,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_optional_select select:focus {
+  color: #b7b7b7;
+  background-image: none;
+  box-shadow: none;
+  border-color: #262C34;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_optional_select:after, .o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_optional_select:before,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_optional_select:after,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_optional_select:before {
+  color: #b7b7b7;
+  font-family: 'FontAwesome';
+  font-size: 8px;
+  content: "\f077";
+  position: absolute;
+  top: 29px;
+  left: auto;
+  bottom: auto;
+  right: 8px;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_optional_select:after,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_optional_select:after {
+  content: "\f078";
+  position: absolute;
+  top: 37px;
+  left: auto;
+  bottom: auto;
+  right: 8px;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_optional_select:hover:after, .o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_optional_select:hover:before,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_optional_select:hover:after,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_optional_select:hover:before {
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_tags .o_field_widget,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_tags .o_field_widget {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-flow: row wrap; flex-flow: row wrap;
+  width: 100%;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_tags .o_field_many2one,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_tags .o_field_many2one {
+  flex: 0 0 100%;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_tags .o_field_many2one > .o_input_dropdown,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_tags .o_field_many2one > .o_input_dropdown {
+  width: auto;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_tags .o_field_many2one > .o_input_dropdown > .o_dropdown_button,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_tags .o_field_many2one > .o_input_dropdown > .o_dropdown_button {
+  right: 18px;
+  top: -2px;
+  font-size: 10px;
+  font-family: 'FontAwesome';
+  color: #b7b7b7;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_tags .o_field_many2one > .o_input_dropdown > .o_dropdown_button:after,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_tags .o_field_many2one > .o_input_dropdown > .o_dropdown_button:after {
+  border: none;
+  content: "\f078";
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_tags .o_field_many2one > .o_input_dropdown:hover .o_dropdown_button,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_tags .o_field_many2one > .o_input_dropdown:hover .o_dropdown_button {
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_tags .o_field_many2one > .o_external_button,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_tags .o_field_many2one > .o_external_button {
+  border: 0;
+  padding-right: 0;
+  background-color: transparent;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_tags .o_field_many2one > .o_external_button:hover, .o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_tags .o_field_many2one > .o_external_button:focus, .o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_tags .o_field_many2one > .o_external_button:active,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_tags .o_field_many2one > .o_external_button:hover,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_tags .o_field_many2one > .o_external_button:focus,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_tags .o_field_many2one > .o_external_button:active {
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_tags .badge,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_tags .badge {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  align-items: baseline;
+  max-width: 270px;
+  margin: 5px 5px 5px 0px;
+  cursor: default;
+  padding: 3px 5px;
+  border-radius: 3px;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_tags .badge .o_badge_text,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_tags .badge .o_badge_text {
+  margin-right: 5px;
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  font-weight: normal;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_tags .badge .o_delete:hover,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_tags .badge .o_delete:hover {
+  cursor: pointer;
+  color: #e6586c;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_tags .badge.o_tag_color_10,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_tags .badge.o_tag_color_10 {
+  background-color: #6999a8;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div.o_web_studio_sidebar_tags .badge + .badge,
+.o_web_studio_sidebar .o_web_studio_sidebar_content > div > .card > .card-collapse > .card-body > div.o_web_studio_sidebar_tags .badge + .badge {
+  margin-top: 1px;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_field_type_container {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-flow: row wrap; flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_component {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  width: 49%;
+  height: 32px;
+  position: relative;
+  margin-bottom: 5px;
+  padding: 3px 5px 0 0;
+  max-width: 130px;
+  border-radius: 2px;
+  background-color: #EAEAEA;
+  box-shadow: 0 1px 1px black;
+  color: #262C34;
+  font: bold 11px/2.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  cursor: pointer;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_component:hover {
+  background-color: white;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_component:hover:before {
+  background: #EAEAEA;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_component.o_web_studio_debug:not(.ui-draggable-helper) {
+  height: 40px;
+  line-height: 1.9;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_component .o_web_studio_component_description {
+  display: block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  padding: 2px;
+  background: white;
+  font: bold 10px/1 Monaco, Menlo, "Ubuntu Mono", Consolas, source-code-pro, monospace;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_component:before {
+  width: 33px;
+  height: 150%;
+  display: block;
+  float: left;
+  margin: -3px 5px 0 0;
+  border-right: 1px solid #a0abb9;
+  background-color: #dddddd;
+  content: "";
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_component:after {
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  bottom: auto;
+  right: auto;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox {
+  flex: 1 0 100%;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn {
+  border: 1px solid;
+  font-size: 0.8em;
+  padding: 7px 15px;
+  color: #EAEAEA;
+  text-transform: uppercase;
+  -webkit-box-flex: 1; -webkit-flex: 1 1 auto; flex: 1 1 auto;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-secondary {
+  border-color: #262C34;
+  background-color: #262C34;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-secondary:hover, .o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-secondary:active, .o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-secondary:focus, .o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-secondary.active {
+  background-color: #22272e;
+  border-color: #22272e;
+  color: white;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-primary {
+  border-color: #00A09D;
+  background-color: #00A09D;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-primary:hover, .o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-primary:active, .o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-primary:focus, .o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-primary.active {
+  background-color: #008784;
+  border-color: #008784;
+  color: white;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-danger {
+  border-color: #e6586c;
+  background-color: #e6586c;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-danger:hover, .o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-danger:active, .o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-danger:focus, .o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-danger.active {
+  background-color: #e34258;
+  border-color: #e34258;
+  color: white;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-warning {
+  border-color: #f0ad4e;
+  background-color: #f0ad4e;
+  color: #EAEAEA;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-warning:hover, .o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-warning:active, .o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-warning:focus, .o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox button.btn.btn-warning.active {
+  background-color: #eea236;
+  border-color: #eea236;
+  color: white;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox > div {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  align-content: space-between;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox .o_web_studio_restore {
+  margin-top: inherit;
+  width: 100%;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_sidebar_toolbox .o_web_studio_remove_warning_groups {
+  color: orange;
+  display: block;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_field_selector_chain_part {
+  background: none;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_edit_selection_values {
+  color: #00A09D;
+}
+
+.o_web_studio_sidebar .o_web_studio_sidebar_content .o_web_studio_edit_selection_values:hover {
+  color: #008784;
+}
+
+.o_web_studio_restore_default_view_dialog {
+  white-space: pre;
+}
+

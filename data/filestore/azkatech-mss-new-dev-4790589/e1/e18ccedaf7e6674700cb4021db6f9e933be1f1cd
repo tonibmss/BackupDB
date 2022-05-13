@@ -1,0 +1,123 @@
+
+.o_map_view {
+  height: 100%;
+}
+
+.o_map_view .o_map_container {
+  height: 100%;
+}
+
+.o_map_view .o_map_container .o_map_popup_table {
+  vertical-align: top;
+}
+
+.o_map_view .o_map_container .o_map_popup_table .contentName {
+  font-weight: bold;
+  white-space: nowrap;
+  line-height: 25px;
+  vertical-align: baseline;
+}
+
+.o_map_view .o_map_container .o_map_popup_table .space {
+  padding-left: 20px;
+}
+
+.o_map_view .o_map_container .o_map_popup_table .contentString {
+  vertical-align: baseline;
+}
+
+.o_map_view .o_map_container div .center {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  justify-content: left;
+  align-items: flex-end;
+}
+
+.o_map_view .o_map_container div .divider {
+  width: 5px;
+  height: auto;
+  display: inline-block;
+}
+
+.o_map_view .o_pin_list_container {
+  padding: 8px 8px 8px 22px;
+  background-color: white;
+  border-left: 1px solid #dee2e6;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  cursor: default;
+}
+
+.o_map_view .o_pin_list_container .o_pin_list_header {
+  padding: 8px 0;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+.o_map_view .o_pin_list_container .o_pin_list_header i {
+  color: #875A7B;
+  margin-right: 0.25rem;
+}
+
+.o_map_view .o_pin_list_container .o_pin_list_header span {
+  font-weight: bold;
+}
+
+.o_map_view .o_pin_list_container .o_pin_list_details {
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+.o_map_view .o_pin_list_container .o_pin_list_details a {
+  color: #212529;
+}
+
+.o_map_view .o_pin_list_container .o_pin_list_details > li {
+  list-style-position: inside;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.o_map_view .o_pin_list_container .o_pin_list_details > li.o_pin_located:hover {
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+.o_map_view .o_pin_list_container .o_pin_list_details > li:not(.o_pin_located) {
+  cursor: not-allowed;
+}
+
+.o_map_view .o_pin_list_container ul.o_pin_list_details {
+  list-style: none;
+  cursor: default;
+  padding-bottom: 2px;
+}
+
+.o_map_view .o_numbered_marker {
+  height: 45px !important;
+  width: 28px !important;
+  margin-top: -45px !important;
+  margin-left: -14px !important;
+  background-image: url("/web_map/static/src/scss/../../lib/leaflet/images/marker-icon-numbered.png");
+}
+
+.o_map_view .o_number_icon {
+  color: white;
+  font-size: 19px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.o_map_view .leaflet-fade-anim .leaflet-popup {
+  transition: none;
+}
+
+/* Fix opw-2124233, preventing rtlcss to reverse the map position */
+.leaflet-pane, .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow,
+.leaflet-tile-container, .leaflet-pane > svg, .leaflet-pane > canvas,
+.leaflet-zoom-box, .leaflet-image-layer, .leaflet-layer {
+  left: 0 /*rtl:ignore*/;
+  right: auto /*rtl:ignore*/;
+}
+

@@ -1,0 +1,250 @@
+
+:root {
+  font-size: 12px;
+}
+
+.o_web_client {
+  direction: ltr;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+.o_icon_button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  outline: none;
+}
+
+div.o_boolean_toggle.custom-control.custom-checkbox {
+  display: inline-block;
+  padding-left: 2.6875rem;
+}
+
+div.o_boolean_toggle.custom-control.custom-checkbox > label.custom-control-label::before, div.o_boolean_toggle.custom-control.custom-checkbox > label.custom-control-label::after {
+  content: "";
+  top: 0;
+  left: -2.6875rem;
+}
+
+div.o_boolean_toggle.custom-control.custom-checkbox > label.custom-control-label::before {
+  width: 2.4375rem;
+  height: 100%;
+  background-color: #a0a0a0 !important;
+  border-radius: 100px;
+  outline: none !important;
+}
+
+div.o_boolean_toggle.custom-control.custom-checkbox > label.custom-control-label::after {
+  transform: translate(0.325rem, 0.325rem);
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+div.o_boolean_toggle.custom-control.custom-checkbox > input.custom-control-input:checked + label.custom-control-label::before {
+  background-color: #00A09D !important;
+}
+
+div.o_boolean_toggle.custom-control.custom-checkbox > input.custom-control-input:checked + label.custom-control-label::after {
+  transform: translate(1.1375rem, 0.325rem);
+  background-image: none;
+}
+
+.bg-success-full {
+  background-color: #00A04A;
+}
+
+.bg-warning-full {
+  background-color: #F0AD4E;
+}
+
+.bg-danger-full {
+  background-color: #DC6965;
+}
+
+.bg-info-full {
+  background-color: #87C0D1;
+}
+
+.bg-muted-full {
+  background-color: #dee2e6;
+}
+
+.o_web_accesskey_overlay {
+  font-family: "Roboto", "Odoo Unicode Support Noto", sans-serif;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
+  justify-content: center;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  align-items: center;
+}
+
+.text-bf {
+  font-weight: bold;
+}
+
+.text-it {
+  font-style: italic;
+}
+
+.badge {
+  margin: 1px 2px 1px 0;
+}
+
+.btn-link {
+  font-weight: 500;
+}
+
+.btn-link.btn-secondary, .o_radio_hide_bullet label.btn-link {
+  text-transform: none;
+  color: #666666;
+}
+
+.btn-link.btn-secondary:hover, .o_radio_hide_bullet label.btn-link:hover, .btn-link.btn-secondary:focus, .o_radio_hide_bullet label.btn-link:focus, .btn-link.btn-secondary.focus, .o_radio_hide_bullet label.btn-link.focus {
+  color: #212529;
+}
+
+.btn-link.btn-secondary, .o_radio_hide_bullet label.btn-link, .btn-link.btn-secondary:hover, .o_radio_hide_bullet label.btn-link:hover, .btn-link.btn-secondary:focus, .o_radio_hide_bullet label.btn-link:focus, .btn-link.btn-secondary:active, .o_radio_hide_bullet label.btn-link:active, .btn-link.btn-secondary.active, .o_radio_hide_bullet label.btn-link.active {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.btn-link.btn-secondary.text-muted, .o_radio_hide_bullet label.btn-link.text-muted, .btn-link.btn-secondary .text-muted, .o_radio_hide_bullet label.btn-link .text-muted {
+  opacity: 0.5;
+  color: #adb5bd;
+}
+
+.btn-link.btn-secondary.text-muted:hover, .o_radio_hide_bullet label.btn-link.text-muted:hover, .btn-link.btn-secondary.text-muted:focus, .o_radio_hide_bullet label.btn-link.text-muted:focus, .btn-link.btn-secondary.text-muted.focus, .o_radio_hide_bullet label.btn-link.text-muted.focus, .btn-link.btn-secondary .text-muted:hover, .o_radio_hide_bullet label.btn-link .text-muted:hover, .btn-link.btn-secondary .text-muted:focus, .o_radio_hide_bullet label.btn-link .text-muted:focus, .btn-link.btn-secondary .text-muted.focus, .o_radio_hide_bullet label.btn-link .text-muted.focus {
+  opacity: 1;
+}
+
+.btn-link.btn-secondary.text-muted:hover, .o_radio_hide_bullet label.btn-link.text-muted:hover, .btn-link.btn-secondary.text-muted:focus, .o_radio_hide_bullet label.btn-link.text-muted:focus, .btn-link.btn-secondary.text-muted.focus, .o_radio_hide_bullet label.btn-link.text-muted.focus, .btn-link.btn-secondary .text-muted:hover, .o_radio_hide_bullet label.btn-link .text-muted:hover, .btn-link.btn-secondary .text-muted:focus, .o_radio_hide_bullet label.btn-link .text-muted:focus, .btn-link.btn-secondary .text-muted.focus, .o_radio_hide_bullet label.btn-link .text-muted.focus {
+  color: #212529;
+}
+
+.btn-link.btn-success, .btn-link.text-success {
+  text-transform: none;
+  color: #666666;
+}
+
+.btn-link.btn-success:hover, .btn-link.btn-success:focus, .btn-link.btn-success.focus, .btn-link.text-success:hover, .btn-link.text-success:focus, .btn-link.text-success.focus {
+  color: #00A04A;
+}
+
+.btn-link.btn-success, .btn-link.btn-success:hover, .btn-link.btn-success:focus, .btn-link.btn-success:active, .btn-link.btn-success.active, .btn-link.text-success, .btn-link.text-success:hover, .btn-link.text-success:focus, .btn-link.text-success:active, .btn-link.text-success.active {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.btn-link.btn-success.text-muted, .btn-link.btn-success .text-muted, .btn-link.text-success.text-muted, .btn-link.text-success .text-muted {
+  opacity: 0.5;
+  color: #adb5bd;
+}
+
+.btn-link.btn-success.text-muted:hover, .btn-link.btn-success.text-muted:focus, .btn-link.btn-success.text-muted.focus, .btn-link.btn-success .text-muted:hover, .btn-link.btn-success .text-muted:focus, .btn-link.btn-success .text-muted.focus, .btn-link.text-success.text-muted:hover, .btn-link.text-success.text-muted:focus, .btn-link.text-success.text-muted.focus, .btn-link.text-success .text-muted:hover, .btn-link.text-success .text-muted:focus, .btn-link.text-success .text-muted.focus {
+  opacity: 1;
+}
+
+.btn-link.btn-success.text-muted:hover, .btn-link.btn-success.text-muted:focus, .btn-link.btn-success.text-muted.focus, .btn-link.btn-success .text-muted:hover, .btn-link.btn-success .text-muted:focus, .btn-link.btn-success .text-muted.focus, .btn-link.text-success.text-muted:hover, .btn-link.text-success.text-muted:focus, .btn-link.text-success.text-muted.focus, .btn-link.text-success .text-muted:hover, .btn-link.text-success .text-muted:focus, .btn-link.text-success .text-muted.focus {
+  color: #00A04A;
+}
+
+.btn-link.btn-warning, .btn-link.text-warning {
+  text-transform: none;
+  color: #666666;
+}
+
+.btn-link.btn-warning:hover, .btn-link.btn-warning:focus, .btn-link.btn-warning.focus, .btn-link.text-warning:hover, .btn-link.text-warning:focus, .btn-link.text-warning.focus {
+  color: #F0AD4E;
+}
+
+.btn-link.btn-warning, .btn-link.btn-warning:hover, .btn-link.btn-warning:focus, .btn-link.btn-warning:active, .btn-link.btn-warning.active, .btn-link.text-warning, .btn-link.text-warning:hover, .btn-link.text-warning:focus, .btn-link.text-warning:active, .btn-link.text-warning.active {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.btn-link.btn-warning.text-muted, .btn-link.btn-warning .text-muted, .btn-link.text-warning.text-muted, .btn-link.text-warning .text-muted {
+  opacity: 0.5;
+  color: #adb5bd;
+}
+
+.btn-link.btn-warning.text-muted:hover, .btn-link.btn-warning.text-muted:focus, .btn-link.btn-warning.text-muted.focus, .btn-link.btn-warning .text-muted:hover, .btn-link.btn-warning .text-muted:focus, .btn-link.btn-warning .text-muted.focus, .btn-link.text-warning.text-muted:hover, .btn-link.text-warning.text-muted:focus, .btn-link.text-warning.text-muted.focus, .btn-link.text-warning .text-muted:hover, .btn-link.text-warning .text-muted:focus, .btn-link.text-warning .text-muted.focus {
+  opacity: 1;
+}
+
+.btn-link.btn-warning.text-muted:hover, .btn-link.btn-warning.text-muted:focus, .btn-link.btn-warning.text-muted.focus, .btn-link.btn-warning .text-muted:hover, .btn-link.btn-warning .text-muted:focus, .btn-link.btn-warning .text-muted.focus, .btn-link.text-warning.text-muted:hover, .btn-link.text-warning.text-muted:focus, .btn-link.text-warning.text-muted.focus, .btn-link.text-warning .text-muted:hover, .btn-link.text-warning .text-muted:focus, .btn-link.text-warning .text-muted.focus {
+  color: #F0AD4E;
+}
+
+.btn-link.btn-danger, .btn-link.text-danger, .oe_import .btn-link.alert.text-error {
+  text-transform: none;
+  color: #666666;
+}
+
+.btn-link.btn-danger:hover, .btn-link.btn-danger:focus, .btn-link.btn-danger.focus, .btn-link.text-danger:hover, .oe_import .btn-link.alert.text-error:hover, .btn-link.text-danger:focus, .oe_import .btn-link.alert.text-error:focus, .btn-link.text-danger.focus, .oe_import .btn-link.focus.alert.text-error {
+  color: #DC6965;
+}
+
+.btn-link.btn-danger, .btn-link.btn-danger:hover, .btn-link.btn-danger:focus, .btn-link.btn-danger:active, .btn-link.btn-danger.active, .btn-link.text-danger, .oe_import .btn-link.alert.text-error, .btn-link.text-danger:hover, .oe_import .btn-link.alert.text-error:hover, .btn-link.text-danger:focus, .oe_import .btn-link.alert.text-error:focus, .btn-link.text-danger:active, .oe_import .btn-link.alert.text-error:active, .btn-link.text-danger.active, .oe_import .btn-link.active.alert.text-error {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.btn-link.btn-danger.text-muted, .btn-link.btn-danger .text-muted, .btn-link.text-danger.text-muted, .oe_import .btn-link.text-muted.alert.text-error, .btn-link.text-danger .text-muted, .oe_import .btn-link.alert.text-error .text-muted {
+  opacity: 0.5;
+  color: #adb5bd;
+}
+
+.btn-link.btn-danger.text-muted:hover, .btn-link.btn-danger.text-muted:focus, .btn-link.btn-danger.text-muted.focus, .btn-link.btn-danger .text-muted:hover, .btn-link.btn-danger .text-muted:focus, .btn-link.btn-danger .text-muted.focus, .btn-link.text-danger.text-muted:hover, .oe_import .btn-link.text-muted.alert.text-error:hover, .btn-link.text-danger.text-muted:focus, .oe_import .btn-link.text-muted.alert.text-error:focus, .btn-link.text-danger.text-muted.focus, .oe_import .btn-link.text-muted.focus.alert.text-error, .btn-link.text-danger .text-muted:hover, .oe_import .btn-link.alert.text-error .text-muted:hover, .btn-link.text-danger .text-muted:focus, .oe_import .btn-link.alert.text-error .text-muted:focus, .btn-link.text-danger .text-muted.focus, .oe_import .btn-link.alert.text-error .text-muted.focus {
+  opacity: 1;
+}
+
+.btn-link.btn-danger.text-muted:hover, .btn-link.btn-danger.text-muted:focus, .btn-link.btn-danger.text-muted.focus, .btn-link.btn-danger .text-muted:hover, .btn-link.btn-danger .text-muted:focus, .btn-link.btn-danger .text-muted.focus, .btn-link.text-danger.text-muted:hover, .oe_import .btn-link.text-muted.alert.text-error:hover, .btn-link.text-danger.text-muted:focus, .oe_import .btn-link.text-muted.alert.text-error:focus, .btn-link.text-danger.text-muted.focus, .oe_import .btn-link.text-muted.focus.alert.text-error, .btn-link.text-danger .text-muted:hover, .oe_import .btn-link.alert.text-error .text-muted:hover, .btn-link.text-danger .text-muted:focus, .oe_import .btn-link.alert.text-error .text-muted:focus, .btn-link.text-danger .text-muted.focus, .oe_import .btn-link.alert.text-error .text-muted.focus {
+  color: #DC6965;
+}
+
+.btn-link.btn-info, .btn-link.text-info {
+  text-transform: none;
+  color: #666666;
+}
+
+.btn-link.btn-info:hover, .btn-link.btn-info:focus, .btn-link.btn-info.focus, .btn-link.text-info:hover, .btn-link.text-info:focus, .btn-link.text-info.focus {
+  color: #4396af;
+}
+
+.btn-link.btn-info, .btn-link.btn-info:hover, .btn-link.btn-info:focus, .btn-link.btn-info:active, .btn-link.btn-info.active, .btn-link.text-info, .btn-link.text-info:hover, .btn-link.text-info:focus, .btn-link.text-info:active, .btn-link.text-info.active {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.btn-link.btn-info.text-muted, .btn-link.btn-info .text-muted, .btn-link.text-info.text-muted, .btn-link.text-info .text-muted {
+  opacity: 0.5;
+  color: #adb5bd;
+}
+
+.btn-link.btn-info.text-muted:hover, .btn-link.btn-info.text-muted:focus, .btn-link.btn-info.text-muted.focus, .btn-link.btn-info .text-muted:hover, .btn-link.btn-info .text-muted:focus, .btn-link.btn-info .text-muted.focus, .btn-link.text-info.text-muted:hover, .btn-link.text-info.text-muted:focus, .btn-link.text-info.text-muted.focus, .btn-link.text-info .text-muted:hover, .btn-link.text-info .text-muted:focus, .btn-link.text-info .text-muted.focus {
+  opacity: 1;
+}
+
+.btn-link.btn-info.text-muted:hover, .btn-link.btn-info.text-muted:focus, .btn-link.btn-info.text-muted.focus, .btn-link.btn-info .text-muted:hover, .btn-link.btn-info .text-muted:focus, .btn-link.btn-info .text-muted.focus, .btn-link.text-info.text-muted:hover, .btn-link.text-info.text-muted:focus, .btn-link.text-info.text-muted.focus, .btn-link.text-info .text-muted:hover, .btn-link.text-info .text-muted:focus, .btn-link.text-info .text-muted.focus {
+  color: #4396af;
+}
+
+@media print {
+  .table-responsive {
+    overflow-x: initial;
+  }
+}
+
+[type="action"], [type="toggle"] {
+  cursor: pointer !important;
+}
+

@@ -1,0 +1,262 @@
+
+.o_web_client.o_in_studio .o_home_menu, .o_web_studio_app_creator {
+  background-image: linear-gradient(90deg, #565d78, #65545c);
+}
+
+.o_web_client.o_in_studio .o_home_menu .o_home_menu_footer,
+.o_web_client.o_in_studio .o_home_menu .o_menu_search,
+.o_web_client.o_in_studio .o_home_menu .database_expiration_panel {
+  visibility: hidden;
+}
+
+.o_web_client.o_in_studio .o_home_menu .o_app {
+  position: relative;
+}
+
+.o_web_client.o_in_studio .o_home_menu .o_app:not(.o_web_studio_new_app) {
+  opacity: 0.5;
+}
+
+.o_web_client.o_in_studio .o_home_menu .o_app:not(.o_web_studio_new_app) .o_app_icon {
+  transition-property: none;
+}
+
+.o_web_client.o_in_studio .o_home_menu .o_app:not(.o_web_studio_new_app):hover, .o_web_client.o_in_studio .o_home_menu .o_app:not(.o_web_studio_new_app):focus {
+  opacity: 0.9;
+  background-color: transparent;
+}
+
+.o_web_client.o_in_studio .o_home_menu .o_app.o_web_studio_new_app {
+  border-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.o_web_client.o_in_studio .o_home_menu .o_app.o_web_studio_new_app .o_app_icon {
+  box-shadow: none;
+}
+
+.o_web_client.o_in_studio .o_home_menu .o_app.o_web_studio_new_app:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.o_web_client.o_in_studio .o_home_menu .o_app .o_web_studio_edit_icon {
+  visibility: hidden;
+  position: absolute;
+  top: 10px;
+  left: auto;
+  bottom: auto;
+  right: 25px;
+  color: white;
+  background-color: #00A09D;
+}
+
+.o_web_client.o_in_studio .o_home_menu .o_app:hover .o_web_studio_edit_icon {
+  visibility: visible;
+  opacity: 0.6;
+}
+
+.o_web_client.o_in_studio .o_home_menu .o_app:hover .o_web_studio_edit_icon:hover {
+  opacity: 1;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box {
+  color: #262C34;
+  box-shadow: 0 16px 13px -8px rgba(38, 44, 52, 0.5);
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left {
+  background-color: white;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left h2 {
+  margin-top: 70px;
+  font-weight: 200;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left h1 {
+  font-size: 3.5em;
+  letter-spacing: -1px;
+  margin-bottom: 0.3em;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left h5 {
+  font-size: 13px;
+  position: absolute;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_name .o_web_studio_app_creator_menu {
+  margin-top: 50px;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_model_choice {
+  margin-top: 25px;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_model_choice label {
+  cursor: pointer;
+  font-size: 12px;
+  color: #212529;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_model_choice label:active {
+  color: #3a3f46;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_model_choice label:hover {
+  color: #262C34;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_model_choice .custom-checkbox > input:not(:checked) + label:before {
+  border: 1px solid #6c757d;
+  background-color: white;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_model_choice .custom-checkbox > input:checked + label:after {
+  background-image: url("/web_studio/static/src/img/ui/checkbox_active.svg");
+  background-size: cover;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_model_choice .custom-checkbox.o_web_studio_checkbox_inactive > input + label:after {
+  background-image: url("/web_studio/static/src/img/ui/checkbox_indeterminate.svg");
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_model {
+  display: none;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_model .o_external_button {
+  padding-right: 0;
+  color: #212529;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_model .o_external_button:hover, .o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_model .o_external_button:focus, .o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_model .o_external_button:active {
+  background-color: transparent;
+  color: #262C34;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_field_warning > label {
+  color: #e6586c;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_right {
+  background-color: #262C34;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_right .o_web_studio_welcome_image {
+  width: 183px;
+  height: 183px;
+  border-radius: 4px;
+  box-shadow: 0 7px 16px -5px #000;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_next, .o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_back {
+  opacity: 0.5;
+  text-transform: uppercase;
+  background-color: white;
+  color: #b7b7b7;
+  border: 1px solid #b7b7b7;
+  padding: 7px 15px;
+  font-size: 11px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_next > span, .o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_back > span {
+  transition: opacity 0.35s ease 0s;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_next:hover, .o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_next:focus, .o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_back:hover, .o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_back:focus {
+  color: #b7b7b7;
+  border-color: #b7b7b7;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_next {
+  cursor: no-drop;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_next.is_ready {
+  opacity: 1;
+  cursor: pointer;
+  background-color: #00A09D;
+  border-color: #00918e;
+  color: white;
+  transition: all 0.3s ease 0s;
+  transition-property: padding background;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_next.is_ready > span {
+  opacity: 1;
+  padding-right: 15px;
+  transition: opacity 0.1s ease 0s;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_next.is_ready:hover, .o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_next.is_ready:focus {
+  background-color: #00aaa7;
+  border-color: #00A09D;
+  color: white;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_back {
+  padding: 7px 15px 6px;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_field_widget.o_field_many2one {
+  width: 100%;
+}
+
+.o_web_studio_app_creator {
+  min-height: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box {
+  position: relative;
+  margin: auto;
+  height: 350px;
+  width: 700px;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left, .o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_right {
+  height: 100%;
+  width: 50%;
+  float: left;
+  padding: 16px 32px;
+  transition: width 0.3s ease 0s;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left {
+  border-radius: 3px 0 0 3px;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-flow: column nowrap; flex-flow: column nowrap;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_left_content {
+  flex: 1 1 100%;
+  padding-top: 20px;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_left_content .o_field_many2one {
+  width: 100%;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_buttons {
+  -webkit-box-flex: 0; -webkit-flex: 0 0 auto; flex: 0 0 auto;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_left .o_web_studio_app_creator_buttons .o_web_studio_app_creator_next {
+  float: right;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_right {
+  border-radius: 0 3px 3px 0;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.o_web_studio_app_creator .o_web_studio_app_creator_box .o_web_studio_app_creator_right .o_web_studio_app_creator_right {
+  height: 200px;
+  width: 200px;
+}
+

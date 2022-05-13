@@ -1,0 +1,93 @@
+
+.o_move_line_list_view {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+}
+
+.o_move_line_list_view .o_list_view {
+  overflow: auto;
+  flex-basis: inherit;
+}
+
+.o_move_line_list_view .o_group_name_custom {
+  font-weight: normal;
+  white-space: pre !important;
+}
+
+.o_move_line_list_view .o_group_header.o_group_open .o_group_buttons {
+  visibility: hidden;
+}
+
+.o_move_line_list_view .o_group_header.o_group_open .o_group_buttons button {
+  margin-left: 10px;
+}
+
+.o_move_line_list_view .o_group_header.o_group_open:hover .o_group_buttons {
+  visibility: visible;
+}
+
+.o_move_line_list_view .o_group_header * {
+  color: initial;
+}
+
+.o_move_line_list_view > .o_move_line_list_view_wrapper {
+  -webkit-box-flex: 1; -webkit-flex: 1 1 auto; flex: 1 1 auto;
+  overflow: auto;
+  height: 100%;
+}
+
+.o_move_line_list_view .o_attachment_preview {
+  height: 100%;
+  width: 30%;
+}
+
+.o_move_line_list_view .o_attachment_preview .o_move_line_empty, .o_move_line_list_view .o_attachment_preview .o_move_line_without_attachment {
+  text-align: center;
+}
+
+.o_move_line_list_view .o_attachment_preview .o_attachment_control {
+  position: absolute;
+  top: 8%;
+  background-color: black;
+  opacity: 0.3;
+  margin-top: -15px;
+  transition: all 0.3s;
+  border-radius: 0px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 15px 15px 15px 5px;
+}
+
+.o_move_line_list_view .o_attachment_preview .o_attachment_control:hover {
+  opacity: 0.7;
+}
+
+.o_move_line_list_view .o_attachment_preview .o_attachment_control::after {
+  color: white;
+  content: '>>';
+}
+
+.o_move_line_list_view .o_attachment_preview.hidden {
+  width: 0 !important;
+  position: unset;
+}
+
+.o_move_line_list_view .o_attachment_preview.hidden .o_attachment_control {
+  right: 0px;
+  border-radius: 0px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 15px 0 15px 15px;
+}
+
+.o_move_line_list_view .o_attachment_preview.hidden .o_attachment_control:hover {
+  padding-right: 5px;
+}
+
+.o_move_line_list_view .o_attachment_preview.hidden .o_attachment_control::after {
+  content: '<';
+}
+
+.o_move_line_list_view .o_attachment_preview.hidden .o_attachment_control:hover::after {
+  content: '<<';
+}
+

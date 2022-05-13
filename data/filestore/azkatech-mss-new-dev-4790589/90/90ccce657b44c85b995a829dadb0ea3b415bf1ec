@@ -1,0 +1,10 @@
+
+.page_batch_payment {
+  page-break-after: always;
+}
+
+.page_batch_payment .batch_details {
+  margin: 0.2in 0;
+  font-size: 1.5em;
+}
+

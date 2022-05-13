@@ -1,0 +1,659 @@
+
+.o_documents_drag_icon {
+  padding: 0px 3px;
+  color: white;
+  font-weight: bold;
+  background-color: #00A09D;
+  border: 1px solid #00A09D;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: auto;
+  bottom: auto;
+  right: 0;
+  z-index: -9999;
+}
+
+.o_documents_kanban {
+  align-items: flex-start;
+}
+
+.o_documents_kanban .o_search_panel > .o_search_panel_section .o_drag_over_selector.o_search_panel_filter_value, .o_documents_kanban .o_search_panel > .o_search_panel_section .o_drag_over_selector > header {
+  background-color: rgba(108, 193, 237, 0.3);
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.o_documents_kanban .o_search_panel > .o_search_panel_section .o_search_panel_spinner {
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: auto;
+  right: 3px;
+  margin: 3px;
+}
+
+.o_documents_kanban .o_documents_model_color {
+  color: #338FFC;
+}
+
+.o_documents_kanban .o_documents_folder_color {
+  color: #875A7B;
+}
+
+.o_documents_kanban .o_documents_tag_color {
+  color: #D59244;
+}
+
+.o_documents_kanban .o_documents_action_color {
+  color: #00A09D;
+}
+
+.o_documents_kanban .o_kanban_record, .o_documents_kanban .o_inspector_tag_remove, .o_documents_kanban .o_inspector_model, .o_documents_kanban .o_inspector_open_chatter, .o_documents_kanban .o_document_close_chatter {
+  cursor: pointer;
+  user-select: none;
+}
+
+.o_documents_kanban .o_kanban_record > .o_kanban_tags {
+  padding-left: 88px;
+}
+
+.o_documents_kanban .o_documents_progress_border {
+  position: relative;
+  padding: 0;
+  min-height: 80px;
+  cursor: pointer;
+}
+
+.o_documents_kanban .o_documents_progress_border .o_kanban_record_bottom {
+  color: #212529;
+}
+
+.o_documents_kanban .o_documents_progress_border .o_kanban_image_wrapper {
+  opacity: 0.7;
+}
+
+.o_documents_kanban .o_documents_progress_bar_wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: auto;
+  right: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.o_documents_kanban .o_documents_progress_bar_wrapper .o_documents_progress_bar {
+  z-index: 0;
+  transition: width 0.1s;
+  border-right: 1px solid #007b79;
+  height: 100%;
+  width: 100%;
+  background-color: #00A09D;
+  opacity: 0.5;
+}
+
+.o_documents_kanban .o_documents_progress_bar_wrapper .o_upload_cross {
+  position: absolute;
+  top: 4px;
+  left: auto;
+  bottom: auto;
+  right: 4px;
+  padding: 4px;
+  color: #963535;
+  font-size: 16px;
+}
+
+.o_documents_kanban .o_documents_progress_bar_wrapper .o_upload_cross:active {
+  opacity: 0.7;
+}
+
+.o_documents_kanban .o_documents_progress_bar_wrapper:not(:hover) .o_upload_cross {
+  display: none;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view {
+  overflow: auto;
+  transition: background 0.3s;
+  height: 100%;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment.oe_file_request {
+  border-style: dashed;
+  background-color: #fff0;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .o_kanban_image, .o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .o_kanban_image_wrapper {
+  height: 100%;
+  width: 80px;
+  position: absolute;
+  top: 0;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .o_kanban_image .o_kanban_image_wrapper {
+  background-color: #e9ecef;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .o_request_image .o_kanban_image_wrapper {
+  background-color: #f1f1f1;
+  opacity: 0.5;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .o_request_image .o_kanban_image_wrapper:hover {
+  background-color: #e9ecef;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .oe_kanban_previewer {
+  cursor: zoom-in;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .o_kanban_details {
+  padding-left: 88px;
+  height: 100%;
+  flex-grow: 2;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .o_kanban_details .o_documents_lock {
+  color: #495057;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .o_kanban_details .o_kanban_details_wrapper {
+  height: 100%;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .o_kanban_details .o_kanban_details_wrapper .o_field_many2manytags {
+  margin-top: 5px;
+  white-space: normal;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .o_kanban_record_title {
+  width: calc(100% - 15px);
+  margin-bottom: 0;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .o_record_selector {
+  color: #ced4da;
+  position: absolute;
+  top: 4px;
+  left: auto;
+  bottom: auto;
+  right: 4px;
+  padding: 4px;
+  font-size: 16px;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .o_record_selector:hover, .o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .o_record_selector:focus, .o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .o_record_selector.focus {
+  color: #343a40;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .favorite_sign_button {
+  opacity: 0.6;
+  color: #ced4da;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .favorite_sign_button:hover, .o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .favorite_sign_button:focus, .o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .favorite_sign_button.focus {
+  opacity: 1;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .favorite_sign_button:hover, .o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .favorite_sign_button:focus, .o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .favorite_sign_button.focus {
+  color: #F0AD4E;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .favorite_sign_button.favorite_sign_button_enabled {
+  color: #F0AD4E;
+  transition: 0.6s color 0.3s;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .favorite_sign_button.favorite_sign_button_enabled:hover, .o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .favorite_sign_button.favorite_sign_button_enabled:focus, .o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_kanban_record.o_kanban_attachment .favorite_sign_button.favorite_sign_button_enabled.focus {
+  color: #DC6965;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_record_selected {
+  opacity: 1;
+  border-color: #00A09D;
+  box-shadow: 0 0 0 1px #00A09D;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_record_selected .o_record_selector {
+  opacity: 0.8;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_record_selected .o_record_selector:hover, .o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_record_selected .o_record_selector:focus, .o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_record_selected .o_record_selector.focus {
+  opacity: 1;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view .o_record_selected .o_record_selector:before {
+  color: #00A09D;
+  content: "\f058";
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view.o_drop_over {
+  background: #495057;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view.o_drop_over:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  bottom: 8px;
+  right: 6px;
+  border: 2px dashed white;
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view.o_drop_over .o_kanban_record {
+  opacity: 0.2;
+  filter: blur(1px);
+}
+
+.o_documents_kanban .o_documents_kanban_view.o_kanban_view.o_drop_over .o_view_nocontent {
+  display: none;
+}
+
+.o_documents_kanban .o_upload_text {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  bottom: auto;
+  right: auto;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.o_documents_kanban .o_upload_text span {
+  font-size: 20px;
+}
+
+.o_documents_kanban .o_documents_inspector {
+  flex: 0 0 320px;
+  overflow: auto;
+  color: #cccccc;
+  background-color: #3F3F3F;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview {
+  padding: 8px;
+  background-color: #2E2E2E;
+  border-bottom: 1px solid #1A1A1A;
+  min-height: 100px;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_inspector_folder_description {
+  white-space: initial;
+  word-wrap: break-word;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview {
+  margin: 4px;
+  font-size: 0;
+  background-color: #3D3D3D;
+  box-shadow: 0 1px 10px -2px #1A1A1A;
+  animation: o_documents_preview_in 0.2s ease-out 0s 1 normal backwards;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview.o_non_image_preview:not(.o_documents_single_preview) {
+  max-width: 50%;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview.o_non_image_preview:not(.o_documents_single_preview) .o_preview_available {
+  max-width: 100%;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview:nth-child(3) {
+  animation-delay: 150ms;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview:nth-child(4) {
+  animation-delay: 200ms;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview:nth-child(5) {
+  animation-delay: 250ms;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview.o_documents_preview_mimetype {
+  background-color: #dee2e6;
+  padding: 8px;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview.o_documents_preview_mimetype .o_mimetype_icon {
+  width: 46px;
+  height: 46px;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview.o_documents_preview_image > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview.o_documents_single_preview {
+  -webkit-box-flex: 0; -webkit-flex: 0 1 auto; flex: 0 1 auto;
+  height: 150px;
+  box-shadow: 0 2px 4px black;
+  animation: none;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview.o_documents_single_preview > img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview.o_documents_single_preview.o_documents_preview_mimetype {
+  height: 100px;
+  padding: 10px;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview.o_documents_single_preview.o_documents_preview_mimetype .o_mimetype_icon {
+  width: 80px;
+  height: 80px;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview img, .o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview .o_preview_available {
+  cursor: zoom-in;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview img.o_documents_image_background, .o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_document_preview .o_preview_available.o_documents_image_background {
+  background-color: white;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_preview .o_selection_size b {
+  font-size: 15px;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info {
+  border-top: 1px solid #4C4C4C;
+  padding: 8px 16px 16px;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_button {
+  background-color: #4C4C4C;
+  border: 1px solid #1A1A1A;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  text-shadow: 0 1px 0 #1A1A1A;
+  color: #cccccc;
+  width: 32px;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_button:hover, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_button:focus, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_button.focus {
+  color: white;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_button.o_inspector_delete, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_button.o_archived {
+  color: #f2f2f2;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_button.o_inspector_delete {
+  background-color: #963535;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_button.o_archived {
+  background-color: #427a1c;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_button.o_locked {
+  background-color: #9e5c4d;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_button.o_inspector_archive:hover {
+  background-color: #963535;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_table .o_inspector_label {
+  width: 0%;
+  color: #cccccc;
+  vertical-align: middle;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_table .o_inspector_label > * {
+  display: block;
+  max-width: 85px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_table .o_inspector_value {
+  padding-left: 8px;
+  color: #cccccc;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_table .o_input:disabled {
+  opacity: 0.6;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_section.o_inspector_section_rules {
+  display: inline-block;
+  width: 100%;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_section.o_inspector_section_rules > label {
+  margin-bottom: 10px;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_section .o_inspector_custom_field td {
+  vertical-align: baseline;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_section .o_inspector_custom_field.o_disabled {
+  opacity: 0.6;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_section .o_inspector_custom_field.o_disabled .o_inspector_tag_add, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_section .o_inspector_custom_field.o_disabled .o_inspector_tag_remove {
+  display: none;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields .o_field_widget {
+  width: 100%;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields .o_field_widget.o_multiple_values, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields .o_field_widget.o_multiple_values input {
+  font-style: italic;
+  color: #a09f9f;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields label {
+  margin-bottom: 0;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields label i.fa {
+  font-size: 0.94791667rem;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields input {
+  border: 1px solid transparent;
+  background-color: #2E2E2E;
+  padding: 4px 8px;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields input:focus {
+  border-color: #1A1A1A;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields .o_dropdown_button {
+  right: 18px;
+  top: -2px;
+  font-size: 10px;
+  font-family: 'FontAwesome';
+  color: inherit;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields .o_dropdown_button:after {
+  border: none;
+  content: "\f0d7";
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields input, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields .o_field_many2one > .o_input_dropdown {
+  color: #cccccc;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields input:hover, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields input:focus, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields input.focus, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields .o_field_many2one > .o_input_dropdown:hover, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields .o_field_many2one > .o_input_dropdown:focus, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_fields .o_field_many2one > .o_input_dropdown.focus {
+  color: #f2f2f2;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_tags .o_inspector_tag {
+  padding: 4px 4px 2px;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_tags .o_inspector_tag:first-child {
+  margin-top: 4px;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_tags .o_inspector_tag:last-of-type {
+  margin-bottom: 4px;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_tags .o_inspector_tag .o_tag_prefix {
+  opacity: 0.5;
+  display: inline-block;
+  max-width: 40%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_tags .o_inspector_tag .o_documents_tag_name {
+  display: inline-block;
+  max-width: 40%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_tags .o_inspector_tag .o_inspector_tag_remove {
+  padding-left: 8px;
+  opacity: 0.5;
+  display: inline-block;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_tags .o_inspector_tag .o_inspector_tag_remove:hover, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_tags .o_inspector_tag .o_inspector_tag_remove:focus, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_tags .o_inspector_tag .o_inspector_tag_remove.focus {
+  opacity: 1;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_tags .o_inspector_tag.o_inspector_hover {
+  color: white;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_tags .o_inspector_tag.o_inspector_hover .o_tag_prefix {
+  opacity: 1;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_rules .o_inspector_rule .o_inspector_trigger_rule {
+  font-size: 10px;
+  padding: 1px 10px;
+  opacity: 0.5;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_rules .o_inspector_rule .o_inspector_trigger_rule:hover, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_rules .o_inspector_rule .o_inspector_trigger_rule:focus, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_rules .o_inspector_rule .o_inspector_trigger_rule.focus {
+  opacity: 1;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_rules .o_inspector_rule.o_inspector_hover {
+  color: white;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_model {
+  padding: 4px;
+  color: #00bab6;
+  display: block;
+  max-width: 203px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+
+.o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_model:hover, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_model:focus, .o_documents_kanban .o_documents_inspector .o_documents_inspector_info .o_inspector_model.focus {
+  color: #00A09D;
+}
+
+.o_documents_kanban .o_inspector_open_chatter, .o_documents_kanban .o_document_close_chatter {
+  position: absolute;
+  top: 5px;
+  left: auto;
+  bottom: auto;
+  right: 5px;
+  width: 34px;
+  height: 34px;
+  color: #f2f2f2;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #4C4C4C;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 #1A1A1A;
+}
+
+.o_documents_kanban .o_inspector_open_chatter:hover, .o_documents_kanban .o_inspector_open_chatter:focus, .o_documents_kanban .o_inspector_open_chatter.focus, .o_documents_kanban .o_document_close_chatter:hover, .o_documents_kanban .o_document_close_chatter:focus, .o_documents_kanban .o_document_close_chatter.focus {
+  color: white;
+}
+
+.o_documents_kanban .o_document_chatter {
+  position: relative;
+  overflow: auto;
+  box-shadow: inset 0 5px 0 #4C4C4C;
+  flex: 0 0 525px;
+}
+
+.o_documents_kanban .o_document_chatter .o_document_close_chatter {
+  box-shadow: none;
+  border-radius: 0 0 10px 10px;
+  line-height: 1.2;
+  z-index: 1;
+}
+
+.o_documents_kanban .o_document_chatter .o_chatter_topbar .o_topbar_right_area {
+  margin-right: 60px;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+}
+
+.o_documents_kanban .o_document_chatter .o_chatter_topbar .o_topbar_right_area .o_chatter_button_attachment {
+  margin-right: 0px;
+}
+
+.o_documents_kanban .o_document_chatter .o_attachments_previews {
+  margin: 0px;
+}
+
+.o_documents_kanban.o_chatter_open .o_inspector_open_chatter {
+  display: none;
+}
+
+.o_url_group .o_field_copy {
+  padding: 0.5rem 1rem;
+  color: #adb5bd;
+  text-align: left;
+  font-style: italic;
+  border-color: #adb5bd;
+}
+
+.o_url_group .o_field_copy .o_clipboard_button {
+  box-shadow: 1px 0 0 1px #00A09D;
+  border-radius: inherit;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+@keyframes o_documents_preview_in {
+  0% {
+    opacity: 0;
+    transform: scaleX(0.5) scaleY(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+  }
+}
+

@@ -1,0 +1,89 @@
+
+/* static stars */
+.o_website_rating_static {
+  color: #FACC2E;
+}
+
+.o_website_rating_card_container {
+  /* progress bars */
+}
+
+.o_website_rating_card_container .o_message_counter {
+  color: #495057;
+}
+
+.o_website_rating_card_container table.o_website_rating_progress_table {
+  width: 100%;
+  overflow: visible;
+}
+
+.o_website_rating_card_container table.o_website_rating_progress_table .o_website_rating_table_star_num {
+  min-width: 50px;
+  white-space: nowrap;
+}
+
+.o_website_rating_card_container table.o_website_rating_progress_table .o_website_rating_select[style*="opacity: 1"] {
+  cursor: pointer;
+}
+
+.o_website_rating_card_container table.o_website_rating_progress_table .o_website_rating_table_progress {
+  min-width: 120px;
+}
+
+.o_website_rating_card_container table.o_website_rating_progress_table .o_website_rating_table_progress > .progress {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.o_website_rating_card_container table.o_website_rating_progress_table .o_website_rating_table_progress .o_rating_progressbar {
+  background-color: #FACC2E;
+}
+
+.o_website_rating_card_container table.o_website_rating_progress_table .o_website_rating_table_percent {
+  text-align: right;
+  padding-left: 5px;
+  font-size: 0.75rem;
+}
+
+.o_website_rating_card_container table.o_website_rating_progress_table .o_website_rating_table_reset .o_website_rating_select_text {
+  visibility: hidden;
+}
+
+/* Star Widget */
+.o_rating_star_card {
+  margin-bottom: 5px;
+}
+
+.o_rating_star_card .stars {
+  display: inline-block;
+  color: #FACC2E;
+  margin-right: 15px;
+}
+
+.o_rating_star_card .stars i {
+  margin-right: -3px;
+  text-align: center;
+}
+
+.o_rating_star_card .stars.enabled {
+  cursor: pointer;
+}
+
+.o_rating_star_card .rate_text {
+  display: inline-block;
+}
+
+/* Rating Popup Composer */
+.o_rating_popup_composer .o_rating_clickable {
+  cursor: pointer;
+}
+
+.o_rating_popup_composer .o_portal_chatter_avatar {
+  margin-right: 10px;
+}
+
+.o_rating_popup_composer_label {
+  color: #212529;
+}
+

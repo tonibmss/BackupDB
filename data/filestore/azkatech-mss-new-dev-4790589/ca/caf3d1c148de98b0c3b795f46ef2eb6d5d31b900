@@ -1,0 +1,97 @@
+
+@media (max-width: 767.98px) {
+  .o_controller_with_searchpanel {
+    -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column;
+  }
+  .o_controller_with_searchpanel .o_renderer_with_searchpanel.o_list_view {
+    width: 100%;
+  }
+  .o_controller_with_searchpanel details.o_search_panel {
+    flex-basis: auto;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    border: 1px solid lightgray;
+  }
+  .o_controller_with_searchpanel details.o_search_panel:focus,
+  .o_controller_with_searchpanel details.o_search_panel > summary:focus {
+    outline: none;
+  }
+  .o_controller_with_searchpanel details.o_search_panel > summary {
+    list-style-type: none;
+    padding: 8px 16px;
+  }
+  .o_controller_with_searchpanel details.o_search_panel > summary::-webkit-details-marker {
+    display: none;
+  }
+  .o_controller_with_searchpanel details.o_search_panel > summary .o_search_panel_mobile_close, .o_controller_with_searchpanel details.o_search_panel > summary .o_search_panel_mobile_title {
+    display: none;
+  }
+  .o_controller_with_searchpanel details.o_search_panel[open] {
+    position: fixed;
+    z-index: 1050;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 46px !important;
+    padding-bottom: 46px !important;
+  }
+  .o_controller_with_searchpanel details.o_search_panel[open] > summary {
+    position: fixed;
+    z-index: 1050;
+    right: 0;
+    top: 0;
+    bottom: initial;
+    left: 0;
+    padding: 0.7rem 1.4rem;
+    height: 46px;
+    pointer-events: none;
+    background-color: #875A7B;
+    border-bottom: 1px solid lightgray;
+    color: white;
+  }
+  .o_controller_with_searchpanel details.o_search_panel[open] > summary, .o_controller_with_searchpanel details.o_search_panel[open] > summary:hover, .o_controller_with_searchpanel details.o_search_panel[open] > summary:active, .o_controller_with_searchpanel details.o_search_panel[open] > summary:focus, .o_controller_with_searchpanel details.o_search_panel[open] > summary:active:focus {
+    box-shadow: none;
+  }
+  .o_controller_with_searchpanel details.o_search_panel[open] > summary .o_search_panel_mobile_collapsed_only {
+    display: none;
+  }
+  .o_controller_with_searchpanel details.o_search_panel[open] > summary .o_search_panel_mobile_close {
+    display: initial;
+    pointer-events: initial;
+  }
+  .o_controller_with_searchpanel details.o_search_panel[open] > summary .o_search_panel_mobile_title {
+    display: initial;
+  }
+  .o_controller_with_searchpanel details.o_search_panel[open] > .o_search_panel_section {
+    margin: 0 16px;
+  }
+  .o_controller_with_searchpanel details.o_search_panel[open] .o_searchview_facet_label,
+  .o_controller_with_searchpanel details.o_search_panel[open] .o_facet_values {
+    padding-right: 5px;
+  }
+  .o_controller_with_searchpanel details.o_search_panel[open] .o_search_panel_filter.o_searchview_facet .o_search_panel_section_icon {
+    background-color: #D59244;
+  }
+  .o_controller_with_searchpanel details.o_search_panel[open] .o_search_panel_category_value .o_search_panel_category_value:after, .o_controller_with_searchpanel details.o_search_panel[open] .o_search_panel_category_value .o_search_panel_category_value:last-child::after {
+    top: 1.3rem;
+  }
+  .o_controller_with_searchpanel details.o_search_panel[open] .o_search_panel_category_value .o_search_panel_category_value:last-child:before {
+    height: 1.4rem;
+  }
+  .o_controller_with_searchpanel details.o_search_panel[open] .list-group-item,
+  .o_controller_with_searchpanel details.o_search_panel[open] .list-group-item .list-group-item,
+  .o_controller_with_searchpanel details.o_search_panel[open] .o_search_panel_category_value.list-group-item .list-group-item-action {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .o_controller_with_searchpanel details.o_search_panel[open] .list-group-item > .list-group {
+    padding-left: 8px;
+  }
+  .o_controller_with_searchpanel details.o_search_panel[open] .o_search_panel_category_value.list-group-item {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
